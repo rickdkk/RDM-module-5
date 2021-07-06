@@ -2,8 +2,15 @@
 # Learn more at https://jupyterbook.org/customize/toc.html
 
 format: jb-book
-root: intro
-chapters:
-- file: markdown
-- file: notebooks
-- file: mymarkdownfile
+root: README
+parts:
+  - caption: Hoofdstukken
+    chapters:
+    - file: chapters/1_project_organisatie
+    - file: chapters/2_data_organisatie
+    - file: chapters/3_data_minimalisatie
+  - caption: Opdrachten
+    chapters:
+      - file: assignments/1_project_organisatie_opdracht
+      - file: assignments/2_data_organisatie_opdracht
+      - file: assignments/3_data_minimalisatie_opdracht

@@ -1,14 +1,16 @@
 # Book settings
 # Learn more at https://jupyterbook.org/customize/config.html
 
-title: Leerlijn RDM - Module 5
-author: Rick de Klerk
-logo: logo.png
+title                     : Leerlijn Research Data Management
+author                    : Rick de Klerk
+logo                      : figures/logo.svg
+
+only_build_toc_files      : true
 
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
 execute:
-  execute_notebooks: force
+  execute_notebooks       : off
 
 # Define the name of the latex output file for PDF builds
 latex:
@@ -21,12 +23,14 @@ bibtex_bibfiles:
 
 # Information about where the book exists on the web
 repository:
-  url: https://github.com/executablebooks/jupyter-book  # Online location of your book
-  path_to_book: docs  # Optional path to your book, relative to the repository root
-  branch: master  # Which branch of the repository should be used when creating links (optional)
+  url                     : https://github.com/Rickdkk/module_5  # Online location of your book
+  branch                  : main  # Which branch of the repository should be used when creating links (optional)
 
 # Add GitHub buttons to your book
 # See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
 html:
-  use_issues_button: true
-  use_repository_button: true
+  use_issues_button       : true
+  use_repository_button   : true
+  favicon                 : figures/icon_small.svg  # A path to a favicon image
+  extra_navbar            : <a href="https://orcid.org/0000-0003-2745-1963">Rick de Klerk</a>  # Will be displayed underneath the left navbar.
+  home_page_in_navbar     : false  # Whether to include your home page in the left Navigation Bar
