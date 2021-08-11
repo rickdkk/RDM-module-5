@@ -7,8 +7,19 @@ parts:
   - caption: Hoofdstukken
     chapters:
     - file: chapters/1_project_organisatie
+      sections:
+        - file: chapters/1_good_practices
+          title: Good practices
+        - file: chapters/1_folders
+        - file: chapters/1_files
     - file: chapters/2_data_organisatie
+      sections:
+      - file: chapters/2_good_practices
     - file: chapters/3_data_minimalisatie
+      sections:
+        - file: chapters/3_good_practices
+        - file: chapters/3_anonimiseren
+        - file: chapters/3_pseudonimiseren
   - caption: Opdrachten
     chapters:
       - file: assignments/1_project_organisatie_opdracht

@@ -1,10 +1,10 @@
 # Book settings
 # Learn more at https://jupyterbook.org/customize/config.html
 
-title                     : Leerlijn Research Data Management
+title                     : "Leerlijn Research Data Management"
 author                    : Rick de Klerk
 logo                      : figures/logo.svg
-
+exclude_patterns          : [_build, data]
 only_build_toc_files      : true
 
 # Force re-execution of notebooks on each build.
@@ -23,14 +23,25 @@ bibtex_bibfiles:
 
 # Information about where the book exists on the web
 repository:
-  url                     : https://github.com/Rickdkk/module_5  # Online location of your book
+  url                     : https://gitlab.com/Rickdkk/module_5/  # Online location of your book
   branch                  : main  # Which branch of the repository should be used when creating links (optional)
 
 # Add GitHub buttons to your book
 # See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
 html:
   use_issues_button       : true
+  use_edit_page_button    : true
   use_repository_button   : true
   favicon                 : figures/icon_small.svg  # A path to a favicon image
   extra_navbar            : <a href="https://orcid.org/0000-0003-2745-1963">Rick de Klerk</a>  # Will be displayed underneath the left navbar.
   home_page_in_navbar     : false  # Whether to include your home page in the left Navigation Bar
+
+# Advanced sphinx config
+sphinx:
+  config:
+    panels_css_variables :
+      "tabs-color-label-active": "rgba(102, 51, 102, 1)"
+      "tabs-color-label-inactive": "rgba(102, 51, 102, 0.62)"
+      "tabs-color-overline": "rgba(102, 51, 102, 0.35)"
+      "tabs-color-underline": "rgba(102, 51, 102, 0.35)"
+      "tabs-size-label": "1rem"
