@@ -1,0 +1,12 @@
+/* Style for tables
+we want to:
+- center it
+*/
+
+.bd-content .section table {
+    display: table;
+}
+
+.table td, .table th {
+    padding: .1rem;
+}
