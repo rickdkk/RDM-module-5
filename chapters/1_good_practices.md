@@ -9,7 +9,7 @@ hangen zijn er een aantal belangrijke tips and tricks die men kan gebruiken voor
 :::{figure-md} markdown-fig
 <img src="https://imgs.xkcd.com/comics/digital_resource_lifespan.png" alt="xkcd" class="bg-primary mb-1">
 
-xkcd.com on the lifespan on digital resources
+xkcd.com over de houdbaarheid van digitale bronnen
 :::
 
 ## Sla je ruwe data op
