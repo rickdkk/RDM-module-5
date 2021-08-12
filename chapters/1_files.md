@@ -66,5 +66,24 @@ Door ervoor te zorgen dat de data ‘machine readable’ is kunnen we met regula
 gemakkelijk data selecteren. Hieronder een voorbeeld van een aantal files met de volgende naamsopbouw:
 
 
+```{tabbed} Python
+![](../figures/glob_ipython.png)
+```
+
+```{tabbed} R
+![](../figures/glob_radian.png)
+```
+
+```{tabbed} Julia
+![](../figures/glob_julia.png)
+```
+
+```{tabbed} Shell
+![](../figures/glob_find.png)
+```
+
+```{tabbed} Explorer
+![](../figures/glob_explorer.png)
+```
 
 Door deze structuur te hanteren kunnen we achteraf, bijvoorbeeld, alle data van proefpersoon 1, alle ergometer data, of alle ergometer data van T1 selecteren:

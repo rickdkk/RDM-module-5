@@ -33,7 +33,7 @@ html:
   use_edit_page_button    : true
   use_repository_button   : true
   favicon                 : figures/icon_small.svg  # A path to a favicon image
-  extra_navbar            : <a href="https://orcid.org/0000-0003-2745-1963">Rick de Klerk</a>  # Will be displayed underneath the left navbar.
+  extra_navbar            : <a href="https://fontysconnect.nl/rdm">Research Data Management</a>  # Will be displayed underneath the left navbar.
   home_page_in_navbar     : false  # Whether to include your home page in the left Navigation Bar
 
 # Advanced sphinx config

@@ -16,8 +16,11 @@ def change_string_in_file(filename: str, old_string: str, new_string: str):
         f.write(content)
 
 
-files = glob("./_build/html/**/*html", recursive=True)
+if __name__ == "__main__":
+    for file in glob("./_build/html/**/*.html", recursive=True):
+        change_string_in_file(file, "fa-github", "fa-gitlab")
 
-for file in files:
-    change_string_in_file(file, "fa-github", "fa-gitlab")
+    # for file in glob("./_build/html/**/*.css", recursive=True):  # replace blue theme with fontys purple
+    #     change_string_in_file(file, "#0071bc", "rgba(102, 51, 102, 1)")
+
     change_string_in_file("./_build/html/README.html", "|version_placeholder|", str(date.today()))

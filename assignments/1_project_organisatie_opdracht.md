@@ -1,4 +1,4 @@
-# Opdracht 1: Project Organisatie
+# Opdracht 1: Project organisatie
 
 ## Voorbereiding
 
