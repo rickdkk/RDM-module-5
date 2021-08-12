@@ -3,10 +3,26 @@ we want to:
 - center it
 */
 
+:root{
+    --fontys-purple: rgba(102, 51, 102, 1);
+}
+
 .bd-content .section table {
     display: table;
 }
 
 .table td, .table th {
     padding: .1rem;
+}
+
+#site-navigation nav ul.nav a:hover, #site-navigation nav ul.nav li.active > a, #site-navigation nav ul.nav li.active > a:hover {
+    color: var(--fontys-purple);
+}
+
+.bd-toc nav li.active > a.active {
+    border-left: 2px solid var(--fontys-purple);
+}
+
+.bd-toc nav a:hover, .bd-toc nav li.active > a.active{
+    color: var(--fontys-purple);
 }
