@@ -15,6 +15,7 @@ parts:
     - file: chapters/2_data_organisatie
       sections:
       - file: chapters/2_good_practices
+      - file: chapters/2_spreadsheets
     - file: chapters/3_data_minimalisatie
       sections:
         - file: chapters/3_good_practices

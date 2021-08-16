@@ -73,13 +73,13 @@ op de lange termijn zou alles in een open format opgeslagen moeten worden.
 De data moet beschreven worden zodat jij en anderen weten wat voor een data het precies betreft. Er zijn verschillende
 niveaus van metadata. Allereerst moet de dataset zelf beschreven worden, dat is bijvoorbeeld nodig om de data terug te
 kunnen vinden in DataverseNL. Dan moet de inhoud van de dataset zelf nog beschreven worden, hiervoor is een goede
-[README](https://nl.wikipedia.org/wiki/README) de meest waardevolle toevoeging. Op de volgende pagina gaan we hier verder
-op in, maar in het kort: een README is een bestand (meestal in plain text) die informatie geeft die gebruikers eerst moeten
-lezen.
+[README](https://nl.wikipedia.org/wiki/README) de meest waardevolle toevoeging. Op [de volgende pagina](readme-label)
+gaan we hier verder op in, maar in het kort: een README is een bestand (meestal in plain text) die informatie geeft die
+gebruikers eerst moeten lezen voordat men aan de slag gaat.
 
 ## Archiveer de data
 
-Onderzoeksdata moet minimaal 10 jaar bewaard blijven (15/20 jaar voor medische data). Het archiveren van data is dus een
+Onderzoeksdata moet minimaal 10 jaar [^VSNU] bewaard blijven (15/20 jaar voor medische data). Het archiveren van data is dus een
 belangrijke stap in het onderzoeksproces. Bij voorkeur wordt de data openbaar gemaakt, maar als dat niet kan dan kan het
 ook gesloten gearchiveerd worden. Fontys beschikt over DataverseNL. Hier kunnen de data zowel open als gesloten
 gearchiveerd worden. Door al het voorwerk dat is gedaan in de voorgaande secties is het archiveren van data zo gebeurd.
@@ -94,3 +94,6 @@ De organisatie is al op orde, evenals de documentatie, en de data staat al in ee
 
 Tot nu toe is er nog niets gezegd over hóe de data moet worden opgeslagen. Welke mappenstructuur is handig voor
 onderzoek en hoe moet ik de files noemen? Daar gaan we in het volgende stuk op in!
+
+
+[^VSNU]: Vereniging van Universiteiten. De Nederlandse Gedragscode Wetenschapsbeoefening. 2014. http://www.vsnu.nl/files/documenten/Domeinen/Onderzoek/Code_wetenschapsbeoefening_2004_%282014%29.pdf

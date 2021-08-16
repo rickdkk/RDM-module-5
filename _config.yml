@@ -45,3 +45,4 @@ sphinx:
       "tabs-color-overline": "rgba(102, 51, 102, 0.35)"
       "tabs-color-underline": "rgba(102, 51, 102, 0.35)"
       "tabs-size-label": "1rem"
+    language: nl

@@ -2,11 +2,11 @@
 
 **Door [Rick de Klerk](https://orcid.org/0000-0003-2745-1963) 🚀** versie |version_placeholder|
 
-Module 5 van de leerlijn RDM gaat over het structureren van onderzoeksprojecten en -data. Aan het einde van deze module 
-is de cursist in staat om een standaard projectstructuur te gebruiken, hun data netjes te organiseren, en te 
-identificeren welke data nodig zijn voor het onderzoek. Waar nodig wordt data geanonimiseerd of gepseudonimiseerd. Voor 
-onderzoekers geldt dat ze in staat zijn de methoden toe te passen en ondersteuners zullen in staat zijn om te adviseren. 
-De module bestaat uit één sessie van circa 2.5 uur.
+[Module 5](https://rickdkk.gitlab.io/module_5) van de leerlijn RDM gaat over het structureren van onderzoeksprojecten en -data. 
+Aan het einde van deze module is de cursist in staat om een standaard projectstructuur te gebruiken, hun data netjes 
+te organiseren, en te identificeren welke data nodig zijn voor het onderzoek. Waar nodig wordt data geanonimiseerd of 
+gepseudonimiseerd. Voor onderzoekers geldt dat ze in staat zijn de methoden toe te passen en ondersteuners zullen in 
+staat zijn om te adviseren. De module bestaat uit één sessie van circa 2.5 uur.
 
 ## Leerdoelen
 
@@ -45,7 +45,7 @@ blended learning met (online) leermateriaal en opdrachten.
 In de opdrachten wordt gebruik gemaakt van een aantal files, zorg dat je deze van tevoren al hebt gedownload,
 deze zijn [hier](https://www.google.com) te vinden. Daarnaast is een spreadsheet programma nodig zoals Microsoft Excel 
 of LibreOffice Calc. Nog geen spreadsheet programma? Download dan [hier](https://www.libreoffice.org/download/download/) 
-LibreOffice. Let wel op er zitten subtiele verschillen binnen en tussen de layout van office programma's. Het kan dus 
+LibreOffice. Let wel op: er zitten subtiele verschillen binnen en tussen de layout van office programma's. Het kan dus 
 zijn dat het er bij een collega allemaal net iets anders uitziet.
 
 ## Credits

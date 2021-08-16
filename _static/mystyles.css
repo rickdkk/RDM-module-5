@@ -26,3 +26,11 @@ we want to:
 .bd-toc nav a:hover, .bd-toc nav li.active > a.active{
     color: var(--fontys-purple);
 }
+
+.bg-warning {
+    background-color: #fce6a4 !important;
+}
+
+.bg-success {
+    background-color: #8df4a5 !important;
+}
