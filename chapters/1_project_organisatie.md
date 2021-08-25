@@ -1,4 +1,4 @@
-# Project organisatie
+# Project organisatie 
 
 Het eerste deel van deze workshop gaat over project organisatie. Het gaat niet over de gehele organisatie van een
 project, maar met name over het (digitaal) organiseren van data. Het opstellen van een duidelijke projectstructuur kost
@@ -11,25 +11,24 @@ tegelijk hebt lopen: een investering waar je dus ook zelf veel profijt van hebt 
 Iemand die niet bekend is met het project, moet in staat zijn om naar de computerbestanden te kijken en begrijpen 
 wat je deed en waarom. Deze "Iemand" kan een van verschillende mensen zijn: iemand die je gepubliceerde artikel leest en wil 
 proberen je werk te reproduceren, een collega die de details van je experimenten wil begrijpen, een opvolger 
-die die verder wil met je werk nadat je een nieuwe baan hebt, je onderzoeksadviseur die misschien geïnteresseerd is in 
+die verder wil met je werk nadat jijzelf een nieuwe baan hebt, je onderzoeksadviseur die misschien geïnteresseerd is in 
 het begrijpen van je werk of je onderzoeksvaardigheden evalueert. Meestal, echter, ben jijzelf die "iemand". 
 
 -- William Stafford Noble
 ```
 
-Veel onderzoeksprojecten maken geen gebruik van uitgebreide database systemen omdat het onderzoek vaak 'kleinschalig' 
-is, wendbaar moet blijven, en niet in productie hoeft te draaien. Dit hoofdstuk gaat dan ook uit van een behapbare 
+De meeste onderzoeksprojecten maken geen gebruik van uitgebreide database systemen omdat het onderzoek vaak 'kleinschalig' 
+is, wendbaar moet blijven, en niet in productie hoeft te draaien. Dit hoofdstuk gaat dan ook uit van een 'behapbare' 
 hoeveelheid data. Voor hele grote datasets gelden over het algemeen andere regels en kan men het best overleggen met 
 IT om tot een juiste oplossing te komen. De content onder dit hoofdstuk kan daarom worden samengevat als 'goed 
 genoeg research data management', omdat het een pragmatische aanpak is die geschikt is voor de meeste projecten, en als
 knipoog naar de paper van Wilson [^Wilson] waarop de content is gebaseerd.
 
-We gaan in op de volgende thema's over project organisatie:
+We gaan in op de volgende thema's met betrekking tot project organisatie:
 
 - Good practices
 - Het organiseren van mappen
 - Het organiseren van files
-
 
 
 [^Wilson]: Wilson G, Bryan J, Cranston K, Kitzes J, Nederbragt L, Teal TK. Good enough practices in scientific 

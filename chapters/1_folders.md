@@ -1,8 +1,9 @@
 # Mappen organiseren
 
-Een duidelijke projectstructuur is belangrijk voor de reproduceerbaarheid en efficiëntie van het onderzoek. Het bepalen 
-van een systeem voor het bewaren van bestanden is dan ook een van de eerste stappen binnen een nieuw project. Op deze
-pagina gaan we in op de mapstructuur van een onderzoeksproject en op de volgende pagina gaan we verder in op de inhoud. 
+Een duidelijke projectstructuur is kan bijdragen aan de reproduceerbaarheid en efficiëntie van het onderzoek. Het 
+bepalen van een systeem voor het bewaren van bestanden is dan ook een van de eerste stappen binnen een nieuw project. 
+Op deze pagina gaan we in op de mapstructuur van een onderzoeksproject en op de volgende pagina gaan we verder in op de
+inhoud. 
 
 De meeste mensen zijn het er over eens dat ieder project in een eigen map moet, maar daarna zijn er veel verschillende 
 systemen te bedenken. Hieronder benoemen we eerst een aantal good practices die altijd gelden en daarna presenteren we 
@@ -12,7 +13,7 @@ behandeld in dit stuk.
 ## Good practices
 ::::::{margin}
 :::{figure-md} old-files-fig
-<img src="https://imgs.xkcd.com/comics/old_files.png" alt="xkcd" class="bg-primary mb-1">
+<img src="https://imgs.xkcd.com/comics/old_files.png" alt="xkcd">
 
 xkcd.com over oude files/data
 :::
@@ -20,24 +21,24 @@ xkcd.com over oude files/data
 - **Check wat de standaard is in jouw onderzoeksgroep** zodat het project aansluit bij bestaande en andere lopende projecten.
 Bedenk niet zelf een systeem als dat niet strikt noodzakelijk is.
 <br><br>
-- **Kies een systeem en leg dit vast in het DMP en de README**. Door het vast te leggen in het DMP is het direct voor 
-iedereen duidelijk welke structuur gebruikt gaat worden. Zo kunnen collega's en studenten meteen de juiste structuur 
-aanhouden. Iets wat tijdens het automatiseren en archiveren veel tijd gaat schelen.
+- **Kies een systeem en leg dit vast in het DMP en de README**. Door het vast te leggen is het direct voor iedereen 
+duidelijk welke structuur gebruikt gaat worden. Zo kunnen collega's en studenten meteen de juiste structuur aanhouden. 
+Iets wat tijdens het automatiseren en archiveren veel tijd gaat schelen.
 <br><br>
 - **Kies betekenisvolle namen** voor de mappen zodat men niet de inhoud hoeft te controleren om te kijken wat er in zit.
 Hiermee documenteert het project zichzelf en zorg je ervoor dat men snel eigen kan worden met het project.
 <br><br>
-- **Maak een beperkt aantal mappen in de root** en maak specifiekere mappen in sub-mappen of sub-sub-mappen. Zorg er wel
-voor dat de lengte van het pad niet te lang wordt, dan is het beter om de context van de bestanden in een los
-bestand op te slaan of om te werken met een database systeem.
+- **Maak een beperkt aantal mappen in de hoofdmap (root)** en maak specifiekere mappen in sub-mappen of sub-sub-mappen. 
+Zorg er wel voor dat de lengte van het pad niet te lang wordt, dan is het beter om de context van de bestanden in een 
+los bestand op te slaan of om te werken met een database systeem.
 <br><br>
 - **Splits data en gegenereerde content van handbewerkte content**. Hierdoor zorg je ervoor dat automatisch 
 gegenereerde data of read-only data niet worden aangepast en dat files die wel met de hand worden aangepast niet worden 
 overschreven.
 <br><br>
-- **Zet een README in de bovenste map** van het project zodat iedereen direct weet waar men moet beginnen. Met een README
+- **Zet een README in de root** van het project zodat iedereen direct weet waar men moet beginnen. Met een README
 zorg je er voor dat jij en je collega's over een paar maanden nog steeds weten waar alles staat en hoe je het project moet
-gebruiken, zie ook: {ref}`readme-label`.
+gebruiken (zie ook {ref}`readme-label`).
 <br><br>
 - **Zorg ervoor dat alles aanwezig is om de analyse te herhalen**. In het geval van projecten waar handmatig met data is
 gewerkt moet er een uitgebreide handleiding aanwezig zijn en voor geautomatiseerde stappen moeten er scripts zijn die
@@ -94,22 +95,35 @@ De mappen maken een logische scheiding op inhoud en type van de files.
 (readme-label)=
 ## De README
 
-In ieder project hoort in te root directory een README en waar nodig in sub-directories een specifiekere README. 
-Veelvoorkomende formats zijn `.txt`, `.md` (Markdown), en `.rst` (reStructuredText), dat zijn allemaal text formats, 
-maar de laatste twee hebben een aantal extra opties om mooiere documenten te maken. De README is waarschijnlijk een van 
-de eerste dingen die iemand zal lezen als die het project te zien krijgt. Het is daarmee ook wel het visitekaartje van
-het project. Op GitHub/GitLab worden READMEs in een repository ook omgezet in een pagina. Een voorbeeld is 
-[deze](https://github.com/willmcgugan/rich#readme) pagina die gemaakt is op basis van 
-[deze](https://raw.githubusercontent.com/willmcgugan/rich/master/README.md) README in .md format.
+::::::{margin}
+:::{tip}
+READMEs worden vaak in markdown gemaakt (net als deze pagina!). Zie [hier](https://www.markdownguide.org/basic-syntax/) 
+een overzicht van de syntax.
+:::
+::::::
 
-Zoals je kan zien in het voorbeeld kan er heel veel in een README, maar er moeten een paar dingen altijd aanwezig zijn:
+In ieder project hoort in de root directory een README en waar nodig in sub-directories een specifiekere README. De README
+beschrijft de inhoud van het project en hoe men aan de slag kan met de inhoud.
+Veelvoorkomende formats zijn `.txt`, `.md` (Markdown), en `.rst` (reStructuredText), dat zijn allemaal text formats, 
+maar de laatste twee hebben een aantal extra opties om documenten op te maken. Iedereen met een text editor kan een README
+bestand dus openen. De README is waarschijnlijk een van de eerste dingen die iemand zal lezen als die het project te 
+zien krijgt. Het is daarmee ook wel het visitekaartje van het project. Op GitHub/GitLab worden READMEs in een repository
+ook omgezet in een pagina. Een voorbeeld is [deze](https://github.com/willmcgugan/rich#readme) pagina die gemaakt is op 
+basis van [deze](https://raw.githubusercontent.com/willmcgugan/rich/master/README.md) README in .md format.
+
+Zoals je kan zien in het voorbeeld kan er heel veel in een README, maar voor onderzoek moeten een paar dingen altijd 
+aanwezig zijn:
 
 - Een titel
 - Een beschrijving/abstract
 - De indeling/organisatie van het project
-- Wat er allemaal nodig is om met het project aan de slag te kunnen
+- Wat er allemaal nodig is om aan de slag te kunnen
 - Informatie over de licentie
 - Informatie over citeren
 
+Daarnaast kan men nog extra informatie verstrekken over de auteurs, methodologie, etc. Hier heb je in principe veel 
+vrijheid, maar probeer wel aan te sluiten bij de standaarden die er zijn in jouw vakgebied. De metadata formulieren 
+die bij de repository horen zijn voor het automatisch indexeren (door computers) bedoeld, maar dit stukje metadata is 
+echt bedoeld voor mensen. Schrijf het dus ook voor mensen.
 
 [^BVreede]: https://github.com/bvreede/good-enough-project

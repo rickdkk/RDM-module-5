@@ -36,10 +36,11 @@ staat.
 
 ## Verwerk de data
 
-We kennen allemaal de oude Windows-98 computer achterin het lab waar de software opstaat van die ene dure sensor. Die
-computer die tevens de enige computer is met de software om de ruwe data om te kunnen zetten naar een verwerkbaar format. Om
-ervoor te zorgen dat we niet afhankelijk zijn van deze computer moeten we de data zo snel mogelijk omzetten naar een
-houdbaar format.
+Een klassiek voorbeeld is de oude Windows-98 computer achterin het lab waar de software opstaat van die ene dure sensor.
+Die computer die tevens de enige computer is met de software om de ruwe data om te kunnen zetten naar een verwerkbaar
+format. Om ervoor te zorgen dat we niet afhankelijk zijn van deze computer moeten we de data zo snel mogelijk omzetten
+naar een houdbaar format. Hiermee zorgen je ervoor dat jij en anderen nu en in de toekomst met de data aan de slag
+kunnen zonder vendor lock-in.
 
 Kies dus een format dat lang mee kan gaan en waar geen specifieke software voor nodig is om het te openen. Een goed
 format is future-proof en simpel. In praktijk zijn dit veelal text files zoals .csv voor 'spreadsheet' data of .txt
@@ -64,26 +65,28 @@ Hieronder een aantal voorbeelden:
 ```
 
 Er bestaat bij het converteren van bestanden altijd een risico dat informatie verloren gaat, bewaar daarom ook de
-originele file totdat je het project hebt afgerond. Soms is het (nog) niet mogelijk om data in een open format op te
-slaan. Als er een ander format beschikbaar is dat een 'industrie standaard' is dan kan dat format worden gebruikt, maar
-op de lange termijn zou alles in een open format opgeslagen moeten worden.
+originele file (in ieder geval totdat je het project hebt afgerond). Soms is het (nog) niet mogelijk om data in een open
+format op te slaan. Als er een ander format beschikbaar is dat een 'industrie standaard' is dan kan dat format worden
+gebruikt, maar op de lange termijn zou alles in een open format opgeslagen moeten worden.
 
 ## Beschrijf de data
 
 De data moet beschreven worden zodat jij en anderen weten wat voor een data het precies betreft. Er zijn verschillende
 niveaus van metadata. Allereerst moet de dataset zelf beschreven worden, dat is bijvoorbeeld nodig om de data terug te
-kunnen vinden in DataverseNL. Dan moet de inhoud van de dataset zelf nog beschreven worden, hiervoor is een goede
+kunnen vinden in DataverseNL. Dan moet de inhoud van de dataset nog beschreven worden, hiervoor is een goede
 [README](https://nl.wikipedia.org/wiki/README) de meest waardevolle toevoeging. Op [de volgende pagina](readme-label)
 gaan we hier verder op in, maar in het kort: een README is een bestand (meestal in plain text) die informatie geeft die
 gebruikers eerst moeten lezen voordat men aan de slag gaat.
 
 ## Archiveer de data
 
-Onderzoeksdata moet minimaal 10 jaar [^VSNU] bewaard blijven (15/20 jaar voor medische data). Het archiveren van data is dus een
-belangrijke stap in het onderzoeksproces. Bij voorkeur wordt de data openbaar gemaakt, maar als dat niet kan dan kan het
-ook gesloten gearchiveerd worden. Fontys beschikt over DataverseNL. Hier kunnen de data zowel open als gesloten
+Onderzoeksdata moet minimaal 10 jaar [^VSNU] bewaard blijven (15/20 jaar voor medische data). Het archiveren van data is
+dus een belangrijke stap in het onderzoeksproces. Bij voorkeur wordt de data openbaar gemaakt, maar als dat niet kan dan
+kan het ook gesloten gearchiveerd worden. Fontys beschikt over DataverseNL. Hier kunnen de data zowel open als gesloten
 gearchiveerd worden. Door al het voorwerk dat is gedaan in de voorgaande secties is het archiveren van data zo gebeurd.
-De organisatie is al op orde, evenals de documentatie, en de data staat al in een houdbaar format.
+De organisatie is al op orde, evenals de documentatie, en de data staat al in een houdbaar format. Aan de data wordt
+een DOI gekoppeld waarmee jij en anderen kunnen refereren aan de data, hierdoor krijg je ook credits voor de moeite die
+je hebt gestoken in de data.
 
 <a href="https://dataverse.nl/dataverse/fontys/">
     <img src=https://dataverse.nl/assets/logos/DataverseNL-logo.png alt="DataverseNL logo" width="200px">

@@ -2,7 +2,7 @@
 
 De naam van een file is belangrijk voor het identificeren van een file, maar ook voor het werken met de file. Geef 
 daarom files een logische naam met waar nodig een deel van de metadata in de naam. Afhankelijk van de situatie 
-(en persoonlijke voorkeur) kunnen er verschillende keuzes worden gemaakt, maar drie principes blijven leidend[^Bryan]:
+(en persoonlijke voorkeur) kunnen er verschillende keuzes worden gemaakt, maar drie principes blijven leidend [^Bryan]:
 
 1. het moet makkelijk te lezen zijn voor de computer
 1. het moet makkelijk te lezen zijn voor de gebruiker
@@ -19,13 +19,14 @@ README.
 omheen werken in je eigen scripts en in het slechtste geval kunnen deze botsen met het besturingssysteem of andere
 software.
 <br><br>
-Bijvoorbeeld: Windows staat geen ASCII control karakters toe in filenamen `\/:*?"<>|`. Op Linux en OS-X kan dit wel, 
-maar dan kan je collega de bestanden dus niet openen.
+Bijvoorbeeld: Windows staat geen ASCII control karakters toe in filenamen `\/:*?"<>|`. Op Linux en OS-X kan dit wel 
+behalve (`/`), maar dan kan je collega de bestanden dus niet openen. Daarnaast snapt Windows het verschil tussen 
+hoofdletters en kleine letters niet, let hier dus ook op.
 <br><br>
 
 ::::::{margin}
 :::{figure-md} iso-fig
-<img src="https://imgs.xkcd.com/comics/iso_8601_2x.png" alt="xkcd" class="bg-primary mb-1">
+<img src="https://imgs.xkcd.com/comics/iso_8601_2x.png" alt="xkcd">
 
 xkcd.com over het schrijven van data
 :::
@@ -40,16 +41,17 @@ Bijvoorbeeld: manuscript_2020-12-01.docx of manuscript_2020-12-02.docx
 genoemd.
 <br><br>
 Bijvoorbeeld: BloodImage_1.xml wordt opgevolgd door BloodImage_11.xml en niet BloodImage_2.xml. Zorg er daarom voor dat 
-je begint met BloodImage_01.xml en op die manier doorgaat met nummeren. 
+je begint met BloodImage_01.xml en op die manier doorgaat met nummeren. Door het nummer aan het begin van een naam te 
+zetten zorg je ervoor dat men altijd kan sorteren, bijv. 01_exploratory_analysis.ipynb, 02_data_cleaning.ipynb, etc.
 <br><br>
 
-- **Gebruik geen spaties**, want deze worden gebruikt om commando's te scheiden in de command-line. Gebruik een `-` of 
-PascalCase om woorden te scheiden (afhankelijk van voorkeur). 
+- **Gebruik geen spaties**, want deze worden gebruikt om commando's te scheiden in de command-line. Gebruik een minteken 
+`-`, camelCase, of PascalCase om woorden te scheiden (afhankelijk van voorkeur). 
 <br><br>
 Bijvoorbeeld: 2020-12-01_BloodImage_001.xml of 2020-12-01_blood-image_001.xml
 <br><br>
 
-- **Gebruik een underscore voor verschillende elementen** van een bestandsnaam. 
+- **Gebruik een underscore voor verschillende elementen** van een bestandsnaam zodat men deze later kan splitsen. 
 <br><br>
 Bijvoorbeeld: In het bovenstaande voorbeeld is het erg makkelijk om de datum, naam, en metingnummer uit de bestandsnaam 
 te halen door de naam te splitsen op de underscore. De volgorde van de elementen bepaalt hoe de bestanden standaard 
@@ -57,10 +59,15 @@ gesorteerd worden.
 <br><br>  
 
 - **Beschrijf de inhoud van een bestand** en geef het niet alleen een getal. Een file zoals figuur_3.png zorgt meteen 
-voor verwarring wanneer er een figuur wordt toegevoegd of verwijderd in het manuscript. Beschrijf daarom ook altijd de 
-inhoud van een file met de naam.
+voor verwarring wanneer er een figuur wordt toegevoegd of verwijderd in het manuscript en zonder te kijken weet je niet
+welk figuur het betreft. Beschrijf daarom ook altijd de inhoud van een file met de naam.
 <br><br>
 Bijvoorbeeld: beurskoers_gme.png of BloodImage_001.png
+<br><br>
+
+- **Gebruik versienummers** of — nog beter — een versiebeheersysteem. Spreek van tevoren af wat de strategie is voor
+versiebeheer zodat je niet uitkomt op een manuscript_v2_FINAL_FINAL.docx. Men kan bijvoorbeeld [semantic versioning](https://semver.org/)
+gebruiken. 
   
 ### Quiz
 
@@ -72,10 +79,10 @@ Welke van deze voorbeelden is geschikt:
 :body: + p-2 bg-warning
 **Fout:** de filenaam bevat spaties, dat kan het automatiseren van analyses verhinderen.
 ```
-```{dropdown} 2021-08-16_abstract-for-isb.docx
+```{dropdown} abstract-for-isb_2021-08-16.docx
 :title: + p-2
 :body: + p-2 bg-success
-**Correct:** de datum is in YYYY-MM-DD, het is duidelijk wat de inhoud van de file is, en de file 
+**Correct:** de datum is in YYYY-MM-DD, het is duidelijk wat de inhoud van de file is, en de naam 
 bevat geen speciale karakters.
 ```
 ```{dropdown} abstract-for-isb_16-08-2021.docx
@@ -88,15 +95,16 @@ Welke van deze voorbeelden is geschikt:
 ^^^
 ```{dropdown} fig01_regplot-speed-vs-power.png
 :title: + p-2
-:body: + p-2 bg-success
-**Correct:** er is zero-padding toegepast en het is direct duidelijk om welk figuur het gaat.
-```
-```{dropdown} Figure_01.png
-:title: + p-2
 :body: + p-2 bg-warning
-**Fout:** er is zero-padding gebruikt, maar het is niet direct duidelijk wat de inhoud van de file is.
+**Fout:** niet strict fout: er is zero-padding toegepast en het is direct duidelijk om welk figuur het gaat, maar kan
+onduidelijk zijn wanneer het figuurnummer in het manuscript veranderd.
 ```
-```{dropdown} figure_1_2020-08-16.png
+```{dropdown} fig_regplot-speed-vs-power.png
+:title: + p-2
+:body: + p-2 bg-success
+**Correct:** het is direct duidelijk om welk figuur het gaat.
+```
+```{dropdown} figure_01_2020-08-16.png
 :title: + p-2
 :body: + p-2 bg-warning
 **Fout:** er is een versienummer toegevoegd op basis van de datum, maar het is niet duidelijk wat de inhoud van de file is.
@@ -111,13 +119,12 @@ zodat de studenten die hielpen met de dataverzameling direct alles in het juiste
 voor een strategie die de 'nesting' van de data reflecteerde: er zijn meerdere proefpersonen, die worden meerdere keren 
 gemeten, met meerdere meetinstrumenten. De bestandsnaam kreeg dus de volgende hiërarchische opbouw:
 
-\<**experiment**\>\_\<**proefpersoon**\>\_\<**meting**\>\_\<**meetinstrument**\>.\<**extensie**\>
+\<**experiment**\>\_\<**proefpersoon_id**\>\_\<**meting**\>\_\<**meetinstrument**\>.\<**extensie**\>
 
 Bijvoorbeeld: `WL_PP01_T01_ergometer.xls`, ofwel de ergometerdata van het 'WL' experiment van proefpersoon 01 op tijd 01.
 Hiermee is alle metadata van een bestand direct beschikbaar in de filenaam en zijn de namen 'machine readable', daardoor 
-kunnen we met regular expressions en/of door te ‘globben’ gemakkelijk data selecteren. Met deze structuur kunnen we 
-na de data verzameling, bijvoorbeeld, alle data van proefpersoon 1, alle ergometer data, of alle ergometer data van T1 
-selecteren:
+kunnen we door te ‘globben’ gemakkelijk data selecteren. Met deze structuur kunnen we na de data verzameling, 
+bijvoorbeeld, alle data van proefpersoon 1, alle ergometer data, of alle ergometer data van T01 selecteren:
 
 ```{tabbed} Python
 ![](../figures/glob_ipython.png)
@@ -142,7 +149,8 @@ selecteren:
 Het is hierbij dus erg belangrijk dat de bestandsnamen consistent en voorspelbaar zijn. Een typo kan ertoe leiden dat
 er bestanden worden overgeslagen. Leg dus ook goed vast wat de conventie is m.b.t. het zero-padden van nummers en het 
 gebruik van hoofdletters. De voordelen zijn echter gigantisch: het handmatig selecteren van 100 of 200 files is onbegonnen
-werk. Als dan later blijkt dat er toch een nét een iets andere selectie nodig was is dat ook geen probleem.
+werk. Door dit process te automatiseren kunnen we veel tijd besparen. Als dan later blijkt dat er toch een nét een iets 
+andere selectie nodig was is dat ook geen probleem.
 
 
 [^Bryan]: Bryan J. Naming things. 2015 May 04. Retrieved from: https://speakerdeck.com/jennybc/how-to-name-files
