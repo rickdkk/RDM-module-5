@@ -1,22 +1,34 @@
-# Opdracht 1: Project organisatie
+# Opdracht 1: Project organisatie 
 
 ## Voorbereiding
 
-Lees voor het maken van de opdracht het eerste hoofdstuk [](../chapters/1_project_organisatie.md).
-Download de voorbeelddata [hier](http://www.google.com) #TODO.
+- Lees voor het maken van de opdracht het eerste hoofdstuk: [](../chapters/1_project_organisatie.md).
+- Lees over de casus: [](0_casus.md)
+- Download de voorbeelddata [hier](https://gitlab.com/Rickdkk/messy-example-project/-/raw/main/wheelchair_sprints0.zip) als je
+die nog niet hebt.
 
-## Opdracht
+## Opdracht <i class="fab fa-accessible-icon"></i>
 
-De opdracht gaat over bla bla bla
+We zijn Nick erg dankbaar dat we mee mogen werken aan het project, maar er moet nog wel het een en ander gebeuren. Aan 
+ons de taak om het project beter te organiseren zodat we verder kunnen met de data:
 
 1. Maak een projectfolder voor het gehele project.
-1. Zet de data (zie vorige pagina) in de folder en unzip de bestanden.
-1. Neem kort de tijd om de bestanden te inventariseren/inspecteren.
-1. Maak een logische structuur aan voor de bestanden. 
-1. Zet de bestanden in de juiste folder.
-1. Pas de bestandsnamen aan.   
-1. Pas de README aan voor de gekozen mappenstructuur
-    - Open de README met een text editor (bijv. Notepad of Gedit). Gebruik eventueel
-    markdown syntax.
-    - Verander de extensie naar .txt als je geen markdown hebt gebruikt.
-1. Zip het hele project en stuur het op naar je buddy.    
+1. Unzip de voorbeelddata en zet alle bestanden in de projectfolder.
+1. Neem kort de tijd om de bestanden te inventariseren/inspecteren:
+   - Waar kijk je eerst?
+   - Wat zijn de extensies van de bestanden?
+   - Kan je de bestanden openen?
+1. Maak een logische structuur aan voor de bestanden ([voorbeeld](example-label)):
+   - Waar moet de data?
+   - Waar moeten de documenten?
+   - Waar moeten de uitkomsten?
+   - Waar moeten de scripts?
+1. Pas de bestandsnamen aan:
+   - Zijn alle namen descriptief?
+   - Hoe zit het met de versienummering?
+   - Worden er geen spaties of speciale tekens gebruikt?
+1. Pas de README aan voor de gekozen mapstructuur:
+   - Open de README met een text editor (bijv. Notepad, TextEdit, of Gedit). 
+   - Vul de README aan, gebruik eventueel markdown syntax. 
+   - Tip: Gebruik een markdown editor zoals [Typora](https://typora.io) of [Joplin](https://joplinapp.org/).
+   - Wat zou nog meer in de README kunnen?

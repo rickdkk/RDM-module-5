@@ -15,14 +15,16 @@ parts:
     - file: chapters/2_data_organisatie
       sections:
       - file: chapters/2_good_practices
+      - file: chapters/2_tidy_data
       - file: chapters/2_spreadsheets
     - file: chapters/3_data_minimalisatie
       sections:
         - file: chapters/3_good_practices
-        - file: chapters/3_anonimiseren
         - file: chapters/3_pseudonimiseren
+        - file: chapters/3_anonimiseren
   - caption: Opdrachten
     chapters:
+      - file: assignments/0_casus.md
       - file: assignments/1_project_organisatie_opdracht
       - file: assignments/2_data_organisatie_opdracht
       - file: assignments/3_data_minimalisatie_opdracht

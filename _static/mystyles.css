@@ -27,10 +27,18 @@ we want to:
     color: var(--fontys-purple);
 }
 
-.bg-warning {
-    background-color: #fce6a4 !important;
+.bg-success {
+    background-color: #52d16f3b !important;
 }
 
-.bg-success {
-    background-color: #8df4a5 !important;
+.bg-warning {
+    background-color: #e7dd7b73 !important;
+}
+
+.bg-error {
+    background-color: #e7b07b96 !important;
+}
+
+main.bd-content #main-content div.figure {
+    margin-bottom: 0;
 }
