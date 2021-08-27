@@ -20,19 +20,20 @@ omheen werken in je eigen scripts en in het slechtste geval kunnen deze botsen m
 software.
 <br><br>
 Bijvoorbeeld: Windows staat geen ASCII control karakters toe in filenamen `\/:*?"<>|`. Op Linux en OS-X kan dit wel 
-behalve (`/`), maar dan kan je collega de bestanden dus niet openen. Daarnaast snapt Windows het verschil tussen 
+(minus `/`), maar dan kan je collega de bestanden dus niet openen. Daarnaast snapt Windows het verschil tussen 
 hoofdletters en kleine letters niet, let hier dus ook op.
 <br><br>
 
 ::::::{margin}
 :::{figure-md} iso-fig
-<img src="https://imgs.xkcd.com/comics/iso_8601_2x.png" alt="xkcd">
+<img src="../figures/xkcd_iso_8601_2x.png" alt="xkcd">
 
 xkcd.com over het schrijven van data
 :::
 ::::::
 
-- **Gebruik voor een datum altijd ISO-8601** (YYYY-MM-DD), alleen dan kan je makkelijk chronologisch sorteren. 
+- **Gebruik voor een datum altijd ISO-8601** (YYYY-MM-DD), alleen dan kan je makkelijk chronologisch sorteren. Meestal
+is het handig om de datum ergens aan het eind te zetten zodat alle bestanden die bij elkaar horen ook onder elkaar staan.
 <br><br>
 Bijvoorbeeld: manuscript_2020-12-01.docx of manuscript_2020-12-02.docx
 <br><br>
@@ -46,14 +47,14 @@ zetten zorg je ervoor dat men altijd kan sorteren, bijv. 01_exploratory_analysis
 <br><br>
 
 - **Gebruik geen spaties**, want deze worden gebruikt om commando's te scheiden in de command-line. Gebruik een minteken 
-`-`, camelCase, of PascalCase om woorden te scheiden (afhankelijk van voorkeur). 
+(-), camelCase, of PascalCase om woorden te scheiden (afhankelijk van voorkeur). 
 <br><br>
-Bijvoorbeeld: 2020-12-01_BloodImage_001.xml of 2020-12-01_blood-image_001.xml
+Bijvoorbeeld: BloodImage_2020-12-01_001.xml of blood-image_2020-12-01_001.xml
 <br><br>
 
 - **Gebruik een underscore voor verschillende elementen** van een bestandsnaam zodat men deze later kan splitsen. 
 <br><br>
-Bijvoorbeeld: In het bovenstaande voorbeeld is het erg makkelijk om de datum, naam, en metingnummer uit de bestandsnaam 
+Bijvoorbeeld: In het bovenstaande voorbeeld is het erg makkelijk om de naam, datum, en metingnummer uit de bestandsnaam 
 te halen door de naam te splitsen op de underscore. De volgorde van de elementen bepaalt hoe de bestanden standaard 
 gesorteerd worden.
 <br><br>  
@@ -69,7 +70,7 @@ Bijvoorbeeld: beurskoers_gme.png of BloodImage_001.png
 versiebeheer zodat je niet uitkomt op een manuscript_v2_FINAL_FINAL.docx. Men kan bijvoorbeeld [semantic versioning](https://semver.org/)
 gebruiken. 
   
-### Quiz
+### Mini-quiz
 
 `````{panels}
 Welke van deze voorbeelden is geschikt:
@@ -96,13 +97,14 @@ Welke van deze voorbeelden is geschikt:
 ```{dropdown} fig01_regplot-speed-vs-power.png
 :title: + p-2
 :body: + p-2 bg-warning
-**Fout:** niet strict fout: er is zero-padding toegepast en het is direct duidelijk om welk figuur het gaat, maar kan
-onduidelijk zijn wanneer het figuurnummer in het manuscript veranderd.
+**Fout-ish:** er is zero-padding toegepast en het is direct duidelijk om welk figuur het gaat, maar kan onduidelijk zijn 
+wanneer het figuurnummer in het manuscript veranderd.
 ```
 ```{dropdown} fig_regplot-speed-vs-power.png
 :title: + p-2
 :body: + p-2 bg-success
-**Correct:** het is direct duidelijk om welk figuur het gaat.
+**Correct:** het is direct duidelijk om welk figuur het gaat en door te beginnen met fig staan alle figuren onder elkaar
+in de map wanneer gesorteerd wordt.
 ```
 ```{dropdown} figure_01_2020-08-16.png
 :title: + p-2
@@ -121,7 +123,7 @@ gemeten, met meerdere meetinstrumenten. De bestandsnaam kreeg dus de volgende hi
 
 \<**experiment**\>\_\<**proefpersoon_id**\>\_\<**meting**\>\_\<**meetinstrument**\>.\<**extensie**\>
 
-Bijvoorbeeld: `WL_PP01_T01_ergometer.xls`, ofwel de ergometerdata van het 'WL' experiment van proefpersoon 01 op tijd 01.
+Bijvoorbeeld: `WL_PP01_T01_ergometer.ods`, ofwel de ergometerdata van het 'WL' experiment van proefpersoon 01 op tijd 01.
 Hiermee is alle metadata van een bestand direct beschikbaar in de filenaam en zijn de namen 'machine readable', daardoor 
 kunnen we door te ‘globben’ gemakkelijk data selecteren. Met deze structuur kunnen we na de data verzameling, 
 bijvoorbeeld, alle data van proefpersoon 1, alle ergometer data, of alle ergometer data van T01 selecteren:
@@ -152,5 +154,13 @@ gebruik van hoofdletters. De voordelen zijn echter gigantisch: het handmatig sel
 werk. Door dit process te automatiseren kunnen we veel tijd besparen. Als dan later blijkt dat er toch een nét een iets 
 andere selectie nodig was is dat ook geen probleem.
 
+---
+
+:::{eval-rst}
+.. link-button:: ../assignments/0_casus
+    :type: ref
+    :text: Klaar voor een opdracht!
+    :classes: btn-outline-primary btn-block
+:::
 
 [^Bryan]: Bryan J. Naming things. 2015 May 04. Retrieved from: https://speakerdeck.com/jennybc/how-to-name-files

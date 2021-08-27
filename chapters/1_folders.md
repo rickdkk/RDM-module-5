@@ -1,9 +1,9 @@
 # Mappen organiseren
 
-Een duidelijke projectstructuur is kan bijdragen aan de reproduceerbaarheid en efficiëntie van het onderzoek. Het 
+Een duidelijke projectstructuur kan bijdragen aan de reproduceerbaarheid en efficiëntie van het onderzoek. Het 
 bepalen van een systeem voor het bewaren van bestanden is dan ook een van de eerste stappen binnen een nieuw project. 
 Op deze pagina gaan we in op de mapstructuur van een onderzoeksproject en op de volgende pagina gaan we verder in op de
-inhoud. 
+inhoud: de files. 
 
 De meeste mensen zijn het er over eens dat ieder project in een eigen map moet, maar daarna zijn er veel verschillende 
 systemen te bedenken. Hieronder benoemen we eerst een aantal good practices die altijd gelden en daarna presenteren we 
@@ -13,20 +13,20 @@ behandeld in dit stuk.
 ## Good practices
 ::::::{margin}
 :::{figure-md} old-files-fig
-<img src="https://imgs.xkcd.com/comics/old_files.png" alt="xkcd">
+<img src="../figures/xkcd_old_files.png" alt="xkcd">
 
 xkcd.com over oude files/data
 :::
 ::::::
-- **Check wat de standaard is in jouw onderzoeksgroep** zodat het project aansluit bij bestaande en andere lopende projecten.
-Bedenk niet zelf een systeem als dat niet strikt noodzakelijk is.
+- **Check wat de standaard is in jouw onderzoeksgroep** zodat het project aansluit bij bestaande en andere lopende 
+projecten. Bedenk niet zelf een systeem als dat niet strikt noodzakelijk is.
 <br><br>
 - **Kies een systeem en leg dit vast in het DMP en de README**. Door het vast te leggen is het direct voor iedereen 
 duidelijk welke structuur gebruikt gaat worden. Zo kunnen collega's en studenten meteen de juiste structuur aanhouden. 
 Iets wat tijdens het automatiseren en archiveren veel tijd gaat schelen.
 <br><br>
 - **Kies betekenisvolle namen** voor de mappen zodat men niet de inhoud hoeft te controleren om te kijken wat er in zit.
-Hiermee documenteert het project zichzelf en zorg je ervoor dat men snel eigen kan worden met het project.
+Hiermee documenteert het project (deels) zichzelf en zorg je ervoor dat men snel eigen kan worden met het project.
 <br><br>
 - **Maak een beperkt aantal mappen in de hoofdmap (root)** en maak specifiekere mappen in sub-mappen of sub-sub-mappen. 
 Zorg er wel voor dat de lengte van het pad niet te lang wordt, dan is het beter om de context van de bestanden in een 
@@ -38,13 +38,14 @@ overschreven.
 <br><br>
 - **Zet een README in de root** van het project zodat iedereen direct weet waar men moet beginnen. Met een README
 zorg je er voor dat jij en je collega's over een paar maanden nog steeds weten waar alles staat en hoe je het project moet
-gebruiken (zie ook {ref}`readme-label`).
+gebruiken (zie ook: {ref}`readme-label`).
 <br><br>
 - **Zorg ervoor dat alles aanwezig is om de analyse te herhalen**. In het geval van projecten waar handmatig met data is
 gewerkt moet er een uitgebreide handleiding aanwezig zijn en voor geautomatiseerde stappen moeten er scripts zijn die
 vanuit de gegeven mapstructuur werken met de aanwezige configuratiefiles.
 <br><br>
 
+(example-label)=
 ## Een systeem: voorbeeld
 
 ::::::{margin}
@@ -124,6 +125,6 @@ aanwezig zijn:
 Daarnaast kan men nog extra informatie verstrekken over de auteurs, methodologie, etc. Hier heb je in principe veel 
 vrijheid, maar probeer wel aan te sluiten bij de standaarden die er zijn in jouw vakgebied. De metadata formulieren 
 die bij de repository horen zijn voor het automatisch indexeren (door computers) bedoeld, maar dit stukje metadata is 
-echt bedoeld voor mensen. Schrijf het dus ook voor mensen.
+echt bedoeld voor mensen. Schrijf het dus ook voor mensen en probeer ze enthousiast te maken over jouw project.
 
 [^BVreede]: https://github.com/bvreede/good-enough-project

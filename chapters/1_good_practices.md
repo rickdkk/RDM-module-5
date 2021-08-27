@@ -1,13 +1,16 @@
 ﻿# Good (enough) practices
 
-Een groot deel van de aanbevelingen op deze pagina zijn gebaseerd op 1) de constatering dat data opslag ongelofelijk
-goedkoop is en tijd erg duur en 2) data geschikt moet zijn voor analyse (d.w.z. tidy) en archivering. Op het moment van
-schrijven is de prijs van een harde schijf ongeveer 2 cent per GB. De prijs van het kwijtraken of beschadigen van data
-is echter velen malen groter en kan een project zo maar een jaar vertragen. Zonder een heel verhaal over FAIR op te
-hangen zijn er een aantal belangrijke tips and tricks die men kan gebruiken voor het goed genoeg beheren van data:
+De opslag van data is in 2021 ongelofelijk goedkoop, maar de tijd van onderzoekers is schaars en duur. Op het
+moment van schrijven is de prijs van een harde schijf ongeveer 2 cent per GB. De prijs van het kwijtraken of beschadigen
+van data is echter velen malen groter en kan een project zo maar een jaar vertragen. Goed genoeg data management kan
+bijdragen aan de efficiëntie van een project en de risico's op het verliezen of beschadigen van data inperken.
+Daarnaast is het belangrijk om ervoor te zorgen dat de data geschikt zijn voor analyse (d.w.z. tidy) en archivering.
+Door hier van tevoren al rekening mee te houden zorgen we dat we geen extra werk moeten leveren en zoveel mogelijk
+kunnen automatiseren. Zonder een heel verhaal over FAIR op te hangen zijn er een aantal belangrijke tips and tricks die
+men kan gebruiken voor het goed genoeg beheren van data:
 
 :::{figure-md} markdown-fig
-<img src="https://imgs.xkcd.com/comics/digital_resource_lifespan.png" alt="xkcd" class="bg-primary mb-1">
+<img src="../figures/xkcd_digital_resource_lifespan.png" alt="xkcd" class="bg-primary mb-1">
 
 xkcd.com over de houdbaarheid van digitale bronnen
 :::
@@ -32,15 +35,16 @@ de slag kan.
 Een back-up is essentieel! Harddrives gaan kapot, laptops worden gestolen, en files kunnen worden overschreven. De enige
 manier om er zeker van te zijn dat je data veilig is, is met een back-up. Werk dus niet alleen met de data op je lokale
 computer, maar zorg er ook voor dat het project in [Fontys Research Drive](https://fontys.data.surfsara.nl/index.php/login)
-staat.
+staat. Je kan ook 'snapshots' van een project maken door tussentijdse versies te zippen en ergens naast het project op
+te slaan. Dat is vooral erg handig als je (nog) niet vaardig bent met Git.
 
 ## Verwerk de data
 
-Een klassiek voorbeeld is de oude Windows-98 computer achterin het lab waar de software opstaat van die ene dure sensor.
-Die computer die tevens de enige computer is met de software om de ruwe data om te kunnen zetten naar een verwerkbaar
-format. Om ervoor te zorgen dat we niet afhankelijk zijn van deze computer moeten we de data zo snel mogelijk omzetten
-naar een houdbaar format. Hiermee zorgen je ervoor dat jij en anderen nu en in de toekomst met de data aan de slag
-kunnen zonder vendor lock-in.
+Zorg dat de data zo snel mogelijk in een bewerkbaar en houdbaar format komt te staan. Een klassiek voorbeeld is de oude
+Windows-98 computer achterin het lab waar de software opstaat van die ene dure sensor. Die computer die tevens de enige
+computer is met de software om de ruwe data om te kunnen zetten naar een verwerkbaar format. Om ervoor te zorgen dat we
+niet afhankelijk zijn van deze computer moeten we de data zo snel mogelijk omzetten naar een houdbaar format. Hiermee
+zorgen je ervoor dat jij en anderen, nu en in de toekomst, met de data aan de slag kunnen zonder vendor lock-in.
 
 Kies dus een format dat lang mee kan gaan en waar geen specifieke software voor nodig is om het te openen. Een goed
 format is future-proof en simpel. In praktijk zijn dit veelal text files zoals .csv voor 'spreadsheet' data of .txt
@@ -48,21 +52,27 @@ voor tekst. Voor een overzicht van geschikte formats kan men kijken bij [DANS](h
 en [4TU](https://data.4tu.nl/info//fileadmin/user_upload/Documenten/preffered_file_formats.pdf).
 Hieronder een aantal voorbeelden:
 
-```{tabbed} Duurzaam
-- Markup: XML, HTML
-- Data: CSV, JSON, ODS
-- Documenten: PDF, ODT, TXT
-- Afbeeldingen: JPEG, PNG, SVG
-- Video: MXF, MKV
-```
+:::{panels}
+:header: bg-success
 
-```{tabbed} Niet-duurzaam
-- Markup: SGML
-- Data: SPSS (SAV), MDB, XLSX
-- Documenten: DOC, DOCX, RTF
-- Afbeeldingen: AI, EPS, WMF
-- Video: MPEG-4, AVI, MOV
-```
+**Duurzaam**
+^^^
+- **Data:** CSV, JSON, ODS
+- **Documenten:** PDF, ODT, TXT
+- **Afbeeldingen:** JPEG, PNG, SVG
+- **Video:** MXF, MKV, FLAC
+- **Markup:** XML, HTML
+
+---
+:header: bg-error
+**Niet-duurzaam**
+^^^
+- **Data:** SAV, MDB, XLSX
+- **Documenten:** DOC, DOCX, RTF
+- **Afbeeldingen:** AI, EPS, WMF
+- **Video:** MPEG-4, AVI, MOV
+- **Markup:** SGML
+:::
 
 Er bestaat bij het converteren van bestanden altijd een risico dat informatie verloren gaat, bewaar daarom ook de
 originele file (in ieder geval totdat je het project hebt afgerond). Soms is het (nog) niet mogelijk om data in een open
@@ -73,10 +83,12 @@ gebruikt, maar op de lange termijn zou alles in een open format opgeslagen moete
 
 De data moet beschreven worden zodat jij en anderen weten wat voor een data het precies betreft. Er zijn verschillende
 niveaus van metadata. Allereerst moet de dataset zelf beschreven worden, dat is bijvoorbeeld nodig om de data terug te
-kunnen vinden in DataverseNL. Dan moet de inhoud van de dataset nog beschreven worden, hiervoor is een goede
-[README](https://nl.wikipedia.org/wiki/README) de meest waardevolle toevoeging. Op [de volgende pagina](readme-label)
-gaan we hier verder op in, maar in het kort: een README is een bestand (meestal in plain text) die informatie geeft die
-gebruikers eerst moeten lezen voordat men aan de slag gaat.
+kunnen vinden in DataverseNL, hiervoor vul je een metadataformulier in. Dan moet de inhoud van de dataset nog beschreven
+worden, hiervoor is een goede [README](https://nl.wikipedia.org/wiki/README) de meest waardevolle toevoeging. Op
+[de volgende pagina](readme-label) gaan we hier verder op in, maar in het kort: een README is een bestand (meestal in
+plain text) die informatie geeft die gebruikers eerst moeten lezen voordat men aan de slag gaat. Voor specifieke files
+kan een [data dictionary](https://help.osf.io/hc/en-us/articles/360019739054-How-to-Make-a-Data-Dictionary) nog een
+goede toevoeging zijn. Hierin staan de namen van de variabelen, een omschrijving, toegestane waardes, etc.
 
 ## Archiveer de data
 
@@ -88,10 +100,12 @@ De organisatie is al op orde, evenals de documentatie, en de data staat al in ee
 een DOI gekoppeld waarmee jij en anderen kunnen refereren aan de data, hierdoor krijg je ook credits voor de moeite die
 je hebt gestoken in de data.
 
-<a href="https://dataverse.nl/dataverse/fontys/">
-    <img src=https://dataverse.nl/assets/logos/DataverseNL-logo.png alt="DataverseNL logo" width="200px">
-</a>
-
+:::{image} ../figures/logo_dataverse.png
+:alt: DataverseNL
+:class: bg-primary mb-1
+:width: 200px
+:align: center
+:::
 
 ## Gebruik een systeem
 

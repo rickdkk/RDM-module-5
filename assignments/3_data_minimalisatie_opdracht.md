@@ -23,7 +23,7 @@ de retentiemeting, maar lang niet alles is nodig. Daarbij staan de gegevens *en 
     - Kan iemand zonder het wachtwoord nog bij de persoonsgegevens?
     - Is de data nu anoniem?
    
-De oplossing voor de opdrachten staat [hier](https://gitlab.com/Rickdkk/messy-example-project/-/raw/main/wheelchair_sprints3.zip).
+Een oplossing voor de opdrachten staat [hier](https://gitlab.com/Rickdkk/messy-example-project/-/raw/main/wheelchair_sprints3.zip).
 Het wachtwoord op de container is password123. 
 Let wel op: in dit voorbeeld staat de sleutel ook in de projectmap, deze mag daar niet blijven. Het wachtwoord is natuurlijk
 ook uitzonderlijk slecht.
@@ -34,7 +34,9 @@ Het project is nu in een acceptabele vorm. Er zijn echter nog een paar dingen di
 eervolle vermelding verdienen:
 - [Version control](https://swcarpentry.github.io/git-novice/)
 - [Automatiseren](https://the-turing-way.netlify.app/reproducible-research/make.html)
-- [Scripting](https://guide.esciencecenter.nl/#/best_practices/language_guides/languages_overview) + [code quality](https://the-turing-way.netlify.app/reproducible-research/code-quality.html) + [code testing](https://the-turing-way.netlify.app/reproducible-research/testing.html)
+- [Scripting](https://guide.esciencecenter.nl/#/best_practices/language_guides/languages_overview) + 
+  [code quality](https://the-turing-way.netlify.app/reproducible-research/code-quality.html) + 
+  [code testing](https://the-turing-way.netlify.app/reproducible-research/testing.html)  
 - [Documentatie](https://ddialliance.org/training/getting-started-new-content/create-a-codebook)
 - Publiceren op [GitHub + Zenodo](https://guides.github.com/activities/citable-code/)
 - •••

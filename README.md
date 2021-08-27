@@ -11,10 +11,11 @@ staat zijn om te adviseren. De module bestaat uit één sessie van circa 2.5 uur
 ## Leerdoelen
 
 - Cursisten onderkennen het belang van een duidelijke projectstructuur en kunnen een project inrichten aan de 
-  hand van een standaard structuur.
+hand van een standaard structuur voor mappen en files.
 - Cursisten kunnen data op een effectieve manier invoeren en organiseren in spreadsheets.
+- Cursisten kunnen "tidy" data herkennen en kunnen "messy" data handmatig omzetten naar een tidy format.
 - Cursisten kunnen het verschil tussen anonimiseren en pseudonimiseren benoemen en zijn in staat een versleuteld 
-  volume aan te maken om een sleutelbestand in op te slaan.
+volume aan te maken, identificeerbare data te verwijderen/verplaatsen, en deze in een sleutelbestand op te slaan.
 
 ## Werkvorm
 
@@ -49,7 +50,8 @@ spreadsheet programma nodig zoals Microsoft Excel of LibreOffice Calc <i class="
 Nog geen spreadsheet programma? Download dan [hier](https://www.libreoffice.org/download/download/) LibreOffice. Let wel 
 op: er zitten subtiele verschillen binnen en tussen de layout van office programma's. Het kan dus zijn dat het er bij een 
 collega allemaal net iets anders uitziet. Als laatste heb je [VeraCrypt](https://www.veracrypt.fr/en/Downloads.html) nodig 
-om files te kunnen versleutelen <i class="fas fa-lock"></i>.
+om files te kunnen versleutelen <i class="fas fa-lock"></i>. Je hoeft nog niet te weten hoe het werkt, maar het is wel 
+handig om het alvast geïnstalleerd te hebben. Wil of kan je het niet installeren? Gebruik dan de portable versie.
 
 ## Credits
 
@@ -68,7 +70,6 @@ waar nodig een issue aan. Pull requests zijn zeker ook welkom! Klonk dit allemaa
 ## Licentie
 
 De content van deze site wordt verstrekt onder een [Creative Commons Attributions 4.0](https://creativecommons.org/licenses/by/4.0/) licentie.
-
 
 
 [^Wilson]: Wilson G, Bryan J, Cranston K, Kitzes J, Nederbragt L, Teal TK. Good enough practices in scientific 

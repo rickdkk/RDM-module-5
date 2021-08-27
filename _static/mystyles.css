@@ -1,7 +1,4 @@
-/* Style for tables
-we want to:
-- center it
-*/
+/* Custom styles to mainly make everything Fontys purple */
 
 :root{
     --fontys-purple: rgba(102, 51, 102, 1);
@@ -41,4 +38,23 @@ we want to:
 
 main.bd-content #main-content div.figure {
     margin-bottom: 0;
+}
+
+.btn-outline-primary{
+    color: var(--fontys-purple) !important;
+    border-color: var(--fontys-purple);
+}
+
+.btn-outline-primary:hover{
+    background-color: var(--fontys-purple);
+    border-color: var(--fontys-purple);
+    color: #fff !important;
+}
+
+.prev-next-bottom a.left-prev, .prev-next-bottom a.right-next{
+    color: var(--fontys-purple) !important;
+}
+
+a.headerlink{
+    color: var(--fontys-purple) !important;
 }

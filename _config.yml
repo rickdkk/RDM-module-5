@@ -3,6 +3,7 @@
 
 title                     : "Leerlijn Research Data Management"
 author                    : Rick de Klerk
+copyright                 : "2021, CC BY 4.0"
 logo                      : figures/logo.svg
 exclude_patterns          : [_build, data]
 only_build_toc_files      : true
