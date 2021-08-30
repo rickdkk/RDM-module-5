@@ -43,7 +43,7 @@ sphinx:
     panels_css_variables :
       "tabs-color-label-active": "rgba(102, 51, 102, 1)"
       "tabs-color-label-inactive": "rgba(102, 51, 102, 0.62)"
-      "tabs-color-overline": "rgba(102, 51, 102, 0.35)"
-      "tabs-color-underline": "rgba(102, 51, 102, 0.35)"
+      "tabs-color-overline": "rgba(102, 51, 102, 0.45)"
+      "tabs-color-underline": "rgba(102, 51, 102, 0.45)"
       "tabs-size-label": "1rem"
     language: nl
