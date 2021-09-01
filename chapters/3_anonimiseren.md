@@ -62,5 +62,13 @@ vijf samples met dezelfde combinatie van gegevens. Om dit met de hand te doen is
 dus men kan dan het beste een tool als [ARX](https://arx.deidentifier.org/) of [Amnesia](https://amnesia.openaire.eu/) 
 gebruiken.
 
+---
+:::{eval-rst}
+.. link-button:: ../assignments/3_data_minimalisatie_opdracht
+    :type: ref
+    :text: Klaar voor een opdracht!
+    :classes: btn-outline-primary btn-block
+:::
+
 [^Prasser]: Prasser F, Eicher J, Spengler H, Bild R, Kuhn KA. Flexible data anonymization using ARX—Current status and 
 challenges ahead. Software: Practice and Experience. 2020 Jul;50(7):1277-304.

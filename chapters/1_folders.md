@@ -68,8 +68,8 @@ gegenereerd als alle code wordt gerunned.
 ```
 .
 ├── .gitignore         <- Files die niet in version control zitten
-├── CITATION.md        <- Hoe het project te citeren
-├── LICENSE.md         <- Copyright informatie
+├── CITATION.cff       <- Hoe het project te citeren
+├── LICENSE            <- Copyright informatie
 ├── README.md
 ├── requirements.txt   <- Vereisten voor het reproduceren van de analyse (PG)
 ├── bin/               <- Gecompileerde code, genegeerd door git (PG)
@@ -99,7 +99,7 @@ De mappen maken een logische scheiding op inhoud en type van de files.
 ::::::{margin}
 :::{tip}
 READMEs worden vaak in markdown gemaakt (net als deze pagina!). Zie [hier](https://www.markdownguide.org/basic-syntax/) 
-een overzicht van de syntax.
+een overzicht van de syntax. Fontys Research Drive heeft een markdown editor!
 :::
 ::::::
 

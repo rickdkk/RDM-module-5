@@ -11,7 +11,7 @@ pseudoniem niet teruggedraaid kan worden. Zolang de sleutel nog bestaat is de da
 En als de sleutel is verwijderd kan het zijn dat er nog aanvullende stappen nodig zijn voordat de data echt anoniem is.
 
 :::{caution}
-Gepseudonimiseerde data is nog steeds persoonlijke data en moet als zodanig behandeld worden. Pas als het onmogelijk is
+Gepseudonimiseerde data is nog steeds persoonlijke data en moet als zodanig behandeld worden. Pas als het *onmogelijk* is
 om de participant te herleiden spreken we van anonieme data. 
 :::
 
@@ -36,6 +36,7 @@ Een aantal punten om op te letten zijn:
 - Stuur het sleutelbestand niet mee met de data als je deze deelt.
 - Zorg dat het sleutelbestand niet afhankelijk is van de kennis van één persoon.'
 - Bewaar het wachtwoord goed: geen wachtwoord is geen data.
+<br><br>
 
 :::{figure-md} security-fig
 <img src="../figures/xkcd_security.png" alt="xkcd">

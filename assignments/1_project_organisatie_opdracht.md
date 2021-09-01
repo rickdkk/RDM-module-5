@@ -30,5 +30,6 @@ ons de taak om het project beter te organiseren zodat we verder kunnen met de da
 1. Pas de README aan voor de gekozen mapstructuur:
    - Open de README met een text editor (bijv. Notepad, TextEdit, of Gedit). 
    - Vul de README aan, gebruik eventueel markdown syntax. 
-   - Tip: Gebruik een markdown editor zoals [Typora](https://typora.io) of [Joplin](https://joplinapp.org/).
+   - Tip: Gebruik een markdown editor zoals [Typora](https://typora.io) of [Joplin](https://joplinapp.org/). Fontys
+     Research Drive bevat ook een markdown editor!
    - Wat zou nog meer in de README kunnen?
