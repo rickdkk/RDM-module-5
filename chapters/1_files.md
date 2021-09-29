@@ -56,7 +56,7 @@ Bijvoorbeeld: BloodImage_2020-12-01_001.xml of blood-image_2020-12-01_001.xml
 <br><br>
 Bijvoorbeeld: In het bovenstaande voorbeeld is het erg makkelijk om de naam, datum, en metingnummer uit de bestandsnaam 
 te halen door de naam te splitsen op de underscore. De volgorde van de elementen bepaalt hoe de bestanden standaard 
-gesorteerd worden.
+gesorteerd worden. Verderop volgt een uitgebreider voorbeeld.
 <br><br>  
 
 - **Beschrijf de inhoud van een bestand** en geef het niet alleen een getal. Een file zoals figuur_3.png zorgt meteen 
@@ -97,14 +97,14 @@ Welke van deze voorbeelden is geschikt:
 ```{dropdown} fig01_regplot-speed-vs-power.png
 :title: + p-2
 :body: + p-2 bg-warning
-**Fout-ish:** er is zero-padding toegepast en het is direct duidelijk om welk figuur het gaat, maar kan onduidelijk zijn 
+**Fout-ish:** er is zero-padding toegepast en het is direct duidelijk om welk figuur het gaat, maar kán onduidelijk zijn 
 wanneer het figuurnummer in het manuscript veranderd.
 ```
 ```{dropdown} fig_regplot-speed-vs-power.png
 :title: + p-2
 :body: + p-2 bg-success
 **Correct:** het is direct duidelijk om welk figuur het gaat en door te beginnen met fig staan alle figuren onder elkaar
-in de map wanneer gesorteerd wordt.
+in de map wanneer gesorteerd wordt (niet noodzakelijk).
 ```
 ```{dropdown} figure_01_2020-08-16.png
 :title: + p-2
@@ -115,17 +115,17 @@ in de map wanneer gesorteerd wordt.
 
 ## Een systeem: voorbeeld
 
-Hieronder volgt een voorbeeld uit een onderzoek naar rolstoelpropulsie op een ergometer. Aan het begin van het project 
-was duidelijk dat het zou gaan om ongeveer 1000 files, dus er was een strategie voor het benoemen van files afgesproken, 
-zodat de studenten die hielpen met de dataverzameling direct alles in het juiste format konden opslaan. Er is gekozen 
-voor een strategie die de 'nesting' van de data reflecteerde: er zijn meerdere proefpersonen, die worden meerdere keren 
-gemeten, met meerdere meetinstrumenten. De bestandsnaam kreeg dus de volgende hiërarchische opbouw:
+Hieronder volgt een voorbeeld uit onderzoek naar rolstoelpropulsie dat vergelijkbaar is met de casus. Aan het begin van 
+het project was duidelijk dat het zou gaan om ongeveer 1000 files, dus er was een strategie voor het benoemen van files 
+afgesproken, zodat de studenten die hielpen met de dataverzameling direct alles in het juiste format konden opslaan. Er 
+werd gekozen voor een strategie die de 'nesting' van de data reflecteerde: er zijn meerdere proefpersonen, die worden 
+meerdere keren gemeten, met meerdere meetinstrumenten. De bestandsnaam kreeg dus de volgende hiërarchische opbouw:
 
 \<**experiment**\>\_\<**proefpersoon_id**\>\_\<**meting**\>\_\<**meetinstrument**\>.\<**extensie**\>
 
 Bijvoorbeeld: `WL_PP01_T01_ergometer.ods`, ofwel de ergometerdata van het 'WL' experiment van proefpersoon 01 op tijd 01.
 Hiermee is alle metadata van een bestand direct beschikbaar in de filenaam en zijn de namen 'machine readable', daardoor 
-kunnen we door te ‘globben’ gemakkelijk data selecteren. Met deze structuur kunnen we na de data verzameling, 
+kunnen we door gemakkelijk data selecteren (door te 'globben'). Met deze structuur kunnen we na de data verzameling, 
 bijvoorbeeld, alle data van proefpersoon 1, alle ergometer data, of alle ergometer data van T01 selecteren:
 
 ```{tabbed} Python

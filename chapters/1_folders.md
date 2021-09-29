@@ -3,7 +3,7 @@
 Een duidelijke projectstructuur kan bijdragen aan de reproduceerbaarheid en efficiëntie van het onderzoek. Het 
 bepalen van een systeem voor het bewaren van bestanden is dan ook een van de eerste stappen binnen een nieuw project. 
 Op deze pagina gaan we in op de mapstructuur van een onderzoeksproject en op de volgende pagina gaan we verder in op de
-inhoud: de files. 
+inhoud: de bestanden. 
 
 De meeste mensen zijn het er over eens dat ieder project in een eigen map moet, maar daarna zijn er veel verschillende 
 systemen te bedenken. Hieronder benoemen we eerst een aantal good practices die altijd gelden en daarna presenteren we 
@@ -28,6 +28,9 @@ Iets wat tijdens het automatiseren en archiveren veel tijd gaat schelen.
 - **Kies betekenisvolle namen** voor de mappen zodat men niet de inhoud hoeft te controleren om te kijken wat er in zit.
 Hiermee documenteert het project (deels) zichzelf en zorg je ervoor dat men snel eigen kan worden met het project.
 <br><br>
+- **Kies handige namen**: In Research Drive beginnen standaard alle namen van mappen met een afkorting van het project. 
+Daarnaast is het goed om geen spaties of speciale tekens te gebruiken (zie ook [files](1_files.md)).
+<br><br>
 - **Maak een beperkt aantal mappen in de hoofdmap (root)** en maak specifiekere mappen in sub-mappen of sub-sub-mappen. 
 Zorg er wel voor dat de lengte van het pad niet te lang wordt, dan is het beter om de context van de bestanden in een 
 los bestand op te slaan of om te werken met een database systeem.
@@ -36,7 +39,7 @@ los bestand op te slaan of om te werken met een database systeem.
 gegenereerde data of read-only data niet worden aangepast en dat files die wel met de hand worden aangepast niet worden 
 overschreven.
 <br><br>
-- **Zet een README in de root** van het project zodat iedereen direct weet waar men moet beginnen. Met een README
+- **Zet een README in de hoofdmap** van het project zodat iedereen direct weet waar men moet beginnen. Met een README
 zorg je er voor dat jij en je collega's over een paar maanden nog steeds weten waar alles staat en hoe je het project moet
 gebruiken (zie ook: {ref}`readme-label`).
 <br><br>
@@ -90,8 +93,8 @@ gegenereerd als alle code wordt gerunned.
 
 De `CITATION`, `LICENSE`, en `README` files zijn allemaal nodig om het project te kunnen gebruiken. Hiermee kunnen mensen
 erachter komen hoe ze, respectievelijk, het project kunnen citeren, wat ermee kan en mag, en zich snel oriënteren 
-op de inhoud van het project. De `.gitingore` zorgt ervoor dat git weet welke files niet onder version control horen. 
-De mappen maken een logische scheiding op inhoud en type van de files.
+op de inhoud van het project. De `.gitingore` zorgt ervoor dat Git weet welke files niet onder version control horen. 
+De mappen zelf maken een logische scheiding op inhoud en type van de files.
 
 (readme-label)=
 ## De README
@@ -99,18 +102,18 @@ De mappen maken een logische scheiding op inhoud en type van de files.
 ::::::{margin}
 :::{tip}
 READMEs worden vaak in markdown gemaakt (net als deze pagina!). Zie [hier](https://www.markdownguide.org/basic-syntax/) 
-een overzicht van de syntax. Fontys Research Drive heeft een markdown editor!
+een overzicht van de syntax. Fontys Research Drive beschikt over een markdown editor!
 :::
 ::::::
 
-In ieder project hoort in de root directory een README en waar nodig in sub-directories een specifiekere README. De README
-beschrijft de inhoud van het project en hoe men aan de slag kan met de inhoud.
-Veelvoorkomende formats zijn `.txt`, `.md` (Markdown), en `.rst` (reStructuredText), dat zijn allemaal text formats, 
-maar de laatste twee hebben een aantal extra opties om documenten op te maken. Iedereen met een text editor kan een README
-bestand dus openen. De README is waarschijnlijk een van de eerste dingen die iemand zal lezen als die het project te 
-zien krijgt. Het is daarmee ook wel het visitekaartje van het project. Op GitHub/GitLab worden READMEs in een repository
-ook omgezet in een pagina. Een voorbeeld is [deze](https://github.com/willmcgugan/rich#readme) pagina die gemaakt is op 
-basis van [deze](https://raw.githubusercontent.com/willmcgugan/rich/master/README.md) README in .md format.
+In ieder project hoort in de hoofdmap een README en waar nodig in sub-mappen een specifiekere README. Deze README
+beschrijft de inhoud van het project en hoe men aan de slag kan met die inhoud.
+Veelvoorkomende formats zijn `.txt`, `.md` (Markdown), en `.rst` (reStructuredText), dat zijn allemaal platte text formats, 
+maar de laatste twee hebben een aantal extra opties om documenten op te maken. Iedereen met een text editor (bijv. Kladblok)
+kan een README bestand dus openen. De README is waarschijnlijk een van de eerste dingen die iemand zal lezen als die het 
+project te zien krijgt. Het is daarmee ook wel het visitekaartje van het project. Op GitHub/GitLab worden READMEs in een
+repository ook omgezet in een pagina. Een voorbeeld is [deze](https://github.com/willmcgugan/rich#readme) pagina die 
+gemaakt is op basis van [deze](https://raw.githubusercontent.com/willmcgugan/rich/master/README.md) README in .md format.
 
 Zoals je kan zien in het voorbeeld kan er heel veel in een README, maar voor onderzoek moeten een paar dingen altijd 
 aanwezig zijn:
@@ -123,8 +126,9 @@ aanwezig zijn:
 - Informatie over citeren
 
 Daarnaast kan men nog extra informatie verstrekken over de auteurs, methodologie, etc. Hier heb je in principe veel 
-vrijheid, maar probeer wel aan te sluiten bij de standaarden die er zijn in jouw vakgebied. De metadata formulieren 
-die bij de repository horen zijn voor het automatisch indexeren (door computers) bedoeld, maar dit stukje metadata is 
-echt bedoeld voor mensen. Schrijf het dus ook voor mensen en probeer ze enthousiast te maken over jouw project.
+vrijheid, maar probeer wel aan te sluiten bij de standaarden die er zijn in jouw vakgebied of onderzoeksgroep. De 
+metadata formulieren die bij de repository horen zijn voor het automatisch indexeren (door computers) bedoeld, maar dit 
+stukje metadata is echt bedoeld voor mensen. Schrijf het dus ook voor mensen en probeer ze enthousiast te maken over
+jouw project.
 
 [^BVreede]: https://github.com/bvreede/good-enough-project

@@ -26,8 +26,8 @@ De module is onderdeel van een workshop, maar het materiaal kan ook gebruikt wor
 ::::::
 
 Het materiaal is bestemd voor een workshop met een groepsgrootte van 5 tot 15 personen. Er wordt gebruik gemaakt van
-blended learning met (online) leermateriaal en opdrachten. We beginnen bij het organiseren van het project (Project 
-organisatie) en zoomen steeds verder in op de inhoud van de data (Data organisatie en later Dataminimalisatie).
+blended learning met (online) leermateriaal en opdrachten. We beginnen bij het organiseren van de data in het project
+(Project organisatie) en zoomen steeds verder in op de inhoud ervan (Data organisatie en later Dataminimalisatie).
 
 | Tijd | Topic/Doel                                                    | Link |
 |------|---------------------------------------------------------------|------|
@@ -57,15 +57,16 @@ handig om het alvast geïnstalleerd te hebben. Wil of kan je het niet installere
 
 De inhoud van deze mini-site is gebaseerd op de paper van Wilson [^Wilson], de content van de eScience Academy [^escience], en The Turing 
 Project [^Turing]. Allen geven een zeer uitgebreide en overzichtelijke uitleg over research data management in de praktijk en best
-practices m.b.t. het beoefenen van gedegen onderzoek en zijn beschikbaar onder een CC-BY license. De huidige module
-is gebaseerd op een selectie van de content uit deze stukken voor deze korte workshop. Heb je na de workshop nog behoefte 
-aan meer informatie? Kijk dan vooral in die stukken!
+practices m.b.t. het beoefenen van gedegen onderzoek en zijn beschikbaar onder een [CC-BY](https://creativecommons.org/licenses/by/4.0/) 
+licentie. De huidige module is gebaseerd op een selectie van de content uit deze stukken voor deze korte workshop. Heb je 
+na de workshop nog behoefte aan meer informatie? Kijk dan ook vooral in die stukken!
 
 ## Bijdragen
 
 Heb je opmerkingen of wil je graag bijdragen aan een pagina? Klik dan op de GitLab knop <i class="fab fa-gitlab" aria-hidden="true"></i> bovenaan de pagina en maak
 waar nodig een issue aan. Pull requests zijn zeker ook welkom! Klonk dit allemaal hocus pocus? Kijk dan eens 
-[hier](https://docs.gitlab.com/ee/topics/gitlab_flow.html#mergepull-requests-with-gitlab-flow).
+[hier](https://docs.gitlab.com/ee/topics/gitlab_flow.html#mergepull-requests-with-gitlab-flow) of stuur gewoon een 
+[e-mail](mailto:r.deklerk@fontys.nl).
 
 ## Licentie
 
