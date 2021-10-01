@@ -46,8 +46,8 @@ populatie door een andere variabele te delen of vermenigvuldigen.
 
 ## Messy data
 
-Het concept van tidy data klinkt simpel en bestaat al een hele tijd. Toch zijn het overgrote deel van de datasets in het
-wild niet tidy. Een aantal veelvoorkomende problemen met data zijn:
+Het concept van tidy data klinkt simpel en bestaat al een hele tijd. Toch zijn het overgrote deel van de datasets in "het
+wild" niet tidy. Een aantal veelvoorkomende problemen met data zijn:
 
 - **Column headers zijn waarden:** dit is ook het geval in de bovenstaande tabel. Hier is de variable 'jaar' verspreid
 over verschillende kolommen en staat de waarde in de header.
@@ -63,8 +63,9 @@ in de data. Bijvoorbeeld als men eenmalig bepaalde eigenschappen meet van iemand
 op een andere variabele doet. In zo'n geval kan het handig zijn om de data op te splitsen naar meerdere tabellen (één met
 de proefpersooneigenschappen en één met iedere individuele meting) en die aan elkaar te linken.
 <br><br>
-- **Zelfde waarde in meerdere tabellen:** dit is een veelvoorkomend probleem als men meerdere metingen doet. In zo'n 
-geval moet men de tabellen combineren naar één hoofdbestand.
+- **Zelfde waarde in meerdere tabellen:** dit is een veelvoorkomend probleem als men meerdere metingen doet. Hierdoor kan
+het voorkomen dat informatie op meerdere plekken tegelijk staat. Dit kan verwarrend werken en kan ervoor zorgen dat men op
+meerdere plekken iets moet aanpassen. In zo'n geval moet men de tabellen combineren naar één hoofdbestand.
   
 Andere problemen met messy data komen vaak voor doordat men werkt in spreadsheet software. Daar gaan we in het volgende
 stuk op in!
