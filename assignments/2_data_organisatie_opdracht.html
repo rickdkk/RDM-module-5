@@ -1,0 +1,418 @@
+
+<!DOCTYPE html>
+
+<html lang="nl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Opdracht 2: Data organisatie &#8212; Leerlijn Research Data Management</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.acff12b8f9c144ce68a297486a2fa670.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystyles.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.403b217e9cfef9c0f0e4ba85ff69d0c0.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/translations.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="shortcut icon" href="../_static/icon_small.svg"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Zoeken" href="../search.html" />
+    <link rel="next" title="Opdracht 3: Data minimalisatie" href="3_data_minimalisatie_opdracht.html" />
+    <link rel="prev" title="Opdracht 1: Project organisatie" href="1_project_organisatie_opdracht.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+      <img src="../_static/logo.svg" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Leerlijn Research Data Management</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Zoek in dit boek ..." aria-label="Zoek in dit boek ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <div class="bd-toc-item active">
+        <p class="caption">
+ <span class="caption-text">
+  Hoofdstukken
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../chapters/1_project_organisatie.html">
+   Project organisatie
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../chapters/1_good_practices.html">
+     Good practices
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../chapters/1_folders.html">
+     Mappen organiseren
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../chapters/1_files.html">
+     Files organiseren
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../chapters/2_data_organisatie.html">
+   Data organisatie
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../chapters/2_good_practices.html">
+     Good practices
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../chapters/2_tidy_data.html">
+     Tidy data
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../chapters/2_spreadsheets.html">
+     Spreadsheets
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../chapters/3_data_minimalisatie.html">
+   Dataminimalisatie
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../chapters/3_good_practices.html">
+     Good practices
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../chapters/3_pseudonimiseren.html">
+     Pseudonimiseren
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../chapters/3_anonimiseren.html">
+     Anonimiseren
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Opdrachten
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="0_casus.html">
+   Introductie casus
+   <i class="fab fa-accessible-icon">
+   </i>
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="1_project_organisatie_opdracht.html">
+   Opdracht 1: Project organisatie
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Opdracht 2: Data organisatie
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="3_data_minimalisatie_opdracht.html">
+   Opdracht 3: Data minimalisatie
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  <a href="https://fontysconnect.nl/rdm">Research Data Management</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Schakel navigatie" aria-controls="site-navigation"
+                title="Schakel navigatie" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download deze pagina"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/assignments/2_data_organisatie_opdracht.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download het bronbestand" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Afdrukken naar pdf"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://gitlab.com/Rickdkk/module_5/"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Bronopslagplaats"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://gitlab.com/Rickdkk/module_5//issues/new?title=Issue%20on%20page%20%2Fassignments/2_data_organisatie_opdracht.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open een probleem"><i class="fas fa-lightbulb"></i>open probleem</button></a>
+        <a class="edit-button" href="https://github.com/Rickdkk/module_5/edit/main/assignments/2_data_organisatie_opdracht.md"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="bewerk deze pagina"><i class="fas fa-pencil-alt"></i>suggereren bewerken</button></a>
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Volledig scherm"
+        title="Volledig scherm"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Inhoud
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#voorbereiding">
+   Voorbereiding
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#opdracht-i-class-fab-fa-accessible-icon-i">
+   Opdracht
+   <i class="fab fa-accessible-icon">
+   </i>
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="opdracht-2-data-organisatie">
+<h1>Opdracht 2: Data organisatie<a class="headerlink" href="#opdracht-2-data-organisatie" title="Permalink naar deze titel">¶</a></h1>
+<div class="section" id="voorbereiding">
+<h2>Voorbereiding<a class="headerlink" href="#voorbereiding" title="Permalink naar deze titel">¶</a></h2>
+<ul class="simple">
+<li><p>Lees voor het maken van de opdracht het tweede hoofdstuk: <a class="reference internal" href="../chapters/2_data_organisatie.html"><span class="doc std std-doc">Data organisatie</span></a>.</p></li>
+<li><p>Maak de eerste opdracht: <a class="reference internal" href="1_project_organisatie_opdracht.html"><span class="doc std std-doc">Opdracht 1: Project organisatie</span></a></p></li>
+<li><p>Optioneel: Eerste opdracht niet helemaal afgekregen? Dan kan je ook verder met
+<a class="reference external" href="https://gitlab.com/Rickdkk/messy-example-project/-/raw/main/wheelchair_sprints1.zip">deze</a> files (.zip).</p></li>
+<li><p>Download de extra data voor deze opdracht <a class="reference external" href="https://gitlab.com/Rickdkk/messy-example-project/-/raw/main/new_data.zip">hier</a>.</p></li>
+</ul>
+</div>
+<div class="section" id="opdracht-i-class-fab-fa-accessible-icon-i">
+<h2>Opdracht <i class="fab fa-accessible-icon"></i><a class="headerlink" href="#opdracht-i-class-fab-fa-accessible-icon-i" title="Permalink naar deze titel">¶</a></h2>
+<div class="margin sidebar">
+<p class="sidebar-title"></p>
+<div class="admonition note">
+<p class="admonition-title">Notitie</p>
+<p>Deze manier van files aanleveren is niet echt optimaal, maar anders was er geen opdracht 🙃.</p>
+</div>
+</div>
+<p>De spreadsheet bestanden in de map zijn nieuwe data verzameld door studenten. Hierin hebben ze de gegevens geregistreerd
+tijdens het onderzoek en ze hebben daarna de files gedropped in hun file drop punt in Fontys Research Drive. Deze moeten
+nog bijgevoegd worden bij de rest van de data. Voor de uiteindelijke analyse is het van belang dat de data allemaal in
+hetzelfde format beschikbaar zijn in één file.</p>
+<ol class="simple">
+<li><p>Maak een kopie van de spreadsheet file met alle data (<code class="docutils literal notranslate"><span class="pre">data.ods</span></code>).</p></li>
+<li><p>Voeg data validatie toe:</p>
+<ul class="simple">
+<li><p>Zorg ervoor dat er een vaste lijst waarden is voor <code class="docutils literal notranslate"><span class="pre">sex</span></code>.</p></li>
+<li><p>Beperk de mogelijke waarden voor <code class="docutils literal notranslate"><span class="pre">weight</span></code>, bijv. 40-120kg.</p></li>
+<li><p>Beperk de mogelijke waarden voor <code class="docutils literal notranslate"><span class="pre">pre</span></code> en <code class="docutils literal notranslate"><span class="pre">post</span></code>, bijv. 10-60s.</p></li>
+</ul>
+</li>
+<li><p>Vul de data in de .ods file met validatie aan met de drie nieuwe samples.</p>
+<ul class="simple">
+<li><p>Was alle data goed ingevuld door de studenten?</p></li>
+</ul>
+</li>
+<li><p>Sla de file op en geef het een nieuw versienummer.</p>
+<ul class="simple">
+<li><p>Staat de data nu in een tidy format?</p></li>
+<li><p>Wat is het verschil met de .csv file <code class="docutils literal notranslate"><span class="pre">data_long.csv</span></code>?</p></li>
+</ul>
+</li>
+<li><p>Bonus: leg je stappen vast in een CHANGELOG</p></li>
+</ol>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./assignments"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+    <a class='left-prev' id="prev-link" href="1_project_organisatie_opdracht.html" title="previous page">Opdracht 1: Project organisatie</a>
+    <a class='right-next' id="next-link" href="3_data_minimalisatie_opdracht.html" title="next page">Opdracht 3: Data minimalisatie</a>
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          Door Rick de Klerk<br/>
+        
+            &copy; auteursrechten 2021, CC BY 4.0.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>

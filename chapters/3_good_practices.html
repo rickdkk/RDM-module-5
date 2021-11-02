@@ -1,0 +1,424 @@
+
+<!DOCTYPE html>
+
+<html lang="nl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Good practices &#8212; Leerlijn Research Data Management</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.acff12b8f9c144ce68a297486a2fa670.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystyles.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.403b217e9cfef9c0f0e4ba85ff69d0c0.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/translations.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="shortcut icon" href="../_static/icon_small.svg"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Zoeken" href="../search.html" />
+    <link rel="next" title="Pseudonimiseren" href="3_pseudonimiseren.html" />
+    <link rel="prev" title="Dataminimalisatie" href="3_data_minimalisatie.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+      <img src="../_static/logo.svg" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Leerlijn Research Data Management</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Zoek in dit boek ..." aria-label="Zoek in dit boek ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <div class="bd-toc-item active">
+        <p class="caption">
+ <span class="caption-text">
+  Hoofdstukken
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="1_project_organisatie.html">
+   Project organisatie
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="1_good_practices.html">
+     Good practices
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="1_folders.html">
+     Mappen organiseren
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="1_files.html">
+     Files organiseren
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="2_data_organisatie.html">
+   Data organisatie
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2_good_practices.html">
+     Good practices
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2_tidy_data.html">
+     Tidy data
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2_spreadsheets.html">
+     Spreadsheets
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="3_data_minimalisatie.html">
+   Dataminimalisatie
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Good practices
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="3_pseudonimiseren.html">
+     Pseudonimiseren
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="3_anonimiseren.html">
+     Anonimiseren
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Opdrachten
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../assignments/0_casus.html">
+   Introductie casus
+   <i class="fab fa-accessible-icon">
+   </i>
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../assignments/1_project_organisatie_opdracht.html">
+   Opdracht 1: Project organisatie
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../assignments/2_data_organisatie_opdracht.html">
+   Opdracht 2: Data organisatie
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../assignments/3_data_minimalisatie_opdracht.html">
+   Opdracht 3: Data minimalisatie
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  <a href="https://fontysconnect.nl/rdm">Research Data Management</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Schakel navigatie" aria-controls="site-navigation"
+                title="Schakel navigatie" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download deze pagina"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/chapters/3_good_practices.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download het bronbestand" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Afdrukken naar pdf"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://gitlab.com/Rickdkk/module_5/"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Bronopslagplaats"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://gitlab.com/Rickdkk/module_5//issues/new?title=Issue%20on%20page%20%2Fchapters/3_good_practices.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open een probleem"><i class="fas fa-lightbulb"></i>open probleem</button></a>
+        <a class="edit-button" href="https://github.com/Rickdkk/module_5/edit/main/chapters/3_good_practices.md"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="bewerk deze pagina"><i class="fas fa-pencil-alt"></i>suggereren bewerken</button></a>
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Volledig scherm"
+        title="Volledig scherm"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Inhoud
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#de-five-safes">
+   De ‘Five Safes’
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#voorbeeld-medische-biomechanica">
+   Voorbeeld: (medische) biomechanica
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="good-practices">
+<h1>Good practices<a class="headerlink" href="#good-practices" title="Permalink naar deze titel">¶</a></h1>
+<p>Bij de vorige twee hoofdstukken waren de good practices voornamelijk aanbevelingen om ervoor te zorgen dat je jezelf
+tijd en moeite kan besparen. Als het gaat om het anonimiseren en pseudonimiseren van data gaat het meestal niet meer om
+aanbevelingen, maar om het voldoen aan de regels.</p>
+<ul class="simple">
+<li><p><strong>Ga voor anonieme data</strong>. Probeer het onderzoek altijd zo op te zetten dat er geen identificeerbare data verwerkt
+hoeft te worden.
+<br><br></p></li>
+<li><p><strong>Plan vroeg in het onderzoek</strong> en schrijf het op in je DMP. Door vroeg te plannen kom je niet voor verassingen te staan
+en door het vast te leggen weet iedereen hoe die moet omgaan met de data.
+<br><br></p></li>
+<li><p><strong>Leg de manipulaties vast</strong> zodat je weet wat er is gebeurd met de data. Dit kan door de manipulaties automatisch te
+doen en het script te bewaren of door een logboek bij te houden.
+<br><br></p></li>
+<li><p><strong>Gebruik betekenisvolle vervangingen</strong> in kwalitatieve data. Vervang in getranscribeerde interviews de tekst met
+[haakjes] of gebruik &lt;Auteur&gt;XML tags&lt;/Auteur&gt;.
+<br><br></p></li>
+<li><p><strong>Print geen documenten met persoonsgegevens</strong>. Het is erg moeilijk om papieren documenten te beveiligen en te
+bewaren. Het beste is om zoveel mogelijk met digitale bestanden te werken.
+<br><br></p></li>
+<li><p><strong>Bewaar niet langer dan nodig</strong>. Als je identificeerbare gegevens opslaat en deze niet langer nodig hebt, verwijder
+ze dan direct.</p></li>
+</ul>
+<div class="section" id="de-five-safes">
+<h2>De ‘Five Safes’<a class="headerlink" href="#de-five-safes" title="Permalink naar deze titel">¶</a></h2>
+<p>Een framework wat kan helpen bij het beschrijven en ontwerpen van onderzoek is het “Five Saves” framework <a class="footnote-reference brackets" href="#desai" id="id1">1</a>. In
+dit framework is aandacht voor de data, maar ook voor de organisatie rondom de data:</p>
+<ul class="simple">
+<li><p>Veilige projecten: is het gebruik van de data gepast (nodig, ethisch, wettelijk, redelijk, etc.)?</p></li>
+<li><p>Veilige mensen: kunnen de gebruikers van de data vertrouwd (kennis, vaardigheden, motieven) worden?</p></li>
+<li><p>Veilige data: zitten er veiligheidsrisico’s in de data zelf?</p></li>
+<li><p>Veilige settings: wie heeft toegang tot de data?</p></li>
+<li><p>Veilige output: zijn de statistische resultaten niet onthullend?</p></li>
+</ul>
+</div>
+<div class="section" id="voorbeeld-medische-biomechanica">
+<h2>Voorbeeld: (medische) biomechanica<a class="headerlink" href="#voorbeeld-medische-biomechanica" title="Permalink naar deze titel">¶</a></h2>
+<p>In de biomechanica wordt gebruik gemaakt van veel verschillende meetinstrumenten. Denk bijvoorbeeld aan apparatuur om de
+zuurstofopname te registreren, de hartslag, 3D positie in de ruimte, en weegcellen. Deze sensors zijn vaak bedoeld voor
+de medische markt en de software die bij de instrumenten hoort is vaak bedoeld voor artsen. Dat betekent dat de software
+een mooi rapportje uit kan draaien met de belangrijkste uitkomsten. Hiervoor vraagt de software altijd van alles over de
+proefpersoon: naam, geboortedatum, lengte, gewicht, etc. Leuk voor een arts, maar erg onhandig voor een onderzoeker die
+zich aan de AVG wil houden.</p>
+<p>Een student vult, zonder nadrukkelijke instructie, deze gegevens meestal gewoon in. Het apparaat vraagt immers zelf om de
+gegevens. Maar daardoor zijn al deze gegevens opgeslagen in ieder apparaat en ieder document. Door hier van tevoren al
+rekening mee te houden in het meetprotocol kunnen we ervoor zorgen dat deze data niet overal komt te staan. Soms vergt
+dit wat extra testen om te kijken hoe het apparaat omgaat met dummy data, maar eigenlijk gaat het altijd wel goed. Dit
+verlaagt het risico op het verlies van deze data aanzienlijk en scheelt veel werk bij het archiveren van de data.</p>
+<hr class="footnotes docutils" />
+<dl class="footnote brackets">
+<dt class="label" id="desai"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
+<dd><p>Desai T, Ritchie F, Welpton R. Five Safes: designing data access for research. <a class="reference external" href="https://core.ac.uk/download/pdf/323894811.pdf">https://core.ac.uk/download/pdf/323894811.pdf</a></p>
+</dd>
+</dl>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./chapters"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+    <a class='left-prev' id="prev-link" href="3_data_minimalisatie.html" title="previous page">Dataminimalisatie</a>
+    <a class='right-next' id="next-link" href="3_pseudonimiseren.html" title="next page">Pseudonimiseren</a>
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          Door Rick de Klerk<br/>
+        
+            &copy; auteursrechten 2021, CC BY 4.0.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>

@@ -1,0 +1,521 @@
+
+<!DOCTYPE html>
+
+<html lang="nl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Good (enough) practices &#8212; Leerlijn Research Data Management</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.acff12b8f9c144ce68a297486a2fa670.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystyles.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.403b217e9cfef9c0f0e4ba85ff69d0c0.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/translations.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="shortcut icon" href="../_static/icon_small.svg"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Zoeken" href="../search.html" />
+    <link rel="next" title="Mappen organiseren" href="1_folders.html" />
+    <link rel="prev" title="Project organisatie" href="1_project_organisatie.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+      <img src="../_static/logo.svg" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Leerlijn Research Data Management</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Zoek in dit boek ..." aria-label="Zoek in dit boek ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <div class="bd-toc-item active">
+        <p class="caption">
+ <span class="caption-text">
+  Hoofdstukken
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="1_project_organisatie.html">
+   Project organisatie
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Good practices
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="1_folders.html">
+     Mappen organiseren
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="1_files.html">
+     Files organiseren
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="2_data_organisatie.html">
+   Data organisatie
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2_good_practices.html">
+     Good practices
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2_tidy_data.html">
+     Tidy data
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2_spreadsheets.html">
+     Spreadsheets
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="3_data_minimalisatie.html">
+   Dataminimalisatie
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="3_good_practices.html">
+     Good practices
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="3_pseudonimiseren.html">
+     Pseudonimiseren
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="3_anonimiseren.html">
+     Anonimiseren
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Opdrachten
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../assignments/0_casus.html">
+   Introductie casus
+   <i class="fab fa-accessible-icon">
+   </i>
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../assignments/1_project_organisatie_opdracht.html">
+   Opdracht 1: Project organisatie
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../assignments/2_data_organisatie_opdracht.html">
+   Opdracht 2: Data organisatie
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../assignments/3_data_minimalisatie_opdracht.html">
+   Opdracht 3: Data minimalisatie
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  <a href="https://fontysconnect.nl/rdm">Research Data Management</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Schakel navigatie" aria-controls="site-navigation"
+                title="Schakel navigatie" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download deze pagina"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/chapters/1_good_practices.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download het bronbestand" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Afdrukken naar pdf"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://gitlab.com/Rickdkk/module_5/"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Bronopslagplaats"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://gitlab.com/Rickdkk/module_5//issues/new?title=Issue%20on%20page%20%2Fchapters/1_good_practices.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open een probleem"><i class="fas fa-lightbulb"></i>open probleem</button></a>
+        <a class="edit-button" href="https://github.com/Rickdkk/module_5/edit/main/chapters/1_good_practices.md"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="bewerk deze pagina"><i class="fas fa-pencil-alt"></i>suggereren bewerken</button></a>
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Volledig scherm"
+        title="Volledig scherm"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Inhoud
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#sla-je-ruwe-data-op">
+   Sla je ruwe data op
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#zorg-voor-een-back-up">
+   Zorg voor een back-up
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#verwerk-de-data">
+   Verwerk de data
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#beschrijf-de-data">
+   Beschrijf de data
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#archiveer-de-data">
+   Archiveer de data
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#gebruik-een-systeem">
+   Gebruik een systeem
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="good-enough-practices">
+<h1>Good (enough) practices<a class="headerlink" href="#good-enough-practices" title="Permalink naar deze titel">¶</a></h1>
+<p>De opslag van data is in 2021 ongelofelijk goedkoop, maar de tijd van onderzoekers is schaars en duur. Op het
+moment van schrijven is de prijs van een harde schijf ongeveer 2 cent per GB. De prijs van het kwijtraken of beschadigen
+van data is echter velen malen groter en kan een project zo maar een jaar vertragen. Goed genoeg data management kan
+bijdragen aan de efficiëntie van een project en de risico’s op het verliezen of beschadigen van data inperken.
+Daarnaast is het belangrijk om ervoor te zorgen dat de data geschikt zijn voor analyse en archivering.
+Door hier van tevoren al rekening mee te houden zorgen we dat we geen extra werk moeten leveren en zoveel mogelijk
+kunnen automatiseren. Zonder een heel verhaal over FAIR op te hangen zijn er een aantal belangrijke tips and tricks die
+men kan gebruiken voor het goed genoeg beheren van data <a class="footnote-reference brackets" href="#wilson" id="id1">1</a>:</p>
+<div class="figure align-default" id="lifespan-fig">
+<a class="bg-primary mb-1 reference internal image-reference" href="../_images/xkcd_digital_resource_lifespan.png"><img alt="xkcd" class="bg-primary mb-1" src="../_images/xkcd_digital_resource_lifespan.png" style="width: 75%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 1 </span><span class="caption-text"><a class="reference external" href="http://xkcd.com">xkcd.com</a> over de houdbaarheid van digitale bronnen</span><a class="headerlink" href="#lifespan-fig" title="Permallink naar deze afbeelding">¶</a></p>
+</div>
+<div class="section" id="sla-je-ruwe-data-op">
+<h2>Sla je ruwe data op<a class="headerlink" href="#sla-je-ruwe-data-op" title="Permalink naar deze titel">¶</a></h2>
+<div class="margin sidebar">
+<p class="sidebar-title"></p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Zet de map met de ruwe data op read-only. Dat kan op Windows, Mac, en Linux gewoon via de file explorer!</p>
+</div>
+</div>
+<p>Zorg dat de ruwe data altijd los is opgeslagen. Het kan zijn dat een meetinstrument een rapport uitdraait. Zorg in zo’n
+geval dat je naast het rapport ook de ruwe data opslaat. Het kan ook zijn dat je direct aan de slag wilt met de data,
+vooral bij programma’s die data opslag en verwerking/visualisatie combineren (bijv. Excel) is dit erg verleidelijk.
+Maar zonder toegang tot de ruwe data is de enige manier waarop je weer toegang tot de originele informatie kan krijgen
+door een meting te herhalen. De ruwe data hoort daarom thuis in een losse map die ofwel read-only is of een extra back-up
+heeft, en het liefst beide. Je kan met de read-only files werken of desnoods een ‘werkkopie’ maken waarmee je aan de
+slag kan.</p>
+</div>
+<div class="section" id="zorg-voor-een-back-up">
+<h2>Zorg voor een back-up<a class="headerlink" href="#zorg-voor-een-back-up" title="Permalink naar deze titel">¶</a></h2>
+<p>Een back-up is essentieel! Harddrives gaan kapot, laptops worden gestolen, en files kunnen worden overschreven. De enige
+manier om er zeker van te zijn dat je data veilig is, is met een back-up. Werk dus niet alleen met de data op je Fontys
+computer, maar zorg er ook voor dat het project in <a class="reference external" href="https://fontys.data.surfsara.nl/index.php/login">Fontys Research Drive</a>
+staat. Research Drive maakt automatisch back-ups verdeeld over meerdere data centers. Je kan ook ‘snapshots’ van een
+project maken door tussentijdse versies te zippen en ergens naast het project in Research Drive op te slaan. Dat is
+vooral erg handig als je (nog) niet vaardig bent met speciale version control software (bijv. Git).</p>
+</div>
+<div class="section" id="verwerk-de-data">
+<h2>Verwerk de data<a class="headerlink" href="#verwerk-de-data" title="Permalink naar deze titel">¶</a></h2>
+<p>Zorg dat de data zo snel mogelijk in een bewerkbaar en houdbaar format komt te staan. Een klassiek voorbeeld is de oude
+Windows-98 computer achterin het lab waar de software opstaat van die ene dure sensor. Die computer die tevens de enige
+computer is met de software om de ruwe data om te kunnen zetten naar een verwerkbaar format. Om ervoor te zorgen dat we
+niet afhankelijk zijn van deze computer moeten we de data zo snel mogelijk omzetten naar een houdbaar format. Hiermee
+zorgen je ervoor dat jij en anderen, nu en in de toekomst, met de data aan de slag kunnen zonder vendor lock-in.</p>
+<p>Kies dus een format dat lang mee kan gaan en waar geen specifieke software voor nodig is om het te openen. Een goed
+format is future-proof en simpel. In praktijk zijn dit veelal text files zoals .csv voor ‘spreadsheet’ data of .txt
+voor tekst. Voor een overzicht van geschikte formats kan men kijken bij <a class="reference external" href="https://dans.knaw.nl/en/about/services/easy/information-about-depositing-data/before-depositing/file-formats">DANS</a>
+en <a class="reference external" href="https://data.4tu.nl/info//fileadmin/user_upload/Documenten/preffered_file_formats.pdf">4TU</a>.
+Hieronder een aantal voorbeelden:</p>
+<div class="sphinx-bs container pb-4 docutils">
+<div class="row docutils">
+<div class="d-flex col-lg-6 col-md-6 col-sm-6 col-xs-12 p-2 docutils">
+<div class="card w-100 shadow docutils">
+<div class="card-header bg-success docutils">
+<p class="card-text"><strong>Duurzaam</strong></p>
+</div>
+<div class="card-body docutils">
+<ul class="simple">
+<li><p class="card-text"><strong>Data:</strong> CSV, JSON, ODS</p></li>
+<li><p class="card-text"><strong>Documenten:</strong> PDF, ODT, TXT</p></li>
+<li><p class="card-text"><strong>Afbeeldingen:</strong> JPEG, PNG, SVG</p></li>
+<li><p class="card-text"><strong>Video/Audio:</strong> MXF, MKV, FLAC</p></li>
+<li><p class="card-text"><strong>Markup:</strong> XML, HTML</p></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="d-flex col-lg-6 col-md-6 col-sm-6 col-xs-12 p-2 docutils">
+<div class="card w-100 shadow docutils">
+<div class="card-header bg-error docutils">
+<p class="card-text"><strong>Niet-duurzaam</strong></p>
+</div>
+<div class="card-body docutils">
+<ul class="simple">
+<li><p class="card-text"><strong>Data:</strong> SAV, MDB, XLSX</p></li>
+<li><p class="card-text"><strong>Documenten:</strong> DOC, DOCX, RTF</p></li>
+<li><p class="card-text"><strong>Afbeeldingen:</strong> AI, EPS, WMF</p></li>
+<li><p class="card-text"><strong>Video/Audio:</strong> MPEG-4, AVI, MP3</p></li>
+<li><p class="card-text"><strong>Markup:</strong> SGML</p></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p>Er bestaat bij het converteren van bestanden altijd een risico dat informatie verloren gaat, bewaar daarom ook de
+originele file (in ieder geval totdat je het project hebt afgerond). Soms is het (nog) niet mogelijk om data in een open
+format op te slaan. Als er een ander format beschikbaar is dat een ‘industrie standaard’ is dan kan dat format worden
+gebruikt, maar op de lange termijn zou alles in een open format opgeslagen moeten worden. Leg van tevoren vast in het
+DMP welke bestanden je gaat gebruiken en welke bewerkingen daarvoor nodig zijn.</p>
+</div>
+<div class="section" id="beschrijf-de-data">
+<h2>Beschrijf de data<a class="headerlink" href="#beschrijf-de-data" title="Permalink naar deze titel">¶</a></h2>
+<p>De data moet beschreven worden zodat jij en anderen weten wat voor een data het precies betreft. Er zijn verschillende
+niveaus van metadata. Allereerst moet de dataset zelf beschreven worden, dat is bijvoorbeeld nodig om de data terug te
+kunnen vinden in DataverseNL, hiervoor vul je een metadataformulier in. Dan moet de inhoud van de dataset nog beschreven
+worden, hiervoor is een goede <a class="reference external" href="https://nl.wikipedia.org/wiki/README">README</a> de meest waardevolle toevoeging. Op
+de <a class="reference internal" href="1_folders.html#readme-label"><span class="std std-ref">volgende</span></a> pagina gaan we hier verder op in, maar in het kort: een README is een bestand (meestal in
+plain text) dat informatie geeft die gebruikers eerst moeten lezen voordat men aan de slag gaat. Voor specifieke files
+kan een <a class="reference external" href="https://help.osf.io/hc/en-us/articles/360019739054-How-to-Make-a-Data-Dictionary">data dictionary</a> nog een
+goede toevoeging zijn. Hierin staan de namen van de variabelen, een omschrijving, toegestane waardes, etc.</p>
+</div>
+<div class="section" id="archiveer-de-data">
+<h2>Archiveer de data<a class="headerlink" href="#archiveer-de-data" title="Permalink naar deze titel">¶</a></h2>
+<p>Onderzoeksdata moet minimaal 10 jaar <a class="footnote-reference brackets" href="#vsnu" id="id2">2</a> bewaard blijven (15/20 jaar voor medische data <a class="footnote-reference brackets" href="#ccmo" id="id3">3</a>). Het archiveren van data is
+dus een belangrijke stap in het onderzoeksproces. Bij voorkeur wordt de data openbaar gemaakt, maar als dat niet kan dan
+kan het ook gesloten gearchiveerd worden. Fontys beschikt over DataverseNL. Hier kunnen de data van helemaal open tot
+helemaal gesloten gearchiveerd worden (Module 4). Door al het voorwerk dat is gedaan in de voorgaande secties is het
+archiveren van data zo gebeurd. De organisatie is al op orde, evenals de documentatie, en de data staat al in een
+houdbaar format. Aan de data wordt een DOI gekoppeld waarmee jij en anderen kunnen refereren aan de data, hierdoor krijg
+je erkenning voor de moeite die je hebt gestoken in de data.</p>
+<a class="bg-primary mb-1 reference internal image-reference" href="../_images/logo_dataverse.png"><img alt="DataverseNL" class="bg-primary mb-1 align-center" src="../_images/logo_dataverse.png" style="width: 33%;" /></a>
+</div>
+<div class="section" id="gebruik-een-systeem">
+<h2>Gebruik een systeem<a class="headerlink" href="#gebruik-een-systeem" title="Permalink naar deze titel">¶</a></h2>
+<p>Tot nu toe is er nog niets gezegd over hóe de data moet worden opgeslagen. Welke mappenstructuur is handig voor
+onderzoek en hoe moet ik de files noemen? Daar gaan we in het volgende stuk op in!</p>
+<hr class="footnotes docutils" />
+<dl class="footnote brackets">
+<dt class="label" id="wilson"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
+<dd><p>Wilson G, Bryan J, Cranston K, Kitzes J, Nederbragt L, Teal TK. Good enough practices in scientific computing. PLoS computational biology. 2017 Jun 22;13(6):e1005510. <a class="reference external" href="https://doi.org/10.1371/journal.pcbi.1005510">https://doi.org/10.1371/journal.pcbi.1005510</a></p>
+</dd>
+<dt class="label" id="vsnu"><span class="brackets"><a class="fn-backref" href="#id2">2</a></span></dt>
+<dd><p>Vereniging van Universiteiten. De Nederlandse Gedragscode Wetenschapsbeoefening. 2014. <a class="reference external" href="http://www.vsnu.nl/files/documenten/Domeinen/Onderzoek/Code_wetenschapsbeoefening_2004_%282014%29.pdf">http://www.vsnu.nl/files/documenten/Domeinen/Onderzoek/Code_wetenschapsbeoefening_2004_(2014).pdf</a></p>
+</dd>
+<dt class="label" id="ccmo"><span class="brackets"><a class="fn-backref" href="#id3">3</a></span></dt>
+<dd><p>Centrale Commissie Mensgebonden Onderzoek. Vragen en antwoorden over sectie 10 van de model-PIF. 2020-09-02</p>
+</dd>
+</dl>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./chapters"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+    <a class='left-prev' id="prev-link" href="1_project_organisatie.html" title="previous page">Project organisatie</a>
+    <a class='right-next' id="next-link" href="1_folders.html" title="next page">Mappen organiseren</a>
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          Door Rick de Klerk<br/>
+        
+            &copy; auteursrechten 2021, CC BY 4.0.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>

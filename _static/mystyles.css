@@ -1,0 +1,60 @@
+/* Custom styles to mainly make everything Fontys purple */
+
+:root{
+    --fontys-purple: rgba(102, 51, 102, 1);
+}
+
+.bd-content .section table {
+    display: table;
+}
+
+.table td, .table th {
+    padding: .1rem;
+}
+
+#site-navigation nav ul.nav a:hover, #site-navigation nav ul.nav li.active > a, #site-navigation nav ul.nav li.active > a:hover {
+    color: var(--fontys-purple);
+}
+
+.bd-toc nav li.active > a.active {
+    border-left: 2px solid var(--fontys-purple);
+}
+
+.bd-toc nav a:hover, .bd-toc nav li.active > a.active{
+    color: var(--fontys-purple);
+}
+
+.bg-success {
+    background-color: #52d16f3b !important;
+}
+
+.bg-warning {
+    background-color: #e7dd7b73 !important;
+}
+
+.bg-error {
+    background-color: #e7b07b96 !important;
+}
+
+main.bd-content #main-content div.figure {
+    margin-bottom: 0;
+}
+
+.btn-outline-primary{
+    color: var(--fontys-purple) !important;
+    border-color: var(--fontys-purple);
+}
+
+.btn-outline-primary:hover{
+    background-color: var(--fontys-purple);
+    border-color: var(--fontys-purple);
+    color: #fff !important;
+}
+
+.prev-next-bottom a.left-prev, .prev-next-bottom a.right-next{
+    color: var(--fontys-purple) !important;
+}
+
+a.headerlink{
+    color: var(--fontys-purple) !important;
+}

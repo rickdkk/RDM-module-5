@@ -1,0 +1,446 @@
+
+<!DOCTYPE html>
+
+<html lang="nl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anonimiseren &#8212; Leerlijn Research Data Management</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.acff12b8f9c144ce68a297486a2fa670.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystyles.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.403b217e9cfef9c0f0e4ba85ff69d0c0.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/translations.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="shortcut icon" href="../_static/icon_small.svg"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Zoeken" href="../search.html" />
+    <link rel="next" title="Introductie casus" href="../assignments/0_casus.html" />
+    <link rel="prev" title="Pseudonimiseren" href="3_pseudonimiseren.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+      <img src="../_static/logo.svg" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Leerlijn Research Data Management</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Zoek in dit boek ..." aria-label="Zoek in dit boek ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <div class="bd-toc-item active">
+        <p class="caption">
+ <span class="caption-text">
+  Hoofdstukken
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="1_project_organisatie.html">
+   Project organisatie
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="1_good_practices.html">
+     Good practices
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="1_folders.html">
+     Mappen organiseren
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="1_files.html">
+     Files organiseren
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="2_data_organisatie.html">
+   Data organisatie
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2_good_practices.html">
+     Good practices
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2_tidy_data.html">
+     Tidy data
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2_spreadsheets.html">
+     Spreadsheets
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="3_data_minimalisatie.html">
+   Dataminimalisatie
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="3_good_practices.html">
+     Good practices
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="3_pseudonimiseren.html">
+     Pseudonimiseren
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Anonimiseren
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Opdrachten
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../assignments/0_casus.html">
+   Introductie casus
+   <i class="fab fa-accessible-icon">
+   </i>
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../assignments/1_project_organisatie_opdracht.html">
+   Opdracht 1: Project organisatie
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../assignments/2_data_organisatie_opdracht.html">
+   Opdracht 2: Data organisatie
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../assignments/3_data_minimalisatie_opdracht.html">
+   Opdracht 3: Data minimalisatie
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  <a href="https://fontysconnect.nl/rdm">Research Data Management</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Schakel navigatie" aria-controls="site-navigation"
+                title="Schakel navigatie" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download deze pagina"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/chapters/3_anonimiseren.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download het bronbestand" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Afdrukken naar pdf"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://gitlab.com/Rickdkk/module_5/"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Bronopslagplaats"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://gitlab.com/Rickdkk/module_5//issues/new?title=Issue%20on%20page%20%2Fchapters/3_anonimiseren.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open een probleem"><i class="fas fa-lightbulb"></i>open probleem</button></a>
+        <a class="edit-button" href="https://github.com/Rickdkk/module_5/edit/main/chapters/3_anonimiseren.md"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="bewerk deze pagina"><i class="fas fa-pencil-alt"></i>suggereren bewerken</button></a>
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Volledig scherm"
+        title="Volledig scherm"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Inhoud
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#aanpak">
+   Aanpak
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#tools">
+   Tools
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="anonimiseren">
+<h1>Anonimiseren<a class="headerlink" href="#anonimiseren" title="Permalink naar deze titel">¶</a></h1>
+<p>Door data te anonimiseren is deze niet meer te herleiden tot een specifiek persoon. Anonimiseren is
+<em>destructief</em>. Dat wil zeggen dat data onomkeerbaar aangepast worden en dat er vaak wat informatie verloren
+gaat. Vaak is de data die je publiceert in het artikel al anoniem doordat de data samengevoegd zijn, maar als je de
+dataset zelf wil publiceren moet je ook zorgen dat in die grotere dataset geen herleidbare gegevens zitten.</p>
+<div class="margin sidebar">
+<p class="sidebar-title"></p>
+<div class="admonition caution">
+<p class="admonition-title">Pas op</p>
+<p>Pseudonimiseren staat dus niet gelijk aan anonimiseren. Het versleutelen van informatie staat ook niet gelijk aan
+anonimiseren.</p>
+</div>
+</div>
+<p>Het kan nog best een uitdaging zijn om de data goed te anonimiseren omdat volgend de AVG het <em>onmogelijk</em> moet zijn om
+de participant te kunnen identificeren. Het voordeel is echter dat wanneer de data volledig geanonimiseerd is deze niet
+meer onder de AVG valt. Er is daarna dus een stuk meer mogelijk met de data, bijvoorbeeld wanneer men deze wilt delen
+of hergebruiken bij vervolgonderzoek.</p>
+<div class="section" id="aanpak">
+<h2>Aanpak<a class="headerlink" href="#aanpak" title="Permalink naar deze titel">¶</a></h2>
+<p>Eerst is het goed om te kijken naar de onderzoekspopulatie zelf. Als je een willekeurige sample studenten hebt gebruikt
+voor een studie is de kans op heridentificatie een stuk kleiner dan wanneer men met data van een hele populatie werkt
+zoals met microdata of een grote clinical trial. Daarna is de volgende stap uiteraard om te controleren dat alle directe
+identifiers uit de data zijn verwijderd. Het verwijderen van indirecte identifiers kan echter een stuk lastiger zijn.
+Zo kan het zijn er maar één proefpersoon is met een bepaalde eigenschap (bijv. iemand die 2.15m lang is) of dat er maar
+één persoon is met een bepaalde combinatie van indirecte gegevens. Er zijn verschillende transformaties die we kunnen
+doen op de data om ervoor te zorgen dat deze indirecte gegevens geen probleem veroorzaken:</p>
+<ol class="simple">
+<li><p><strong>Sampling:</strong> het publiceren van een sample van de data en niet de complete dataset. Dit is met name relevant als de data
+een hele populatie beschrijft, bijv. bij microdata of ziekenhuisdata.</p></li>
+<li><p><strong>Aggregation:</strong> door resultaten te aggregeren (bijv. door het gemiddelde te nemen)</p></li>
+<li><p><strong>Surpression:</strong> door bepaalde waarden niet te laten zien als die bijv. uniek zijn voor die persoon of die persoon uniek
+in de dataset maakt. Voor outliers kan men ook de waarden aftoppen of de outlier helemaal niet meenemen.</p></li>
+<li><p><strong>Masking:</strong> door een deel van de informatie te verstoppen. Een goed voorbeeld hier zijn postcodes, door de laatste cijfers
+en letters te verbergen wordt de geografische locatie steeds minder specifiek.</p></li>
+<li><p><strong>Categorizeren:</strong> door ‘bins’ te maken waarin een proefpersoon valt kan men het detail vervagen. Dit werkt goed voor gewicht
+of lengte, maar bijvoorbeeld ook bij inkomen.</p></li>
+<li><p><strong>Generaliseren:</strong> door gegevens op een hoger abstractieniveau weer te geven. Denk hier bijvoorbeeld aan ziektes
+adhv een hoger niveau op de <a class="reference external" href="https://www.who.int/standards/classifications/classification-of-diseases">classification of diseases</a>
+of beroepen op een hoger niveau in de <a class="reference external" href="http://www.ilo.org/public/english/bureau/stat/isco/isco08/index.htm">International Standard Classification of Occupations</a>.</p></li>
+<li><p><strong>Disruption/swapping:</strong> door gegevens te verwisselen, dit kan met name bij kwalitatief onderzoek handig zijn als het
+detailniveau in een transcript niet heel belangrijk is. Bijvoorbeeld door [broer] te vervangen met [zus] bij een
+transcript kan je het risico op heridentificatie verlagen.
+<br><br></p></li>
+</ol>
+<div class="figure align-default" id="anonimization-fig">
+<a class="reference internal image-reference" href="../_images/prasser_transformation_methods.webp"><img alt="../_images/prasser_transformation_methods.webp" src="../_images/prasser_transformation_methods.webp" style="width: 75%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 9 </span><span class="caption-text">Transformatie methoden voor anonimisering CC-BY-NC <a class="footnote-reference brackets" href="#prasser" id="id1">1</a>.</span><a class="headerlink" href="#anonimization-fig" title="Permallink naar deze afbeelding">¶</a></p>
+</div>
+</div>
+<div class="section" id="tools">
+<h2>Tools<a class="headerlink" href="#tools" title="Permalink naar deze titel">¶</a></h2>
+<div class="margin sidebar">
+<p class="sidebar-title"></p>
+<div class="admonition note">
+<p class="admonition-title">Notitie</p>
+<p>Bij kleinschalig onderzoek is dit vaak niet nodig/praktisch.</p>
+</div>
+</div>
+<p>Het is erg lastig om alle verschillende combinaties van indirecte identifiers na te gaan om te kijken of iemand
+geheridentificeerd kan worden. Gelukkig zijn er verschillende tools die hierbij kunnen helpen, die verschillende
+privacy modellen ondersteunen. Die modellen hebben vaak catchy namen zoals 𝛿-Presence, 𝛽-Likeness, k-Anonymity, of t-Closeness. Het
+makkelijkste voorbeeld is k-Anonymity: een dataset is k-anoniem als voor elke combinatie van indirecte identifier er op
+zijn minst k andere zijn. Een veelgebruikt getal voor k is 5, dan zijn er voor elke combinatie van variabelen op zijn minst
+vijf samples met dezelfde combinatie van gegevens. Om dit met de hand te doen is erg lastig (ook om te programmeren overigens)
+dus men kan dan het beste een tool als <a class="reference external" href="https://arx.deidentifier.org/">ARX</a> of <a class="reference external" href="https://amnesia.openaire.eu/">Amnesia</a>
+gebruiken. Anonimiseren werkt voor iedere dataset anders, overleg daarom bij twijfel met de Privacy Officer en je Data
+Supporter.</p>
+<hr class="docutils" />
+<p><a class="sphinx-bs btn text-wrap btn-outline-primary btn-block reference internal" href="../assignments/3_data_minimalisatie_opdracht.html"><span class="doc">Klaar voor een opdracht!</span></a></p>
+<hr class="footnotes docutils" />
+<dl class="footnote brackets">
+<dt class="label" id="prasser"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
+<dd><p>Prasser F, Eicher J, Spengler H, Bild R, Kuhn KA. Flexible data anonymization using ARX—Current status and
+challenges ahead. Software: Practice and Experience. 2020 Jul;50(7):1277-304.</p>
+</dd>
+</dl>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./chapters"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+    <a class='left-prev' id="prev-link" href="3_pseudonimiseren.html" title="previous page">Pseudonimiseren</a>
+    <a class='right-next' id="next-link" href="../assignments/0_casus.html" title="next page">Introductie casus <i class="fab fa-accessible-icon"></i></a>
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          Door Rick de Klerk<br/>
+        
+            &copy; auteursrechten 2021, CC BY 4.0.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>

@@ -1,0 +1,462 @@
+
+<!DOCTYPE html>
+
+<html lang="nl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spreadsheets &#8212; Leerlijn Research Data Management</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.acff12b8f9c144ce68a297486a2fa670.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystyles.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.403b217e9cfef9c0f0e4ba85ff69d0c0.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/translations.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="shortcut icon" href="../_static/icon_small.svg"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Zoeken" href="../search.html" />
+    <link rel="next" title="Dataminimalisatie" href="3_data_minimalisatie.html" />
+    <link rel="prev" title="Tidy data" href="2_tidy_data.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+      <img src="../_static/logo.svg" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Leerlijn Research Data Management</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Zoek in dit boek ..." aria-label="Zoek in dit boek ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <div class="bd-toc-item active">
+        <p class="caption">
+ <span class="caption-text">
+  Hoofdstukken
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="1_project_organisatie.html">
+   Project organisatie
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="1_good_practices.html">
+     Good practices
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="1_folders.html">
+     Mappen organiseren
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="1_files.html">
+     Files organiseren
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="2_data_organisatie.html">
+   Data organisatie
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="2_good_practices.html">
+     Good practices
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2_tidy_data.html">
+     Tidy data
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Spreadsheets
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="3_data_minimalisatie.html">
+   Dataminimalisatie
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="3_good_practices.html">
+     Good practices
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="3_pseudonimiseren.html">
+     Pseudonimiseren
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="3_anonimiseren.html">
+     Anonimiseren
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Opdrachten
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../assignments/0_casus.html">
+   Introductie casus
+   <i class="fab fa-accessible-icon">
+   </i>
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../assignments/1_project_organisatie_opdracht.html">
+   Opdracht 1: Project organisatie
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../assignments/2_data_organisatie_opdracht.html">
+   Opdracht 2: Data organisatie
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../assignments/3_data_minimalisatie_opdracht.html">
+   Opdracht 3: Data minimalisatie
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  <a href="https://fontysconnect.nl/rdm">Research Data Management</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Schakel navigatie" aria-controls="site-navigation"
+                title="Schakel navigatie" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download deze pagina"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/chapters/2_spreadsheets.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download het bronbestand" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Afdrukken naar pdf"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://gitlab.com/Rickdkk/module_5/"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Bronopslagplaats"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://gitlab.com/Rickdkk/module_5//issues/new?title=Issue%20on%20page%20%2Fchapters/2_spreadsheets.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open een probleem"><i class="fas fa-lightbulb"></i>open probleem</button></a>
+        <a class="edit-button" href="https://github.com/Rickdkk/module_5/edit/main/chapters/2_spreadsheets.md"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="bewerk deze pagina"><i class="fas fa-pencil-alt"></i>suggereren bewerken</button></a>
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Volledig scherm"
+        title="Volledig scherm"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Inhoud
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#een-spreadsheet-een-tabel">
+   Eén spreadsheet één tabel
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#formatting-issues">
+   Formatting issues
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#gebruik-validatie">
+   Gebruik validatie
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#werken-met-datums">
+   Werken met datums
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#missings">
+   Missings
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#good-practices">
+   Good practices
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="spreadsheets">
+<h1>Spreadsheets<a class="headerlink" href="#spreadsheets" title="Permalink naar deze titel">¶</a></h1>
+<p>Spreadsheet software kan heel veel en het is daarom verleidelijk om alles te doen in een spreadsheet. Toch kleven er veel
+nadelen aan het misbruiken van deze software voor ieder probleem. Over het algemeen is het advies dus om geen data te
+manipuleren, analyseren, of plotten in een spreadsheet. Maar waar zijn ze dan wel handig voor? Het voordeel is dat je
+de data goed kan bekijken en dat, met data validatie, het op zich een aardige tool is om data in te voeren. Toch zijn
+er mensen die spreadsheets overal voor gebruiken en dat is op zich prima. Ik heb collega’s gehad die hele Monte Carlo
+analyses in spreadsheets deden. De beste tool is vaak gewoon de tool waar jij het beste mee overweg kan. Er zijn dan wel
+een aantal dingen waar je op kunt letten, daar gaan we in dit stuk op in. Voor een uitgebreidere introductie kan je
+<a class="reference external" href="https://datacarpentry.org/spreadsheets-socialsci/">hier</a> kijken.</p>
+<div class="figure align-default" id="spreadsheets-fig">
+<img alt="xkcd" src="../_images/xkcd_spreadsheets.png" />
+<p class="caption"><span class="caption-number">Fig. 6 </span><span class="caption-text"><a class="reference external" href="http://xkcd.com">xkcd.com</a> over spreadsheets</span><a class="headerlink" href="#spreadsheets-fig" title="Permallink naar deze afbeelding">¶</a></p>
+</div>
+<div class="section" id="een-spreadsheet-een-tabel">
+<h2>Eén spreadsheet één tabel<a class="headerlink" href="#een-spreadsheet-een-tabel" title="Permalink naar deze titel">¶</a></h2>
+<p>Het is verleidelijk om meerdere tabellen in één spreadsheet te plakken, dan staat alle info op één plek. Dit maakt het echter
+heel lastig om de data later nog te verwerken of te exporteren naar een houdbaar format. Zorg er daarom voor dat er
+één tabel per spreadsheet wordt gebruikt.</p>
+</div>
+<div class="section" id="formatting-issues">
+<h2>Formatting issues<a class="headerlink" href="#formatting-issues" title="Permalink naar deze titel">¶</a></h2>
+<div class="margin sidebar">
+<p class="sidebar-title"></p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Gebruik een open source programmeertaal zoals Python, R, of Julia om je data te analyseren en/of transformeren. Gebruik
+OpenRefine als je niet wilt scripten.</p>
+</div>
+</div>
+<p>Gebruik geen cell highlighting of andere kleurtjes om iets aan te geven in de data, deze waarden kunnen niet ingelezen
+worden met andere programma’s en als het wel kan kost het vaak veel extra moeite. Als highlighting gebruikt wordt om een
+waarde aan te geven, dan moet daar een extra kolom voor komen. Hetzelfde geldt voor het gebruiken van comments, deze
+horen ook thuis in een eigen kolom.</p>
+</div>
+<div class="section" id="gebruik-validatie">
+<h2>Gebruik validatie<a class="headerlink" href="#gebruik-validatie" title="Permalink naar deze titel">¶</a></h2>
+<p>Wanneer men een online formulier invult wordt er vaak gecontroleerd of de waarde die je invult mogelijk is. Hetzelfde zou
+je eigenlijk willen als men data invult in een spreadsheet. Gelukkig hebben Excel en Libreoffice Calc allebei de optie
+om data validation te gebruiken. Met data validation kan je aangeven welk soort waarden er in een veld mogen, daardoor
+kan je niet per ongeluk een ongeldige waarde invullen. Het is handig om dit te doen voordat je de data gaat invullen,
+want als de data er al instaat krijg je wel een indicatie waar de data niet klopt, maar je moet dan wel alle data langs.
+Zie <a class="reference external" href="https://datacarpentry.org/spreadsheets-socialsci/04-quality-assurance/index.html">hier</a> een uitleg over data validatie.</p>
+</div>
+<div class="section" id="werken-met-datums">
+<h2>Werken met datums<a class="headerlink" href="#werken-met-datums" title="Permalink naar deze titel">¶</a></h2>
+<p>Datums in spreadsheets zijn erg tricky. Er zit verschil tussen spreadsheet programma’s, tussen regio notaties, en tussen
+versies (zie Excel op de Mac vs die op Windows). Sommige waarden worden niet herkend als een datum, bijvoorbeeld als ze
+van voor 1900 zijn en anderen worden soms onterecht herkend als een datum, wat voor veel fouten kan zorgen <a class="footnote-reference brackets" href="#ziemann" id="id1">1</a>.
+De beste manier om data te formatten in een spreadsheet is door de datum op te splitsen in een jaar, maand, en een dag
+en die in losse kolommen op te slaan. Hiervoor kan men ook de ingebouwde functies <code class="docutils literal notranslate"><span class="pre">YEAR()</span></code>, <code class="docutils literal notranslate"><span class="pre">MONTH()</span></code>, <code class="docutils literal notranslate"><span class="pre">DAY()</span></code> gebruiken.</p>
+</div>
+<div class="section" id="missings">
+<h2>Missings<a class="headerlink" href="#missings" title="Permalink naar deze titel">¶</a></h2>
+<p>Het is belangrijk om consistent te zijn met missing values. Er zijn hierbij twee dingen belangrijk. Als je een waarde
+wel gemeten hebt maar deze is 0, vul dan een 0 in. Het tweede ding is dat men moet kiezen voor consistente waardes
+in het geval van missing data. Over het algemeen heeft het de voorkeur om dan geen waarde in te vullen. De meeste programma’s
+en programmeertalen herkennen dit automatisch als een missing value. Vroeger werd -999 wel eens gebruikt, maar dat is al
+lang niet meer nodig voor de computer en kan in een berekening terecht komen met alle gevolgen van dien.</p>
+</div>
+<div class="section" id="good-practices">
+<h2>Good practices<a class="headerlink" href="#good-practices" title="Permalink naar deze titel">¶</a></h2>
+<p>De eerdergenoemde good practices met betrekking tot versiebeheer, het kiezen van kolomnamen, en het aanhouden van een tidy
+format gelden uiteraard ook voor spreadsheets!</p>
+<hr class="docutils" />
+<p><a class="sphinx-bs btn text-wrap btn-outline-primary btn-block reference internal" href="../assignments/2_data_organisatie_opdracht.html"><span class="doc">Klaar voor een opdracht!</span></a></p>
+<hr class="footnotes docutils" />
+<dl class="footnote brackets">
+<dt class="label" id="ziemann"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
+<dd><p>Ziemann M, Eren Y, El-Osta A. Gene name errors are widespread in the scientific literature. Genome biology.
+2016 Dec;17(1):1-3.</p>
+</dd>
+</dl>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./chapters"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+    <a class='left-prev' id="prev-link" href="2_tidy_data.html" title="previous page">Tidy data</a>
+    <a class='right-next' id="next-link" href="3_data_minimalisatie.html" title="next page">Dataminimalisatie</a>
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          Door Rick de Klerk<br/>
+        
+            &copy; auteursrechten 2021, CC BY 4.0.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>

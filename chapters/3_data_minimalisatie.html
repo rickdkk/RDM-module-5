@@ -1,0 +1,477 @@
+
+<!DOCTYPE html>
+
+<html lang="nl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dataminimalisatie &#8212; Leerlijn Research Data Management</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.acff12b8f9c144ce68a297486a2fa670.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystyles.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.403b217e9cfef9c0f0e4ba85ff69d0c0.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/translations.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="shortcut icon" href="../_static/icon_small.svg"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Zoeken" href="../search.html" />
+    <link rel="next" title="Good practices" href="3_good_practices.html" />
+    <link rel="prev" title="Spreadsheets" href="2_spreadsheets.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+      <img src="../_static/logo.svg" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Leerlijn Research Data Management</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Zoek in dit boek ..." aria-label="Zoek in dit boek ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <div class="bd-toc-item active">
+        <p class="caption">
+ <span class="caption-text">
+  Hoofdstukken
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="1_project_organisatie.html">
+   Project organisatie
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="1_good_practices.html">
+     Good practices
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="1_folders.html">
+     Mappen organiseren
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="1_files.html">
+     Files organiseren
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="2_data_organisatie.html">
+   Data organisatie
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2_good_practices.html">
+     Good practices
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2_tidy_data.html">
+     Tidy data
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2_spreadsheets.html">
+     Spreadsheets
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="current reference internal" href="#">
+   Dataminimalisatie
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="3_good_practices.html">
+     Good practices
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="3_pseudonimiseren.html">
+     Pseudonimiseren
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="3_anonimiseren.html">
+     Anonimiseren
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Opdrachten
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../assignments/0_casus.html">
+   Introductie casus
+   <i class="fab fa-accessible-icon">
+   </i>
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../assignments/1_project_organisatie_opdracht.html">
+   Opdracht 1: Project organisatie
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../assignments/2_data_organisatie_opdracht.html">
+   Opdracht 2: Data organisatie
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../assignments/3_data_minimalisatie_opdracht.html">
+   Opdracht 3: Data minimalisatie
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  <a href="https://fontysconnect.nl/rdm">Research Data Management</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Schakel navigatie" aria-controls="site-navigation"
+                title="Schakel navigatie" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download deze pagina"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/chapters/3_data_minimalisatie.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download het bronbestand" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Afdrukken naar pdf"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://gitlab.com/Rickdkk/module_5/"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Bronopslagplaats"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://gitlab.com/Rickdkk/module_5//issues/new?title=Issue%20on%20page%20%2Fchapters/3_data_minimalisatie.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open een probleem"><i class="fas fa-lightbulb"></i>open probleem</button></a>
+        <a class="edit-button" href="https://github.com/Rickdkk/module_5/edit/main/chapters/3_data_minimalisatie.md"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="bewerk deze pagina"><i class="fas fa-pencil-alt"></i>suggereren bewerken</button></a>
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Volledig scherm"
+        title="Volledig scherm"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Inhoud
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#minimalisatie">
+   Minimalisatie
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#anonimiseren-vs-pseudonimiseren">
+   Anonimiseren vs pseudonimiseren
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="dataminimalisatie">
+<h1>Dataminimalisatie<a class="headerlink" href="#dataminimalisatie" title="Permalink naar deze titel">¶</a></h1>
+<p>Er wordt steeds meer data verzameld en er zijn steeds meer technieken beschikbaar om waarde uit data te halen. Maar er
+zijn ook steeds meer datalekken en de privacy van mensen is over de hele linie in het geding. Als onderzoeker is het je
+plicht om verantwoord om te gaan met de data van je participanten. De data die het makkelijkst is om te beschermen is
+de data die je niet hebt, daarom gaat dit eerste stuk over <em>dataminimalisatie</em>. Dit kan men bereiken door gevoelige
+informatie helemaal niet te verwerken of door de informatie direct uit de data te halen (anonimiseren). Het
+pseudonimiseren van data kan een middenweg zijn als de data gevoelig doch noodzakelijk is voor het onderzoek. In het
+volgende stuk gaan we in op dataminimalisatie, pseudonimiseren, en anonimiseren bij kleinschalig onderzoek.</p>
+<div class="figure align-default" id="rewards-fig">
+<a class="reference internal image-reference" href="../_images/xkcd_customer_rewards.png"><img alt="xkcd" src="../_images/xkcd_customer_rewards.png" style="width: 250px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 7 </span><span class="caption-text"><a class="reference external" href="http://xkcd.com">xkcd.com</a> over persoonsgegevens</span><a class="headerlink" href="#rewards-fig" title="Permallink naar deze afbeelding">¶</a></p>
+</div>
+<div class="section" id="minimalisatie">
+<h2>Minimalisatie<a class="headerlink" href="#minimalisatie" title="Permalink naar deze titel">¶</a></h2>
+<div class="margin sidebar">
+<p class="sidebar-title"></p>
+<div class="admonition note">
+<p class="admonition-title">Notitie</p>
+<p>Dit hoofdstuk bevat geen uitgebreide uitleg over de AVG. Module 2/3 van het ISP office gaat hier verder op in. De nadruk
+ligt hier op praktische tips voor het werken met data.</p>
+</div>
+</div>
+<p>Als onderzoeker wil je altijd zo veel mogelijk informatie vergaren. Helaas is dat niet altijd mogelijk. Bij het
+onderzoek mag je niet meer (persoons)gegevens verwerken dan strikt noodzakelijk is. Als de persoonsgegevens niet meer
+nodig zijn dan moeten ze ook worden verwijderd. Daarbij moet je van tevoren aangeven waarom je de data verzameld en kan
+je deze niet voor iets anders inzetten. Het beste is echter om helemaal geen persoonsgegevens te verzamelen dat scheelt
+veel extra moeite tijdens en na het onderzoek.</p>
+<p>Als je bijvoorbeeld geen contact meer hoeft op te nemen met de proefpersoon, heb je dus helemaal geen contactinformatie
+nodig en kan je die ofwel verwijderen of helemaal niet verzamelen. Zo kan het bijvoorbeeld ook zijn dat je iemand zijn
+leeftijd nodig hebt voor je statistische model. Kijk dan of alleen een leeftijd(range) voldoende is en registreer <em>niet</em>
+de geboortedatum. Het kan bijvoorbeeld ook zijn dat je een locatie nodig hebt van de proefpersoon. Kijk dan of alleen
+een plaatsnaam of het eerste deel van een postcode ook voldoende is en registreer <em>niet</em> het hele adres. Deze gegevens
+kunnen op zichzelf meestal niet direct tot identificatie leiden, maar indirect wel. Daarom worden dit ook wel indirecte
+persoonsgegevens genoemd. Indirecte persoonsgegevens zijn overigens nog steeds gewoon persoonsgegevens.</p>
+<p>Het moet ook duidelijk zijn wat het doel is van het verzamelen van de gegevens, dit komt terug in de onderzoeksaanvraag
+en je DMP, maar ook in de informatiebrief aan de proefpersonen. Je mag alleen gegevens verzamelen die nodig zijn om dit
+doel te bereiken en waar de proefpersoon toestemming voor heeft gegeven. De bottom-line is: vraag niet zo maar alles
+uit omdat je <em>denkt</em> dat je het <em>misschien</em> nodig gaat hebben en kijk altijd of je met minder of anonieme gegevens kan
+werken. Gebruik hierbij je gezonde verstand en vraag bij twijfel het ISP om advies.</p>
+<div class="sphinx-bs container pb-4 docutils">
+<div class="row docutils">
+<div class="d-flex col-lg-6 col-md-6 col-sm-6 col-xs-12 p-2 docutils">
+<div class="card w-100 shadow docutils">
+<div class="card-header bg-error docutils">
+<p class="card-text"><strong>Persoonsgegevens</strong></p>
+</div>
+<div class="card-body docutils">
+<ul class="simple">
+<li><p class="card-text">Naam en/of initialen</p></li>
+<li><p class="card-text">Geboortedatum</p></li>
+<li><p class="card-text">Adresgegevens</p></li>
+<li><p class="card-text">Telefoonnummer/e-mail/IP/etc.</p></li>
+<li><p class="card-text">BSN, IBAN</p></li>
+<li><p class="card-text">Video/audio</p></li>
+<li><p class="card-text">•••</p></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="d-flex col-lg-6 col-md-6 col-sm-6 col-xs-12 p-2 docutils">
+<div class="card w-100 shadow docutils">
+<div class="card-header bg-warning docutils">
+<p class="card-text"><strong>Indirecte persoonsgegevens</strong></p>
+</div>
+<div class="card-body docutils">
+<ul class="simple">
+<li><p class="card-text">Gender</p></li>
+<li><p class="card-text">Geboortejaar/plaats</p></li>
+<li><p class="card-text">Lengte/gewicht</p></li>
+<li><p class="card-text">Sociaal-economische factoren</p></li>
+<li><p class="card-text">Medische gegevens</p></li>
+<li><p class="card-text">Beroep</p></li>
+<li><p class="card-text">•••</p></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="anonimiseren-vs-pseudonimiseren">
+<h2>Anonimiseren vs pseudonimiseren<a class="headerlink" href="#anonimiseren-vs-pseudonimiseren" title="Permalink naar deze titel">¶</a></h2>
+<p>Het heeft dus de voorkeur om überhaupt geen data te verzamelen die tot heridentificatie kan leiden. Soms moet men echter
+wel met data werken die niet volledig anoniem is of wordt data niet volledig anoniem aangeleverd. Anonimiseren en
+pseudonimiseren zijn dan twee methoden om toch zo min mogelijk gegevens te verwerken.</p>
+<p>De eerste optie is <strong>anonimiseren</strong>, dat kan door het verwijderen van persoonsgegevens en/of het vervagen van indirecte
+persoonsgevens. Na het anonimiseren moet het <em>onmogelijk</em> zijn om de data terug te linken aan de originele participant.
+In praktijk kan dit nog best lastig zijn omdat door variabelen te combineren of door het koppelen van datasets er vaak
+toch heridentificatie mogelijk is. Zo lieten Rocher en collega’s <a class="footnote-reference brackets" href="#rocher" id="id1">1</a> zien dat incomplete microdata tot
+heridentificatie van bijna alle inwoners van de VS kan leiden.</p>
+<p>Als tussenoplossing kan men de data <strong>pseudonimiseren</strong>. Bijvoorbeeld als je nog contact op moet nemen met participanten
+voor een vervolgmeting. Bij het pseudonimiseren verwijder je dan de contactgegevens uit de brondata, maar je bewaart
+ze in een losse versleutelde file die op een andere locatie staat. Hiermee verlaag je het privacy risico voor de
+participanten. Door gebruik te maken van deze ‘sleutel’ is het mogelijk om de gepseudonimiseerde data te koppelen aan
+de persoonsgegevens. Het is dus nog mogelijk om de data terug te linken aan de originele participant: de data is dus
+per definitie niet anoniem.</p>
+<p>In de volgende paar stukken gaan we verder in op <a class="reference internal" href="3_good_practices.html"><span class="doc std std-doc">good practices</span></a>, <a class="reference internal" href="3_pseudonimiseren.html"><span class="doc std std-doc">pseudonimiseren</span></a>,
+en <a class="reference internal" href="3_anonimiseren.html"><span class="doc std std-doc">anonimiseren</span></a>.</p>
+<hr class="footnotes docutils" />
+<dl class="footnote brackets">
+<dt class="label" id="rocher"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
+<dd><p>Rocher L, Hendrickx JM, De Montjoye YA. Estimating the success of re-identifications in incomplete datasets
+using generative models. Nature communications. 2019 Jul 23;10(1):1-9.</p>
+</dd>
+</dl>
+</div>
+<div class="toctree-wrapper compound">
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./chapters"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+    <a class='left-prev' id="prev-link" href="2_spreadsheets.html" title="previous page">Spreadsheets</a>
+    <a class='right-next' id="next-link" href="3_good_practices.html" title="next page">Good practices</a>
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          Door Rick de Klerk<br/>
+        
+            &copy; auteursrechten 2021, CC BY 4.0.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>
