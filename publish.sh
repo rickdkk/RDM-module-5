@@ -1,1 +1,0 @@
- rm -r ./_build && jb build ./ && python replace_elements.py

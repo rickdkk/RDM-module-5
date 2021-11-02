@@ -2,7 +2,7 @@
 
 **Door [Rick de Klerk](https://orcid.org/0000-0003-2745-1963) 🚀** versie |version_placeholder|
 
-[Module 5](https://rickdkk.gitlab.io/module_5) van de leerlijn RDM gaat over het structureren van onderzoeksprojecten en -data. 
+[Module 5](https://rickdkk.github.io/module_5) van de leerlijn RDM gaat over het structureren van onderzoeksprojecten en -data. 
 Aan het einde van deze module is de cursist in staat om een standaard projectstructuur te gebruiken, hun data netjes 
 te organiseren, en te identificeren welke data nodig zijn voor het onderzoek. Waar nodig wordt data geanonimiseerd of 
 gepseudonimiseerd. Voor onderzoekers geldt dat ze in staat zijn de methoden toe te passen en ondersteuners zullen in 
@@ -63,10 +63,9 @@ na de workshop nog behoefte aan meer informatie? Kijk dan ook vooral in die stuk
 
 ## Bijdragen
 
-Heb je opmerkingen of wil je graag bijdragen aan een pagina? Klik dan op de GitLab knop <i class="fab fa-gitlab" aria-hidden="true"></i> bovenaan de pagina en maak
+Heb je opmerkingen of wil je graag bijdragen aan een pagina? Klik dan op de GitLab knop <i class="fab fa-github" aria-hidden="true"></i> bovenaan de pagina en maak
 waar nodig een issue aan. Pull requests zijn zeker ook welkom! Klonk dit allemaal hocus pocus? Kijk dan eens 
-[hier](https://docs.gitlab.com/ee/topics/gitlab_flow.html#mergepull-requests-with-gitlab-flow) of stuur gewoon een 
-[e-mail](mailto:r.deklerk@fontys.nl).
+[hier](https://guides.github.com/introduction/flow/) of stuur gewoon een [e-mail](mailto:r.deklerk@fontys.nl).
 
 ## Licentie
 

@@ -45,7 +45,7 @@ transcript kan je het risico op heridentificatie verlagen.
 ```{figure} ../figures/prasser_transformation_methods.webp
 ---
 name: anonimization-fig
-width: 75%
+width: 75%  
 ---
 Transformatie methoden voor anonimisering CC-BY-NC [^Prasser].
 ```
