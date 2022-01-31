@@ -26,18 +26,18 @@ heel lastig om de data later nog te verwerken of te exporteren naar een houdbaar
 ::::::{margin}
 :::{tip}
 Gebruik een open source programmeertaal zoals Python, R, of Julia om je data te analyseren en/of transformeren. Gebruik
-OpenRefine als je niet wilt scripten.
+OpenRefine als je niet wilt scripten. Analyseer en manipuleer data bij voorkeur niet in spreadsheet programma's!
 :::
 ::::::
 
 Gebruik geen cell highlighting of andere kleurtjes om iets aan te geven in de data, deze waarden kunnen niet ingelezen
 worden met andere programma's en als het wel kan kost het vaak veel extra moeite. Als highlighting gebruikt wordt om een
-waarde aan te geven, dan moet daar een extra kolom voor komen. Hetzelfde geldt voor het gebruiken van comments, deze 
-horen ook thuis in een eigen kolom.
+waarde aan te geven, dan moet daar een extra kolom voor komen. Hetzelfde geldt voor het gebruiken van comments en 
+grootheden, deze horen ook thuis in een eigen kolom.
 
 ## Gebruik validatie
 
-Wanneer men een online formulier invult wordt er vaak gecontroleerd of de waarde die je invult mogelijk is. Hetzelfde zou
+Wanneer men een online formulier invult, wordt er vaak gecontroleerd of de waarde die je invult mogelijk is. Hetzelfde zou
 je eigenlijk willen als men data invult in een spreadsheet. Gelukkig hebben Excel en Libreoffice Calc allebei de optie
 om data validation te gebruiken. Met data validation kan je aangeven welk soort waarden er in een veld mogen, daardoor
 kan je niet per ongeluk een ongeldige waarde invullen. Het is handig om dit te doen voordat je de data gaat invullen,
@@ -55,7 +55,7 @@ en die in losse kolommen op te slaan. Hiervoor kan men ook de ingebouwde functie
 ## Missings
 
 Het is belangrijk om consistent te zijn met missing values. Er zijn hierbij twee dingen belangrijk. Als je een waarde
-wel gemeten hebt maar deze is 0, vul dan een 0 in. Het tweede ding is dat men moet kiezen voor consistente waardes
+wel gemeten hebt, maar deze is 0, vul dan een 0 in. Het tweede ding is dat men moet kiezen voor consistente waardes
 in het geval van missing data. Over het algemeen heeft het de voorkeur om dan geen waarde in te vullen. De meeste programma's
 en programmeertalen herkennen dit automatisch als een missing value. Vroeger werd -999 wel eens gebruikt, maar dat is al
 lang niet meer nodig voor de computer en kan in een berekening terecht komen met alle gevolgen van dien.

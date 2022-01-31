@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Opdracht 2: Data organisatie &#8212; Leerlijn Research Data Management</title>
     
-  <link href="../_static/css/theme.css" rel="stylesheet" />
-  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -23,7 +23,7 @@
 
     
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/sphinx-book-theme.acff12b8f9c144ce68a297486a2fa670.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../_static/panels-variables.403b217e9cfef9c0f0e4ba85ff69d0c0.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
 
     <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -43,8 +43,8 @@
     <script src="../_static/copybutton.js"></script>
     <script src="../_static/translations.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
     <script >
         const thebe_selector = ".thebe"
         const thebe_selector_input = "pre"
@@ -57,7 +57,10 @@
     <link rel="next" title="Opdracht 3: Data minimalisatie" href="3_data_minimalisatie_opdracht.html" />
     <link rel="prev" title="Opdracht 1: Project organisatie" href="1_project_organisatie_opdracht.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en" />
+    <meta name="docsearch:language" content="nl">
+    
+
+    <!-- Google Analytics -->
     
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
@@ -74,6 +77,10 @@
         <div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="../index.html">
       
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
       <img src="../_static/logo.svg" class="logo" alt="logo">
       
       
@@ -83,7 +90,7 @@
 </div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Zoek in dit boek ..." aria-label="Zoek in dit boek ..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
         <p class="caption">
  <span class="caption-text">
@@ -180,10 +187,8 @@
 </p>
 <ul class="current nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="0_casus.html">
-   Introductie casus
-   <i class="fab fa-accessible-icon">
-   </i>
+  <a class="reference internal" href="0_voorbereiding.html">
+   Voorbereiding &amp; casus
   </a>
  </li>
  <li class="toctree-l1">
@@ -247,7 +252,7 @@
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
         <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Afdrukken naar pdf"
-            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
     </div>
 </div>
 
@@ -258,14 +263,14 @@
         aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
     <div class="dropdown-buttons sourcebuttons">
         <a class="repository-button"
-            href="https://gitlab.com/Rickdkk/module_5/"><button type="button" class="btn btn-secondary topbarbtn"
+            href="https://github.com/rickdkk/RDM-module-5/"><button type="button" class="btn btn-secondary topbarbtn"
                 data-toggle="tooltip" data-placement="left" title="Bronopslagplaats"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://gitlab.com/Rickdkk/module_5//issues/new?title=Issue%20on%20page%20%2Fassignments/2_data_organisatie_opdracht.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/rickdkk/RDM-module-5//issues/new?title=Issue%20on%20page%20%2Fassignments/2_data_organisatie_opdracht.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open een probleem"><i class="fas fa-lightbulb"></i>open probleem</button></a>
-        <a class="edit-button" href="https://github.com/Rickdkk/module_5/edit/main/assignments/2_data_organisatie_opdracht.md"><button
+        <a class="edit-button" href="https://github.com/rickdkk/RDM-module-5/edit/main/assignments/2_data_organisatie_opdracht.md"><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="bewerk deze pagina"><i class="fas fa-pencil-alt"></i>suggereren bewerken</button></a>
     </div>
@@ -283,12 +288,12 @@
         </div>
 
         <!-- Table of contents -->
-        <div class="d-none d-md-block col-md-2 bd-toc show">
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
             
             <div class="tocsection onthispage pt-5 pb-3">
                 <i class="fas fa-list"></i> Inhoud
             </div>
-            <nav id="bd-toc-nav">
+            <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#voorbereiding">
@@ -310,10 +315,40 @@
 </div>
     <div id="main-content" class="row">
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
-        
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Opdracht 2: Data organisatie</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Inhoud </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#voorbereiding">
+   Voorbereiding
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#opdracht-i-class-fab-fa-accessible-icon-i">
+   Opdracht
+   <i class="fab fa-accessible-icon">
+   </i>
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
               <div>
                 
-  <div class="section" id="opdracht-2-data-organisatie">
+  <div class="tex2jax_ignore mathjax_ignore section" id="opdracht-2-data-organisatie">
 <h1>Opdracht 2: Data organisatie<a class="headerlink" href="#opdracht-2-data-organisatie" title="Permalink naar deze titel">¶</a></h1>
 <div class="section" id="voorbereiding">
 <h2>Voorbereiding<a class="headerlink" href="#voorbereiding" title="Permalink naar deze titel">¶</a></h2>
@@ -322,7 +357,8 @@
 <li><p>Maak de eerste opdracht: <a class="reference internal" href="1_project_organisatie_opdracht.html"><span class="doc std std-doc">Opdracht 1: Project organisatie</span></a></p></li>
 <li><p>Optioneel: Eerste opdracht niet helemaal afgekregen? Dan kan je ook verder met
 <a class="reference external" href="https://gitlab.com/Rickdkk/messy-example-project/-/raw/main/wheelchair_sprints1.zip">deze</a> files (.zip).</p></li>
-<li><p>Download de extra data voor deze opdracht <a class="reference external" href="https://gitlab.com/Rickdkk/messy-example-project/-/raw/main/new_data.zip">hier</a>.</p></li>
+<li><p>Download de extra data voor deze opdracht <a class="reference external" href="https://gitlab.com/Rickdkk/messy-example-project/-/raw/main/new_data.zip">hier</a>
+(.zip).</p></li>
 </ul>
 </div>
 <div class="section" id="opdracht-i-class-fab-fa-accessible-icon-i">
@@ -336,18 +372,18 @@
 </div>
 <p>De spreadsheet bestanden in de map zijn nieuwe data verzameld door studenten. Hierin hebben ze de gegevens geregistreerd
 tijdens het onderzoek en ze hebben daarna de files gedropped in hun file drop punt in Fontys Research Drive. Deze moeten
-nog bijgevoegd worden bij de rest van de data. Voor de uiteindelijke analyse is het van belang dat de data allemaal in
-hetzelfde format beschikbaar zijn in één file.</p>
+nog gedigitaliseerd en bijgevoegd worden bij de rest van de data. Voor de uiteindelijke analyse is het van belang dat
+de data allemaal in hetzelfde format beschikbaar zijn in één file.</p>
 <ol class="simple">
 <li><p>Maak een kopie van de spreadsheet file met alle data (<code class="docutils literal notranslate"><span class="pre">data.ods</span></code>).</p></li>
 <li><p>Voeg data validatie toe:</p>
 <ul class="simple">
 <li><p>Zorg ervoor dat er een vaste lijst waarden is voor <code class="docutils literal notranslate"><span class="pre">sex</span></code>.</p></li>
-<li><p>Beperk de mogelijke waarden voor <code class="docutils literal notranslate"><span class="pre">weight</span></code>, bijv. 40-120kg.</p></li>
-<li><p>Beperk de mogelijke waarden voor <code class="docutils literal notranslate"><span class="pre">pre</span></code> en <code class="docutils literal notranslate"><span class="pre">post</span></code>, bijv. 10-60s.</p></li>
+<li><p>Beperk de mogelijke waarden voor <code class="docutils literal notranslate"><span class="pre">weight</span></code> tot 40-120kg.</p></li>
+<li><p>Beperk de mogelijke waarden voor <code class="docutils literal notranslate"><span class="pre">pre</span></code> en <code class="docutils literal notranslate"><span class="pre">post</span></code> tot 10-60s.</p></li>
 </ul>
 </li>
-<li><p>Vul de data in de .ods file met validatie aan met de drie nieuwe samples.</p>
+<li><p>Vul de data in de .ods file met validatie aan met de drie nieuwe samples uit de extra data.</p>
 <ul class="simple">
 <li><p>Was alle data goed ingevuld door de studenten?</p></li>
 </ul>
@@ -358,7 +394,7 @@ hetzelfde format beschikbaar zijn in één file.</p>
 <li><p>Wat is het verschil met de .csv file <code class="docutils literal notranslate"><span class="pre">data_long.csv</span></code>?</p></li>
 </ul>
 </li>
-<li><p>Bonus: leg je stappen vast in een CHANGELOG</p></li>
+<li><p>Bonus: Leg je stappen vast in een CHANGELOG</p></li>
 </ol>
 </div>
 </div>
@@ -385,34 +421,42 @@ hetzelfde format beschikbaar zijn in één file.</p>
 
               </div>
               
-        
-        <div class='prev-next-bottom'>
             
-    <a class='left-prev' id="prev-link" href="1_project_organisatie_opdracht.html" title="previous page">Opdracht 1: Project organisatie</a>
-    <a class='right-next' id="next-link" href="3_data_minimalisatie_opdracht.html" title="next page">Opdracht 3: Data minimalisatie</a>
-
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="1_project_organisatie_opdracht.html" title="vorige pagina">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">vorige</p>
+            <p class="prev-next-title">Opdracht 1: Project organisatie</p>
         </div>
-        
+    </a>
+    <a class='right-next' id="next-link" href="3_data_minimalisatie_opdracht.html" title="volgende pagina">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">volgende</p>
+        <p class="prev-next-title">Opdracht 3: Data minimalisatie</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
         </div>
     </div>
-    <footer class="footer mt-5 mt-md-0">
-    <div class="container">
-      <p>
-        
-          Door Rick de Klerk<br/>
-        
-            &copy; auteursrechten 2021, CC BY 4.0.<br/>
-      </p>
-    </div>
-  </footer>
+    <footer class="footer">
+  <p>
+    
+      Door Rick de Klerk<br/>
+    
+        &copy; auteursrechten 2022, CC BY 4.0 .<br/>
+  </p>
+</footer>
 </main>
 
 
       </div>
     </div>
   
-  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
 
-  
   </body>
 </html>

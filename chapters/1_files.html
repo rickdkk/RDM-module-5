@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Files organiseren &#8212; Leerlijn Research Data Management</title>
     
-  <link href="../_static/css/theme.css" rel="stylesheet" />
-  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -23,7 +23,7 @@
 
     
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/sphinx-book-theme.acff12b8f9c144ce68a297486a2fa670.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../_static/panels-variables.403b217e9cfef9c0f0e4ba85ff69d0c0.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
 
     <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -43,8 +43,8 @@
     <script src="../_static/copybutton.js"></script>
     <script src="../_static/translations.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
     <script >
         const thebe_selector = ".thebe"
         const thebe_selector_input = "pre"
@@ -57,7 +57,10 @@
     <link rel="next" title="Data organisatie" href="2_data_organisatie.html" />
     <link rel="prev" title="Mappen organiseren" href="1_folders.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en" />
+    <meta name="docsearch:language" content="nl">
+    
+
+    <!-- Google Analytics -->
     
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
@@ -74,6 +77,10 @@
         <div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="../index.html">
       
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
       <img src="../_static/logo.svg" class="logo" alt="logo">
       
       
@@ -83,7 +90,7 @@
 </div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Zoek in dit boek ..." aria-label="Zoek in dit boek ..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
         <p class="caption">
  <span class="caption-text">
@@ -180,10 +187,8 @@
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="../assignments/0_casus.html">
-   Introductie casus
-   <i class="fab fa-accessible-icon">
-   </i>
+  <a class="reference internal" href="../assignments/0_voorbereiding.html">
+   Voorbereiding &amp; casus
   </a>
  </li>
  <li class="toctree-l1">
@@ -247,7 +252,7 @@
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
         <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Afdrukken naar pdf"
-            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
     </div>
 </div>
 
@@ -258,14 +263,14 @@
         aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
     <div class="dropdown-buttons sourcebuttons">
         <a class="repository-button"
-            href="https://gitlab.com/Rickdkk/module_5/"><button type="button" class="btn btn-secondary topbarbtn"
+            href="https://github.com/rickdkk/RDM-module-5/"><button type="button" class="btn btn-secondary topbarbtn"
                 data-toggle="tooltip" data-placement="left" title="Bronopslagplaats"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://gitlab.com/Rickdkk/module_5//issues/new?title=Issue%20on%20page%20%2Fchapters/1_files.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/rickdkk/RDM-module-5//issues/new?title=Issue%20on%20page%20%2Fchapters/1_files.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open een probleem"><i class="fas fa-lightbulb"></i>open probleem</button></a>
-        <a class="edit-button" href="https://github.com/Rickdkk/module_5/edit/main/chapters/1_files.md"><button
+        <a class="edit-button" href="https://github.com/rickdkk/RDM-module-5/edit/main/chapters/1_files.md"><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="bewerk deze pagina"><i class="fas fa-pencil-alt"></i>suggereren bewerken</button></a>
     </div>
@@ -283,12 +288,12 @@
         </div>
 
         <!-- Table of contents -->
-        <div class="d-none d-md-block col-md-2 bd-toc show">
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
             
             <div class="tocsection onthispage pt-5 pb-3">
                 <i class="fas fa-list"></i> Inhoud
             </div>
-            <nav id="bd-toc-nav">
+            <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#good-practices">
@@ -315,10 +320,45 @@
 </div>
     <div id="main-content" class="row">
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
-        
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Files organiseren</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Inhoud </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#good-practices">
+   Good practices
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#mini-quiz">
+     Mini-quiz
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#een-systeem-voorbeeld">
+   Een systeem: voorbeeld
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
               <div>
                 
-  <div class="section" id="files-organiseren">
+  <div class="tex2jax_ignore mathjax_ignore section" id="files-organiseren">
 <h1>Files organiseren<a class="headerlink" href="#files-organiseren" title="Permalink naar deze titel">¶</a></h1>
 <p>De naam van een file is belangrijk voor het identificeren van een file, maar ook voor het werken met de file. Geef
 daarom files een logische naam met waar nodig een deel van de metadata in de naam. Afhankelijk van de situatie
@@ -331,9 +371,18 @@ daarom files een logische naam met waar nodig een deel van de metadata in de naa
 <div class="section" id="good-practices">
 <h2>Good practices<a class="headerlink" href="#good-practices" title="Permalink naar deze titel">¶</a></h2>
 <ul class="simple">
-<li><p><strong>Check of er al een systeem is</strong> bij de andere onderzoekers van de onderzoeksgroep of in de documentatie van het lab.
-Als er al een systeem is dan is het vaak beter om hier gebruik van te maken. Leg het systeem vast in het DMP en de
-README.
+<li><p><strong>Check wat de standaard is in jouw onderzoeksgroep</strong> zodat het project aansluit bij bestaande en andere lopende
+projecten. Bedenk niet zelf een systeem als dat niet strikt noodzakelijk is.
+<br><br></p></li>
+<li><p><strong>Kies een systeem en leg dit vast in het DMP en de README</strong>. Door het vast te leggen is het direct voor iedereen
+duidelijk welke structuur gebruikt gaat worden. Zo kunnen collega’s en studenten meteen de juiste structuur aanhouden.
+Iets wat tijdens het automatiseren en archiveren veel tijd gaat schelen.
+<br><br></p></li>
+<li><p><strong>Kies betekenisvolle namen</strong> en beschrijf de inhoud van een bestand en geef het niet alleen een getal. Een file zoals
+<em>figuur_3.png</em> zorgt meteen voor verwarring wanneer er een figuur wordt toegevoegd of verwijderd in het manuscript en
+zonder te kijken weet je niet welk figuur het betreft. Beschrijf daarom ook altijd de inhoud van een file met de naam.
+<br><br>
+Bijvoorbeeld: <em>beurskoers_gme.png</em> of <em>BloodImage_001.png</em>
 <br><br></p></li>
 <li><p><strong>Gebruik geen speciale karakters</strong> zoals <code class="docutils literal notranslate"><span class="pre">~</span> <span class="pre">!</span> <span class="pre">&#64;</span> <span class="pre">#</span> <span class="pre">$</span> <span class="pre">%</span> <span class="pre">^</span> <span class="pre">&amp;</span> <span class="pre">*</span> <span class="pre">(</span> <span class="pre">)</span> <span class="pre">[</span> <span class="pre">]</span> <span class="pre">{</span> <span class="pre">}</span> <span class="pre">;</span> <span class="pre">:</span> <span class="pre">&quot;</span> <span class="pre">'</span> <span class="pre">&lt;</span> <span class="pre">&gt;</span> <span class="pre">/</span> <span class="pre">\</span> <span class="pre">|</span> <span class="pre">?</span></code>. In het beste geval moet je er
 omheen werken in je eigen scripts en in het slechtste geval kunnen deze botsen met het besturingssysteem of andere
@@ -355,34 +404,29 @@ hoofdletters en kleine letters niet, let hier dus ook op.
 <li><p><strong>Gebruik voor een datum altijd ISO-8601</strong> (YYYY-MM-DD), alleen dan kan je makkelijk chronologisch sorteren. Meestal
 is het handig om de datum ergens aan het eind te zetten zodat alle bestanden die bij elkaar horen ook onder elkaar staan.
 <br><br>
-Bijvoorbeeld: manuscript_2020-12-01.docx of manuscript_2020-12-02.docx
+Bijvoorbeeld: <em>manuscript_2020-12-01.docx</em> of <em>manuscript_2020-12-02.docx</em>
 <br><br></p></li>
-<li><p><strong>Houdt ruimte voor hogere getallen</strong> door nullen toe te voegen aan het begin van een getal, dit wordt ook wel zero-padding
-genoemd.
+<li><p><strong>Maak handig gebruik van getallen</strong> door nullen toe te voegen aan het begin van een getal (dit wordt ook wel zero-padding
+genoemd) of door de sorteervolgorde te beïnvloeden.
 <br><br>
-Bijvoorbeeld: BloodImage_1.xml wordt opgevolgd door BloodImage_11.xml en niet BloodImage_2.xml. Zorg er daarom voor dat
-je begint met BloodImage_01.xml en op die manier doorgaat met nummeren. Door het nummer aan het begin van een naam te
-zetten zorg je ervoor dat men altijd kan sorteren, bijv. 01_exploratory_analysis.ipynb, 02_data_cleaning.ipynb, etc.
+Bijvoorbeeld: <em>BloodImage_1.xml</em> wordt opgevolgd door <em>BloodImage_11.xml</em> en niet <em>BloodImage_2.xml</em>. Zorg er daarom voor dat
+je begint met <em>BloodImage_01.xml</em> en op die manier doorgaat met nummeren.
+<br>
+Bijvoorbeeld: Door het nummer aan het begin van een naam te  zetten zorg je ervoor dat men altijd kan sorteren, bijv.
+<em>01_exploratory_analysis.ipynb</em>, <em>02_data_cleaning.ipynb</em>, etc.
 <br><br></p></li>
 <li><p><strong>Gebruik geen spaties</strong>, want deze worden gebruikt om commando’s te scheiden in de command-line. Gebruik een minteken
 (-), camelCase, of PascalCase om woorden te scheiden (afhankelijk van voorkeur).
 <br><br>
-Bijvoorbeeld: BloodImage_2020-12-01_001.xml of blood-image_2020-12-01_001.xml
+Bijvoorbeeld: <em>BloodImage_2020-12-01_001.xml</em> of <em>blood-image_2020-12-01_001.xml</em>
 <br><br></p></li>
 <li><p><strong>Gebruik een underscore voor verschillende elementen</strong> van een bestandsnaam zodat men deze later kan splitsen.
 <br><br>
-Bijvoorbeeld: In het bovenstaande voorbeeld is het erg makkelijk om de naam, datum, en metingnummer uit de bestandsnaam
-te halen door de naam te splitsen op de underscore. De volgorde van de elementen bepaalt hoe de bestanden standaard
-gesorteerd worden. Verderop volgt een uitgebreider voorbeeld.
-<br><br></p></li>
-<li><p><strong>Beschrijf de inhoud van een bestand</strong> en geef het niet alleen een getal. Een file zoals figuur_3.png zorgt meteen
-voor verwarring wanneer er een figuur wordt toegevoegd of verwijderd in het manuscript en zonder te kijken weet je niet
-welk figuur het betreft. Beschrijf daarom ook altijd de inhoud van een file met de naam.
-<br><br>
-Bijvoorbeeld: beurskoers_gme.png of BloodImage_001.png
+Bijvoorbeeld: In het bovenstaande voorbeeld is het makkelijk om de naam, datum, en metingnummer uit de bestandsnaam
+te halen door de naam te splitsen. De volgorde van de elementen bepaalt hoe de bestanden standaard gesorteerd worden.
 <br><br></p></li>
 <li><p><strong>Gebruik versienummers</strong> of — nog beter — een versiebeheersysteem. Spreek van tevoren af wat de strategie is voor
-versiebeheer zodat je niet uitkomt op een manuscript_v2_FINAL_FINAL.docx. Men kan bijvoorbeeld <a class="reference external" href="https://semver.org/">semantic versioning</a>
+versiebeheer zodat je niet uitkomt op een <em>manuscript_v2_FINAL_FINAL.docx</em>. Men kan bijvoorbeeld <a class="reference external" href="https://semver.org/">semantic versioning</a>
 gebruiken.</p></li>
 </ul>
 <div class="section" id="mini-quiz">
@@ -481,28 +525,28 @@ Hiermee is alle metadata van een bestand direct beschikbaar in de filenaam en zi
 kunnen we door gemakkelijk data selecteren (door te ‘globben’). Met deze structuur kunnen we na de data verzameling,
 bijvoorbeeld, alle data van proefpersoon 1, alle ergometer data, of alle ergometer data van T01 selecteren:</p>
 <div class="tabbed-set docutils">
-<input checked="checked" id="f96d18df-097c-4cc3-8672-9f2d21fe3f29" name="ba611559-8301-4f7a-8ba0-ef99422f72d7" type="radio">
-</input><label class="tabbed-label" for="f96d18df-097c-4cc3-8672-9f2d21fe3f29">
+<input checked="checked" id="a8a9ecee-b2f2-4421-9b96-6094e32ae6f0" name="d9db32ad-7900-4d24-8a5e-22aeff8f5a39" type="radio">
+</input><label class="tabbed-label" for="a8a9ecee-b2f2-4421-9b96-6094e32ae6f0">
 Python</label><div class="tabbed-content docutils">
 <p><img alt="" src="../_images/glob_ipython.png" /></p>
 </div>
-<input id="6c379fd6-3695-44cb-b60b-844232b92f6d" name="ba611559-8301-4f7a-8ba0-ef99422f72d7" type="radio">
-</input><label class="tabbed-label" for="6c379fd6-3695-44cb-b60b-844232b92f6d">
+<input id="bc953630-7f26-401d-9d47-5d2e62b5e950" name="d9db32ad-7900-4d24-8a5e-22aeff8f5a39" type="radio">
+</input><label class="tabbed-label" for="bc953630-7f26-401d-9d47-5d2e62b5e950">
 R</label><div class="tabbed-content docutils">
 <p><img alt="" src="../_images/glob_radian.png" /></p>
 </div>
-<input id="d434b3e4-76b5-4a0d-8916-a47e7b6bb9de" name="ba611559-8301-4f7a-8ba0-ef99422f72d7" type="radio">
-</input><label class="tabbed-label" for="d434b3e4-76b5-4a0d-8916-a47e7b6bb9de">
+<input id="b6c35226-011c-4604-9cc7-5f2f0b803850" name="d9db32ad-7900-4d24-8a5e-22aeff8f5a39" type="radio">
+</input><label class="tabbed-label" for="b6c35226-011c-4604-9cc7-5f2f0b803850">
 Julia</label><div class="tabbed-content docutils">
 <p><img alt="" src="../_images/glob_julia.png" /></p>
 </div>
-<input id="ff2d4ef7-4359-40b9-9ab7-9a6256d43c40" name="ba611559-8301-4f7a-8ba0-ef99422f72d7" type="radio">
-</input><label class="tabbed-label" for="ff2d4ef7-4359-40b9-9ab7-9a6256d43c40">
+<input id="96a05c28-3c9a-4db3-bb12-d372aa275c8f" name="d9db32ad-7900-4d24-8a5e-22aeff8f5a39" type="radio">
+</input><label class="tabbed-label" for="96a05c28-3c9a-4db3-bb12-d372aa275c8f">
 Shell</label><div class="tabbed-content docutils">
 <p><img alt="" src="../_images/glob_find.png" /></p>
 </div>
-<input id="59d39ce3-b1bc-4232-8184-41b8354da3aa" name="ba611559-8301-4f7a-8ba0-ef99422f72d7" type="radio">
-</input><label class="tabbed-label" for="59d39ce3-b1bc-4232-8184-41b8354da3aa">
+<input id="f78b5b34-4396-46b4-b39a-f987dd2a183e" name="d9db32ad-7900-4d24-8a5e-22aeff8f5a39" type="radio">
+</input><label class="tabbed-label" for="f78b5b34-4396-46b4-b39a-f987dd2a183e">
 Explorer</label><div class="tabbed-content docutils">
 <p><img alt="" src="../_images/glob_explorer.png" /></p>
 </div>
@@ -513,7 +557,7 @@ gebruik van hoofdletters. De voordelen zijn echter gigantisch: het handmatig sel
 werk. Door dit process te automatiseren kunnen we veel tijd besparen. Als dan later blijkt dat er toch een nét een iets
 andere selectie nodig was is dat ook geen probleem.</p>
 <hr class="docutils" />
-<p><a class="sphinx-bs btn text-wrap btn-outline-primary btn-block reference internal" href="../assignments/0_casus.html"><span class="doc">Klaar voor een opdracht!</span></a></p>
+<p><a class="sphinx-bs btn text-wrap btn-outline-primary btn-block reference internal" href="../assignments/0_voorbereiding.html"><span class="doc">Klaar voor een opdracht!</span></a></p>
 <hr class="footnotes docutils" />
 <dl class="footnote brackets">
 <dt class="label" id="bryan"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
@@ -545,34 +589,42 @@ andere selectie nodig was is dat ook geen probleem.</p>
 
               </div>
               
-        
-        <div class='prev-next-bottom'>
             
-    <a class='left-prev' id="prev-link" href="1_folders.html" title="previous page">Mappen organiseren</a>
-    <a class='right-next' id="next-link" href="2_data_organisatie.html" title="next page">Data organisatie</a>
-
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="1_folders.html" title="vorige pagina">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">vorige</p>
+            <p class="prev-next-title">Mappen organiseren</p>
         </div>
-        
+    </a>
+    <a class='right-next' id="next-link" href="2_data_organisatie.html" title="volgende pagina">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">volgende</p>
+        <p class="prev-next-title">Data organisatie</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
         </div>
     </div>
-    <footer class="footer mt-5 mt-md-0">
-    <div class="container">
-      <p>
-        
-          Door Rick de Klerk<br/>
-        
-            &copy; auteursrechten 2021, CC BY 4.0.<br/>
-      </p>
-    </div>
-  </footer>
+    <footer class="footer">
+  <p>
+    
+      Door Rick de Klerk<br/>
+    
+        &copy; auteursrechten 2022, CC BY 4.0 .<br/>
+  </p>
+</footer>
 </main>
 
 
       </div>
     </div>
   
-  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
 
-  
   </body>
 </html>

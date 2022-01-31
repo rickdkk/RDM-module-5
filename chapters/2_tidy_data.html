@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tidy data &#8212; Leerlijn Research Data Management</title>
     
-  <link href="../_static/css/theme.css" rel="stylesheet" />
-  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -23,7 +23,7 @@
 
     
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/sphinx-book-theme.acff12b8f9c144ce68a297486a2fa670.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../_static/panels-variables.403b217e9cfef9c0f0e4ba85ff69d0c0.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
 
     <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -43,8 +43,8 @@
     <script src="../_static/copybutton.js"></script>
     <script src="../_static/translations.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
     <script >
         const thebe_selector = ".thebe"
         const thebe_selector_input = "pre"
@@ -57,7 +57,10 @@
     <link rel="next" title="Spreadsheets" href="2_spreadsheets.html" />
     <link rel="prev" title="Good practices" href="2_good_practices.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en" />
+    <meta name="docsearch:language" content="nl">
+    
+
+    <!-- Google Analytics -->
     
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
@@ -74,6 +77,10 @@
         <div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="../index.html">
       
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
       <img src="../_static/logo.svg" class="logo" alt="logo">
       
       
@@ -83,7 +90,7 @@
 </div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Zoek in dit boek ..." aria-label="Zoek in dit boek ..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
         <p class="caption">
  <span class="caption-text">
@@ -180,10 +187,8 @@
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="../assignments/0_casus.html">
-   Introductie casus
-   <i class="fab fa-accessible-icon">
-   </i>
+  <a class="reference internal" href="../assignments/0_voorbereiding.html">
+   Voorbereiding &amp; casus
   </a>
  </li>
  <li class="toctree-l1">
@@ -247,7 +252,7 @@
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
         <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Afdrukken naar pdf"
-            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
     </div>
 </div>
 
@@ -258,14 +263,14 @@
         aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
     <div class="dropdown-buttons sourcebuttons">
         <a class="repository-button"
-            href="https://gitlab.com/Rickdkk/module_5/"><button type="button" class="btn btn-secondary topbarbtn"
+            href="https://github.com/rickdkk/RDM-module-5/"><button type="button" class="btn btn-secondary topbarbtn"
                 data-toggle="tooltip" data-placement="left" title="Bronopslagplaats"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://gitlab.com/Rickdkk/module_5//issues/new?title=Issue%20on%20page%20%2Fchapters/2_tidy_data.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/rickdkk/RDM-module-5//issues/new?title=Issue%20on%20page%20%2Fchapters/2_tidy_data.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open een probleem"><i class="fas fa-lightbulb"></i>open probleem</button></a>
-        <a class="edit-button" href="https://github.com/Rickdkk/module_5/edit/main/chapters/2_tidy_data.md"><button
+        <a class="edit-button" href="https://github.com/rickdkk/RDM-module-5/edit/main/chapters/2_tidy_data.md"><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="bewerk deze pagina"><i class="fas fa-pencil-alt"></i>suggereren bewerken</button></a>
     </div>
@@ -283,12 +288,12 @@
         </div>
 
         <!-- Table of contents -->
-        <div class="d-none d-md-block col-md-2 bd-toc show">
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
             
             <div class="tocsection onthispage pt-5 pb-3">
                 <i class="fas fa-list"></i> Inhoud
             </div>
-            <nav id="bd-toc-nav">
+            <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#messy-data">
@@ -303,15 +308,39 @@
 </div>
     <div id="main-content" class="row">
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
-        
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Tidy data</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Inhoud </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#messy-data">
+   Messy data
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
               <div>
                 
-  <div class="section" id="tidy-data">
+  <div class="tex2jax_ignore mathjax_ignore section" id="tidy-data">
 <h1>Tidy data<a class="headerlink" href="#tidy-data" title="Permalink naar deze titel">¶</a></h1>
 <p>Data komt zelden in een format waarin je het direct kan gebruiken voor analyse. Er gaan vaak veel stappen aan vooraf en
 er wordt ook wel gezegd dat 80% van de analysetijd gaat zitten in het opschonen en transformeren van de data. Een goede
-manier om data te organiseren voor analyse is door gebruik te maken van het <em>tidy</em> format: tidy data <a class="footnote-reference brackets" href="#tidy" id="id1">1</a>,<a class="footnote-reference brackets" href="#tidyr" id="id2">2</a>. Zolang
-de data past in een 2D (spreadsheet) vorm, heeft dit format (meestal) de voorkeur. Het principe van tidy data is simpel:</p>
+manier om data te organiseren voor analyse is door gebruik te maken van het <em>tidy</em> format: tidy data
+<a class="footnote-reference brackets" href="#tidy" id="id1">1</a><sup>,</sup><a class="footnote-reference brackets" href="#tidyr" id="id2">2</a>. Zolang de data past in een spreadsheet (2D) vorm, heeft dit format (meestal) de voorkeur.
+Het principe van tidy data is simpel:</p>
 <ol class="simple">
 <li><p>Elke variabele krijgt een kolom</p></li>
 <li><p>Elke observatie is een rij</p></li>
@@ -403,10 +432,14 @@ in kolommen staan. Op het eerste gezicht zullen de meeste mensen, misschien een 
 maar het verwerken van deze data wordt al snel vervelend wanneer men berekeningen wil uitvoeren op de tabel. Men moet dan
 goed oppassen met indexeren op basis van de kolomnamen. In het linkervoorbeeld is het bijvoorbeeld veel makkelijker om de
 populatie door een andere variabele te delen of vermenigvuldigen.</p>
+<blockquote class="epigraph">
+<div><p>Tidy datasets are all alike, but every messy dataset is messy in its own way.</p>
+<p class="attribution">—Hadley Wickham <a class="footnote-reference brackets" href="#tidy" id="id4">1</a></p>
+</div></blockquote>
 <div class="section" id="messy-data">
 <h2>Messy data<a class="headerlink" href="#messy-data" title="Permalink naar deze titel">¶</a></h2>
 <p>Het concept van tidy data klinkt simpel en bestaat al een hele tijd. Toch zijn het overgrote deel van de datasets in “het
-wild” niet tidy. Een aantal veelvoorkomende problemen met data zijn:</p>
+wild” niet tidy. Een aantal veelvoorkomende problemen (naast de eerdergenoemde in de good practices) met data zijn:</p>
 <ul class="simple">
 <li><p><strong>Column headers zijn waarden:</strong> dit is ook het geval in de bovenstaande tabel. Hier is de variable ‘jaar’ verspreid
 over verschillende kolommen en staat de waarde in de header.
@@ -424,13 +457,14 @@ de proefpersooneigenschappen en één met iedere individuele meting) en die aan 
 <br><br></p></li>
 <li><p><strong>Zelfde waarde in meerdere tabellen:</strong> dit is een veelvoorkomend probleem als men meerdere metingen doet. Hierdoor kan
 het voorkomen dat informatie op meerdere plekken tegelijk staat. Dit kan verwarrend werken en kan ervoor zorgen dat men op
-meerdere plekken iets moet aanpassen. In zo’n geval moet men de tabellen combineren naar één hoofdbestand.</p></li>
+meerdere plekken iets moet aanpassen. In zo’n geval moet men de tabellen combineren naar één hoofdbestand. Het project
+<a class="reference external" href="https://goodtables.io/">goodtables.io</a> van Frictionless Data kan een dataset checken op ‘tidyness’.</p></li>
 </ul>
 <p>Andere problemen met messy data komen vaak voor doordat men werkt in spreadsheet software. Daar gaan we in het volgende
 stuk op in!</p>
 <hr class="footnotes docutils" />
 <dl class="footnote brackets">
-<dt class="label" id="tidy"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
+<dt class="label" id="tidy"><span class="brackets">1</span><span class="fn-backref">(<a href="#id1">1</a>,<a href="#id4">2</a>)</span></dt>
 <dd><p>Wickham H. Tidy data. Journal of statistical software. 2014 Sep 12;59(1):1-23. <a class="reference external" href="http://www.jstatsoft.org/v59/i10/paper">http://www.jstatsoft.org/v59/i10/paper</a></p>
 </dd>
 <dt class="label" id="tidyr"><span class="brackets"><a class="fn-backref" href="#id2">2</a></span></dt>
@@ -465,34 +499,42 @@ stuk op in!</p>
 
               </div>
               
-        
-        <div class='prev-next-bottom'>
             
-    <a class='left-prev' id="prev-link" href="2_good_practices.html" title="previous page">Good practices</a>
-    <a class='right-next' id="next-link" href="2_spreadsheets.html" title="next page">Spreadsheets</a>
-
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="2_good_practices.html" title="vorige pagina">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">vorige</p>
+            <p class="prev-next-title">Good practices</p>
         </div>
-        
+    </a>
+    <a class='right-next' id="next-link" href="2_spreadsheets.html" title="volgende pagina">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">volgende</p>
+        <p class="prev-next-title">Spreadsheets</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
         </div>
     </div>
-    <footer class="footer mt-5 mt-md-0">
-    <div class="container">
-      <p>
-        
-          Door Rick de Klerk<br/>
-        
-            &copy; auteursrechten 2021, CC BY 4.0.<br/>
-      </p>
-    </div>
-  </footer>
+    <footer class="footer">
+  <p>
+    
+      Door Rick de Klerk<br/>
+    
+        &copy; auteursrechten 2022, CC BY 4.0 .<br/>
+  </p>
+</footer>
 </main>
 
 
       </div>
     </div>
   
-  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
 
-  
   </body>
 </html>

@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Good (enough) practices &#8212; Leerlijn Research Data Management</title>
     
-  <link href="../_static/css/theme.css" rel="stylesheet" />
-  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -23,7 +23,7 @@
 
     
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/sphinx-book-theme.acff12b8f9c144ce68a297486a2fa670.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../_static/panels-variables.403b217e9cfef9c0f0e4ba85ff69d0c0.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
 
     <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -43,8 +43,8 @@
     <script src="../_static/copybutton.js"></script>
     <script src="../_static/translations.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
     <script >
         const thebe_selector = ".thebe"
         const thebe_selector_input = "pre"
@@ -57,7 +57,10 @@
     <link rel="next" title="Mappen organiseren" href="1_folders.html" />
     <link rel="prev" title="Project organisatie" href="1_project_organisatie.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en" />
+    <meta name="docsearch:language" content="nl">
+    
+
+    <!-- Google Analytics -->
     
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
@@ -74,6 +77,10 @@
         <div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="../index.html">
       
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
       <img src="../_static/logo.svg" class="logo" alt="logo">
       
       
@@ -83,7 +90,7 @@
 </div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Zoek in dit boek ..." aria-label="Zoek in dit boek ..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
         <p class="caption">
  <span class="caption-text">
@@ -180,10 +187,8 @@
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="../assignments/0_casus.html">
-   Introductie casus
-   <i class="fab fa-accessible-icon">
-   </i>
+  <a class="reference internal" href="../assignments/0_voorbereiding.html">
+   Voorbereiding &amp; casus
   </a>
  </li>
  <li class="toctree-l1">
@@ -247,7 +252,7 @@
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
         <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Afdrukken naar pdf"
-            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
     </div>
 </div>
 
@@ -258,14 +263,14 @@
         aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
     <div class="dropdown-buttons sourcebuttons">
         <a class="repository-button"
-            href="https://gitlab.com/Rickdkk/module_5/"><button type="button" class="btn btn-secondary topbarbtn"
+            href="https://github.com/rickdkk/RDM-module-5/"><button type="button" class="btn btn-secondary topbarbtn"
                 data-toggle="tooltip" data-placement="left" title="Bronopslagplaats"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://gitlab.com/Rickdkk/module_5//issues/new?title=Issue%20on%20page%20%2Fchapters/1_good_practices.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/rickdkk/RDM-module-5//issues/new?title=Issue%20on%20page%20%2Fchapters/1_good_practices.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open een probleem"><i class="fas fa-lightbulb"></i>open probleem</button></a>
-        <a class="edit-button" href="https://github.com/Rickdkk/module_5/edit/main/chapters/1_good_practices.md"><button
+        <a class="edit-button" href="https://github.com/rickdkk/RDM-module-5/edit/main/chapters/1_good_practices.md"><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="bewerk deze pagina"><i class="fas fa-pencil-alt"></i>suggereren bewerken</button></a>
     </div>
@@ -283,12 +288,12 @@
         </div>
 
         <!-- Table of contents -->
-        <div class="d-none d-md-block col-md-2 bd-toc show">
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
             
             <div class="tocsection onthispage pt-5 pb-3">
                 <i class="fas fa-list"></i> Inhoud
             </div>
-            <nav id="bd-toc-nav">
+            <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#sla-je-ruwe-data-op">
@@ -328,14 +333,62 @@
 </div>
     <div id="main-content" class="row">
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
-        
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Good (enough) practices</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Inhoud </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#sla-je-ruwe-data-op">
+   Sla je ruwe data op
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#zorg-voor-een-back-up">
+   Zorg voor een back-up
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#verwerk-de-data">
+   Verwerk de data
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#beschrijf-de-data">
+   Beschrijf de data
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#archiveer-de-data">
+   Archiveer de data
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#gebruik-een-systeem">
+   Gebruik een systeem
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
               <div>
                 
-  <div class="section" id="good-enough-practices">
+  <div class="tex2jax_ignore mathjax_ignore section" id="good-enough-practices">
 <h1>Good (enough) practices<a class="headerlink" href="#good-enough-practices" title="Permalink naar deze titel">¶</a></h1>
-<p>De opslag van data is in 2021 ongelofelijk goedkoop, maar de tijd van onderzoekers is schaars en duur. Op het
+<p>De opslag van data is in 2022 ongelofelijk goedkoop, maar de tijd van onderzoekers is schaars en duur. Op het
 moment van schrijven is de prijs van een harde schijf ongeveer 2 cent per GB. De prijs van het kwijtraken of beschadigen
-van data is echter velen malen groter en kan een project zo maar een jaar vertragen. Goed genoeg data management kan
+van data is echter velen malen groter en kan een project zo maar een jaar vertragen. Goed (genoeg) data management kan
 bijdragen aan de efficiëntie van een project en de risico’s op het verliezen of beschadigen van data inperken.
 Daarnaast is het belangrijk om ervoor te zorgen dat de data geschikt zijn voor analyse en archivering.
 Door hier van tevoren al rekening mee te houden zorgen we dat we geen extra werk moeten leveren en zoveel mogelijk
@@ -423,7 +476,9 @@ Hieronder een aantal voorbeelden:</p>
 originele file (in ieder geval totdat je het project hebt afgerond). Soms is het (nog) niet mogelijk om data in een open
 format op te slaan. Als er een ander format beschikbaar is dat een ‘industrie standaard’ is dan kan dat format worden
 gebruikt, maar op de lange termijn zou alles in een open format opgeslagen moeten worden. Leg van tevoren vast in het
-DMP welke bestanden je gaat gebruiken en welke bewerkingen daarvoor nodig zijn.</p>
+DMP welke bestanden je gaat gebruiken en welke bewerkingen daarvoor nodig zijn. Op de RDM portal staan wat handige
+<a class="reference external" href="https://connect.fontys.nl/fontysbreed/opo/ResearchDataManagement/Data-opslag/Paginas/Data-omzetten.aspx">tips</a>
+voor het omzetten van data.</p>
 </div>
 <div class="section" id="beschrijf-de-data">
 <h2>Beschrijf de data<a class="headerlink" href="#beschrijf-de-data" title="Permalink naar deze titel">¶</a></h2>
@@ -440,11 +495,11 @@ goede toevoeging zijn. Hierin staan de namen van de variabelen, een omschrijving
 <h2>Archiveer de data<a class="headerlink" href="#archiveer-de-data" title="Permalink naar deze titel">¶</a></h2>
 <p>Onderzoeksdata moet minimaal 10 jaar <a class="footnote-reference brackets" href="#vsnu" id="id2">2</a> bewaard blijven (15/20 jaar voor medische data <a class="footnote-reference brackets" href="#ccmo" id="id3">3</a>). Het archiveren van data is
 dus een belangrijke stap in het onderzoeksproces. Bij voorkeur wordt de data openbaar gemaakt, maar als dat niet kan dan
-kan het ook gesloten gearchiveerd worden. Fontys beschikt over DataverseNL. Hier kunnen de data van helemaal open tot
-helemaal gesloten gearchiveerd worden (Module 4). Door al het voorwerk dat is gedaan in de voorgaande secties is het
-archiveren van data zo gebeurd. De organisatie is al op orde, evenals de documentatie, en de data staat al in een
-houdbaar format. Aan de data wordt een DOI gekoppeld waarmee jij en anderen kunnen refereren aan de data, hierdoor krijg
-je erkenning voor de moeite die je hebt gestoken in de data.</p>
+kan het ook gesloten gearchiveerd worden. Fontys beschikt over <a class="reference external" href="https://dataverse.nl/dataverse/fontys/">DataverseNL</a>.
+Hier kunnen de data van helemaal open tot helemaal gesloten gearchiveerd worden (Module 4). Door al het voorwerk dat is
+gedaan in de voorgaande secties is het archiveren van data zo gebeurd. De organisatie is al op orde, evenals de
+documentatie, en de data staat al in een houdbaar format. Aan de data wordt een DOI gekoppeld waarmee jij en anderen
+kunnen refereren aan de data, hierdoor krijg je erkenning voor de moeite die je hebt gestoken in de data.</p>
 <a class="bg-primary mb-1 reference internal image-reference" href="../_images/logo_dataverse.png"><img alt="DataverseNL" class="bg-primary mb-1 align-center" src="../_images/logo_dataverse.png" style="width: 33%;" /></a>
 </div>
 <div class="section" id="gebruik-een-systeem">
@@ -488,34 +543,42 @@ onderzoek en hoe moet ik de files noemen? Daar gaan we in het volgende stuk op i
 
               </div>
               
-        
-        <div class='prev-next-bottom'>
             
-    <a class='left-prev' id="prev-link" href="1_project_organisatie.html" title="previous page">Project organisatie</a>
-    <a class='right-next' id="next-link" href="1_folders.html" title="next page">Mappen organiseren</a>
-
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="1_project_organisatie.html" title="vorige pagina">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">vorige</p>
+            <p class="prev-next-title">Project organisatie</p>
         </div>
-        
+    </a>
+    <a class='right-next' id="next-link" href="1_folders.html" title="volgende pagina">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">volgende</p>
+        <p class="prev-next-title">Mappen organiseren</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
         </div>
     </div>
-    <footer class="footer mt-5 mt-md-0">
-    <div class="container">
-      <p>
-        
-          Door Rick de Klerk<br/>
-        
-            &copy; auteursrechten 2021, CC BY 4.0.<br/>
-      </p>
-    </div>
-  </footer>
+    <footer class="footer">
+  <p>
+    
+      Door Rick de Klerk<br/>
+    
+        &copy; auteursrechten 2022, CC BY 4.0 .<br/>
+  </p>
+</footer>
 </main>
 
 
       </div>
     </div>
   
-  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
 
-  
   </body>
 </html>

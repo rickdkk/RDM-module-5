@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pseudonimiseren &#8212; Leerlijn Research Data Management</title>
     
-  <link href="../_static/css/theme.css" rel="stylesheet" />
-  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -23,7 +23,7 @@
 
     
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/sphinx-book-theme.acff12b8f9c144ce68a297486a2fa670.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../_static/panels-variables.403b217e9cfef9c0f0e4ba85ff69d0c0.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
 
     <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -43,8 +43,8 @@
     <script src="../_static/copybutton.js"></script>
     <script src="../_static/translations.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
     <script >
         const thebe_selector = ".thebe"
         const thebe_selector_input = "pre"
@@ -57,7 +57,10 @@
     <link rel="next" title="Anonimiseren" href="3_anonimiseren.html" />
     <link rel="prev" title="Good practices" href="3_good_practices.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en" />
+    <meta name="docsearch:language" content="nl">
+    
+
+    <!-- Google Analytics -->
     
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
@@ -74,6 +77,10 @@
         <div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="../index.html">
       
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
       <img src="../_static/logo.svg" class="logo" alt="logo">
       
       
@@ -83,7 +90,7 @@
 </div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Zoek in dit boek ..." aria-label="Zoek in dit boek ..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
         <p class="caption">
  <span class="caption-text">
@@ -180,10 +187,8 @@
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="../assignments/0_casus.html">
-   Introductie casus
-   <i class="fab fa-accessible-icon">
-   </i>
+  <a class="reference internal" href="../assignments/0_voorbereiding.html">
+   Voorbereiding &amp; casus
   </a>
  </li>
  <li class="toctree-l1">
@@ -247,7 +252,7 @@
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
         <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Afdrukken naar pdf"
-            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
     </div>
 </div>
 
@@ -258,14 +263,14 @@
         aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
     <div class="dropdown-buttons sourcebuttons">
         <a class="repository-button"
-            href="https://gitlab.com/Rickdkk/module_5/"><button type="button" class="btn btn-secondary topbarbtn"
+            href="https://github.com/rickdkk/RDM-module-5/"><button type="button" class="btn btn-secondary topbarbtn"
                 data-toggle="tooltip" data-placement="left" title="Bronopslagplaats"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://gitlab.com/Rickdkk/module_5//issues/new?title=Issue%20on%20page%20%2Fchapters/3_pseudonimiseren.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/rickdkk/RDM-module-5//issues/new?title=Issue%20on%20page%20%2Fchapters/3_pseudonimiseren.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open een probleem"><i class="fas fa-lightbulb"></i>open probleem</button></a>
-        <a class="edit-button" href="https://github.com/Rickdkk/module_5/edit/main/chapters/3_pseudonimiseren.md"><button
+        <a class="edit-button" href="https://github.com/rickdkk/RDM-module-5/edit/main/chapters/3_pseudonimiseren.md"><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="bewerk deze pagina"><i class="fas fa-pencil-alt"></i>suggereren bewerken</button></a>
     </div>
@@ -283,12 +288,12 @@
         </div>
 
         <!-- Table of contents -->
-        <div class="d-none d-md-block col-md-2 bd-toc show">
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
             
             <div class="tocsection onthispage pt-5 pb-3">
                 <i class="fas fa-list"></i> Inhoud
             </div>
-            <nav id="bd-toc-nav">
+            <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#sleutelbestand">
@@ -298,11 +303,6 @@
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#tokenizen">
    Tokenizen
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#versleutelen">
-   Versleutelen
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -318,10 +318,43 @@
 </div>
     <div id="main-content" class="row">
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
-        
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Pseudonimiseren</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Inhoud </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#sleutelbestand">
+   Sleutelbestand
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#tokenizen">
+   Tokenizen
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#tot-slot">
+   Tot slot
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
               <div>
                 
-  <div class="section" id="pseudonimiseren">
+  <div class="tex2jax_ignore mathjax_ignore section" id="pseudonimiseren">
 <h1>Pseudonimiseren<a class="headerlink" href="#pseudonimiseren" title="Permalink naar deze titel">¶</a></h1>
 <p>Bij pseudonimiseren worden herleidbare data vervangen door een pseudoniem (ook wel token) die wordt opgeslagen in een
 sleutelbestand. Door het sleutelbestand te gebruiken kan je de data weer reconstrueren.
@@ -342,7 +375,7 @@ om de participant te herleiden spreken we van anonieme data.</p>
 <p>In het sleutelbestaand staan de persoonsgegevens die beschermd moeten worden naast de tokens die zijn toegeschreven aan
 de andere data. Met het sleutelbestand kan men de data weer reconstrueren. Het is daarom belangrijk dat het
 sleutelbestand op een aparte en veilige plaats staat opgeslagen. <a class="reference internal" href="../assignments/3_data_minimalisatie_opdracht.html"><span class="doc std std-doc">Opdracht 3</span></a>
-gaat in op het versleutelen van data. In 2019 heeft LCRDM <a class="footnote-reference brackets" href="#lcrdm" id="id1">1</a> een stappenplan opgesteld om data te pseudonimiseren,
+gaat in op het pseudonimiseren van data. In 2019 heeft LCRDM <a class="footnote-reference brackets" href="#lcrdm" id="id1">1</a> een stappenplan opgesteld om data te pseudonimiseren,
 hier volgt een korte samenvatting:</p>
 <ol class="simple">
 <li><p>Bedenk van tevoren welke data je wilt pseudonimiseren en hoe je dat gaat doen. Leg dit vast in je DMP.</p></li>
@@ -357,7 +390,7 @@ tot het bestand.</p></li>
 <ul class="simple">
 <li><p>Stuur het sleutelbestand niet mee met de data als je deze deelt.</p></li>
 <li><p>Zorg dat het sleutelbestand niet afhankelijk is van de kennis van één persoon.’</p></li>
-<li><p>Bewaar het wachtwoord goed: geen wachtwoord is geen data.
+<li><p>Wanneer het bestand is versleuteld, bewaar dan het wachtwoord goed: geen wachtwoord is geen data.
 <br><br></p></li>
 </ul>
 <div class="figure align-default" id="security-fig">
@@ -391,142 +424,10 @@ dit relevant kan zijn voor het onderzoek. Hierbij moet men wel weer oppassen voo
 terecht zouden kunnen komen. In zo’n geval is er dus een uitgebreide aanpak nodig om de data te pseudonimiseren die men
 dus goed moet documenteren.</p>
 </div>
-<div class="section" id="versleutelen">
-<h2>Versleutelen<a class="headerlink" href="#versleutelen" title="Permalink naar deze titel">¶</a></h2>
-<p>Het versleutelen van onderzoeksdata kan belangrijk zijn bij het pseudonimiseren van data of als data op een mobiele
-gegevensdrager verplaatst moet worden. Hieronder lees je hoe je jouw data gemakkelijk kan versleutelen met de
-populaire encryptietool VeraCrypt.</p>
-<p>In grote lijnen moeten de volgende dingen gebeuren:</p>
-<ul class="simple">
-<li><p>VeraCrypt installeren</p></li>
-<li><p>Een versleutelde file aanmaken</p></li>
-<li><p>De versleutelde file openen</p></li>
-</ul>
-<p>Hieronder vind je in dertien stappen een werkwijze om versleutelde files aan te maken. Schrik niet: stap 0-10 hoeft maar
-één keer worden gedaan om een versleuteld bestand aan te maken, daarna kan je heel snel het bestand weer openen met
-VeraCrypt (zolang je over het wachtwoord beschikt).</p>
-<div class="tabbed-set docutils">
-<input checked="checked" id="e9c2cf01-116e-41cb-886a-112dc8a417d2" name="386003ce-f56c-4010-8f3a-840c07bff31f" type="radio">
-</input><label class="tabbed-label" for="e9c2cf01-116e-41cb-886a-112dc8a417d2">
-Stap 0</label><div class="tabbed-content docutils">
-<p><img alt="" src="../_images/00_download_page.png" /></p>
-<p>Allereerst moet je VeraCrypt <a class="reference external" href="https://veracrypt.fr/en/Downloads.html">downloaden</a>, dat kan op hun site. Onder het kopje
-downloads vind je verschillende installers voor Windows, macOS, en Linux. Bij Windows kun je kiezen uit een installer
-om hem op je pc te zetten of de portable versie. Deze versie hoef je niet te installeren en zou je bijvoorbeeld op een
-USB-stick kunnen zetten om zo op iedere Windows pc te kunnen runnen: wel zo handig als je data van pc’s in het lab wil
-halen en meteen wil versleutelen.</p>
-</div>
-<input id="a5301c91-9c09-4e2f-ad42-7a60fe66e317" name="386003ce-f56c-4010-8f3a-840c07bff31f" type="radio">
-</input><label class="tabbed-label" for="a5301c91-9c09-4e2f-ad42-7a60fe66e317">
-Stap 1</label><div class="tabbed-content docutils">
-<p><img alt="" src="../_images/01_create_volume.png" /></p>
-<p>Als je het programma hebt geïnstalleerd moet je hem nu opstarten. De interface zal er ongeveer zo uit zien als in
-het onderstaande plaatje. Nu moet er eerst een versleutelde file worden aangemaakt.</p>
-<p><strong>&gt;&gt;&gt; Klik op het knopje “Create Volume”.</strong></p>
-</div>
-<input id="7782efb7-67fe-4e3e-9718-5a20cb847e8b" name="386003ce-f56c-4010-8f3a-840c07bff31f" type="radio">
-</input><label class="tabbed-label" for="7782efb7-67fe-4e3e-9718-5a20cb847e8b">
-Stap 2</label><div class="tabbed-content docutils">
-<p><img alt="" src="../_images/02_create_container.png" /></p>
-<p>In dit voorbeeld maken we een versleutelde file aan, dat is de eerste optie.</p>
-<p><strong>&gt;&gt;&gt; Klik op “Next &gt;”.</strong></p>
-</div>
-<input id="289cb893-7e9c-4e7b-83d7-39e3face8266" name="386003ce-f56c-4010-8f3a-840c07bff31f" type="radio">
-</input><label class="tabbed-label" for="289cb893-7e9c-4e7b-83d7-39e3face8266">
-Stap 3</label><div class="tabbed-content docutils">
-<p><img alt="" src="../_images/03_volume_type.png" /></p>
-<p>Hier kan je kiezen uit een standaard volume of een hidden volume. We gaan er voor het gemak even van uit dat je niet
-gemarteld zal worden om je wachtwoord vrij te geven, daarom gaan we verder met de voorgeselecteerde optie, het Standard
-VeraCrypt volume.</p>
-<p><strong>&gt;&gt;&gt; Klik op “Next &gt;”.</strong></p>
-</div>
-<input id="00dde954-3d6d-4025-aab2-2ae619d63743" name="386003ce-f56c-4010-8f3a-840c07bff31f" type="radio">
-</input><label class="tabbed-label" for="00dde954-3d6d-4025-aab2-2ae619d63743">
-Stap 4</label><div class="tabbed-content docutils">
-<p><img alt="" src="../_images/04_volume_location.png" /></p>
-<p>Nu moeten we kiezen waar je de file wilt opslaan. Dat kan op je eigen computer zijn of bijvoorbeeld op een USB-stick.</p>
-<p><strong>&gt;&gt;&gt; Klik op “Select File…” en kies een locatie om de file op te slaan en een naam voor het bestand.</strong><br>
-<strong>&gt;&gt;&gt; Klik op “Next &gt;”.</strong></p>
-</div>
-<input id="0b8d8df3-f2dd-4a88-9e1b-07e5f0c7e8f8" name="386003ce-f56c-4010-8f3a-840c07bff31f" type="radio">
-</input><label class="tabbed-label" for="0b8d8df3-f2dd-4a88-9e1b-07e5f0c7e8f8">
-Stap 5</label><div class="tabbed-content docutils">
-<p><img alt="" src="../_images/05_encryption_options.png" /></p>
-<p>Nu moet er gekozen worden voor een encryptie algoritme. Alle algoritmes in VeraCrypt zijn bewezen veilig, maar er zit
-wel wat verschil tussen de opties. De standaardoptie AES met een SHA-512 Hash is meer dan voldoende voor de meeste
-toepassingen en werkt ook heel vlot.</p>
-<p><strong>&gt;&gt;&gt; Klik op “Next &gt;”.</strong></p>
-</div>
-<input id="1992c6c8-47ca-4039-837f-031cc324dca9" name="386003ce-f56c-4010-8f3a-840c07bff31f" type="radio">
-</input><label class="tabbed-label" for="1992c6c8-47ca-4039-837f-031cc324dca9">
-Stap 6</label><div class="tabbed-content docutils">
-<p><img alt="" src="../_images/06_volume_size.png" /></p>
-<p>Nu moet er gekozen worden voor de grootte van het bestand. Dit bepaald hoe veel data je straks versleuteld kan opslaan.
-Om te voorkomen dat er later data overgezet moet worden kan je het beter iets te veel kiezen dan net genoeg.</p>
-<p><strong>&gt;&gt;&gt; Kies de hoeveelheid data die jij wilt gebruiken. In het voorbeeld gebruiken we 100 MiB (≈105MB).</strong><br>
-<strong>&gt;&gt;&gt; Klik op “Next &gt;”</strong></p>
-</div>
-<input id="8d17fdee-2816-467a-b67e-3a9e316e0f8a" name="386003ce-f56c-4010-8f3a-840c07bff31f" type="radio">
-</input><label class="tabbed-label" for="8d17fdee-2816-467a-b67e-3a9e316e0f8a">
-Stap 7</label><div class="tabbed-content docutils">
-<p><img alt="" src="../_images/07_volume_password.png" /></p>
-<p>Nu moet er een wachtwoord gekozen worden die later nodig is om de file te kunnen decrypten. Volg hierbij de instructies
-in dit menu. Een wachtwoord dat te makkelijk of te kort is heeft vrij weinig nut.</p>
-<p><strong>&gt;&gt;&gt; Kies een wachtwoord.</strong><br>
-<strong>&gt;&gt;&gt; Klik op “Next &gt;”.</strong></p>
-</div>
-<input id="9b189a76-4235-41d5-a4be-e7cc2fc892f6" name="386003ce-f56c-4010-8f3a-840c07bff31f" type="radio">
-</input><label class="tabbed-label" for="9b189a76-4235-41d5-a4be-e7cc2fc892f6">
-Stap 8</label><div class="tabbed-content docutils">
-<p><img alt="" src="../_images/08_format_options.png" /></p>
-<p>Nu moet het filesysteem gekozen worden. FAT is een oud format maar wel breed ondersteund. Hier kan dus wederom de
-standaardoptie gekozen worden. Wil je bestanden groter dan 4GB opslaan, kies dan voor een ander format.</p>
-<p><strong>&gt;&gt;&gt; Kies een ander filesysteem als dat de voorkeur heeft.</strong><br>
-<strong>&gt;&gt;&gt; Klik op “Next &gt;”.</strong></p>
-</div>
-<input id="c4296bb4-9fa9-4a81-885d-096044a7de88" name="386003ce-f56c-4010-8f3a-840c07bff31f" type="radio">
-</input><label class="tabbed-label" for="c4296bb4-9fa9-4a81-885d-096044a7de88">
-Stap 9</label><div class="tabbed-content docutils">
-<p><img alt="" src="../_images/09_volume_format.png" /></p>
-<p>Nu wordt de file geformatteerd. Om ervoor te zorgen dat de file goed versleuteld wordt moet je zelf nog wat
-willekeurigheid toevoegen door met je muis over het scherm te bewegen.</p>
-<p><strong>&gt;&gt;&gt; Beweeg met je muis over het scherm.</strong><br>
-<strong>&gt;&gt;&gt; Klik op “Format”.</strong></p>
-</div>
-<input id="1c7a8178-abd1-4350-b3d1-0170b4862fdf" name="386003ce-f56c-4010-8f3a-840c07bff31f" type="radio">
-</input><label class="tabbed-label" for="1c7a8178-abd1-4350-b3d1-0170b4862fdf">
-Stap 10</label><div class="tabbed-content docutils">
-<p><img alt="" src="../_images/10_volume_created.png" /></p>
-<p>Het volume is nu aangemaakt. Je kan ervoor kiezen om nog een volume te maken of om af te sluiten.</p>
-<p><strong>Klik op “Exit”.</strong></p>
-</div>
-<input id="70033362-b80d-4d70-a2b7-bad82e07f392" name="386003ce-f56c-4010-8f3a-840c07bff31f" type="radio">
-</input><label class="tabbed-label" for="70033362-b80d-4d70-a2b7-bad82e07f392">
-Stap 11</label><div class="tabbed-content docutils">
-<p><img alt="" src="../_images/11_mount_volume.png" /></p>
-<p>In je file explorer moet je nu het versleutelde bestand kunnen vinden. Als je deze zou openen met een applicatie dan zie
-je allemaal onzin, dat komt omdat het bestand nog versleuteld is. De voorgaande stappen zijn dus éénmalig om het
-bestand aan te maken. Om het bestand te nu openen is VeraCrypt wederom nodig.</p>
-<p><strong>&gt;&gt;&gt; Selecteer het bestand wat je zojuist hebt versleuteld (de locatie en naam heb je gekozen in stap 4).</strong><br>
-<strong>&gt;&gt;&gt; Klik op “Mount”.</strong><br>
-<strong>&gt;&gt;&gt; Vul het wachtwoord uit stap 7 in.</strong></p>
-</div>
-<input id="0db7af65-2fe6-466f-9dc7-c8f3ac0a8185" name="386003ce-f56c-4010-8f3a-840c07bff31f" type="radio">
-</input><label class="tabbed-label" for="0db7af65-2fe6-466f-9dc7-c8f3ac0a8185">
-Stap 12</label><div class="tabbed-content docutils">
-<p><img alt="" src="../_images/12_done.png" /></p>
-<p>In je file explorer moet er nu een nieuwe map staan. Op Windows is dit bijvoorbeeld de A: schijf, op mac of Linux
-is dit bijvoorbeeld slot 1. Door te dubbelklikken op de regel in VeraCrypt opent file explorer de map. Deze map werkt
-zoals een gewone map op de computer. Je kan bestanden aanmaken en verplaatsen. Als je klaar bent klik je op “Dismount”
-en dan kan niemand meer bij je vertrouwelijke onderzoeksdata.</p>
-</div>
-</div>
-</div>
 <div class="section" id="tot-slot">
 <h2>Tot slot<a class="headerlink" href="#tot-slot" title="Permalink naar deze titel">¶</a></h2>
-<p>Zorg dat je het wachtwoord goed bewaard en dat een collega ook toegang heeft tot het wachtwoord. Zo voorkom je eventuele
-problemen. Daarnaast is het versleutelen van bestanden geen uitweg voor slecht Research Data Management. Zorg dus altijd
-voor een goed Data Management Plan en gebruik deze ook. Succes!</p>
+<p>Zorg dat je het bestand goed bewaard en dat een collega ook toegang heeft tot het bestand. Zo voorkom je eventuele
+problemen.</p>
 <hr class="footnotes docutils" />
 <dl class="footnote brackets">
 <dt class="label" id="lcrdm"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
@@ -558,34 +459,42 @@ voor een goed Data Management Plan en gebruik deze ook. Succes!</p>
 
               </div>
               
-        
-        <div class='prev-next-bottom'>
             
-    <a class='left-prev' id="prev-link" href="3_good_practices.html" title="previous page">Good practices</a>
-    <a class='right-next' id="next-link" href="3_anonimiseren.html" title="next page">Anonimiseren</a>
-
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="3_good_practices.html" title="vorige pagina">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">vorige</p>
+            <p class="prev-next-title">Good practices</p>
         </div>
-        
+    </a>
+    <a class='right-next' id="next-link" href="3_anonimiseren.html" title="volgende pagina">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">volgende</p>
+        <p class="prev-next-title">Anonimiseren</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
         </div>
     </div>
-    <footer class="footer mt-5 mt-md-0">
-    <div class="container">
-      <p>
-        
-          Door Rick de Klerk<br/>
-        
-            &copy; auteursrechten 2021, CC BY 4.0.<br/>
-      </p>
-    </div>
-  </footer>
+    <footer class="footer">
+  <p>
+    
+      Door Rick de Klerk<br/>
+    
+        &copy; auteursrechten 2022, CC BY 4.0 .<br/>
+  </p>
+</footer>
 </main>
 
 
       </div>
     </div>
   
-  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
 
-  
   </body>
 </html>

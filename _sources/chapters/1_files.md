@@ -10,9 +10,20 @@ daarom files een logische naam met waar nodig een deel van de metadata in de naa
 
 ## Good practices
 
-- **Check of er al een systeem is** bij de andere onderzoekers van de onderzoeksgroep of in de documentatie van het lab.
-Als er al een systeem is dan is het vaak beter om hier gebruik van te maken. Leg het systeem vast in het DMP en de 
-README.
+- **Check wat de standaard is in jouw onderzoeksgroep** zodat het project aansluit bij bestaande en andere lopende 
+projecten. Bedenk niet zelf een systeem als dat niet strikt noodzakelijk is.
+<br><br>
+
+- **Kies een systeem en leg dit vast in het DMP en de README**. Door het vast te leggen is het direct voor iedereen 
+duidelijk welke structuur gebruikt gaat worden. Zo kunnen collega's en studenten meteen de juiste structuur aanhouden. 
+Iets wat tijdens het automatiseren en archiveren veel tijd gaat schelen.
+<br><br>
+
+- **Kies betekenisvolle namen** en beschrijf de inhoud van een bestand en geef het niet alleen een getal. Een file zoals 
+*figuur_3.png* zorgt meteen voor verwarring wanneer er een figuur wordt toegevoegd of verwijderd in het manuscript en 
+zonder te kijken weet je niet welk figuur het betreft. Beschrijf daarom ook altijd de inhoud van een file met de naam.
+<br><br>
+Bijvoorbeeld: *beurskoers_gme.png* of *BloodImage_001.png*
 <br><br>
 
 - **Gebruik geen speciale karakters** zoals `~ ! @ # $ % ^ & * ( ) [ ] { } ; : " ' < > / \ | ?`. In het beste geval moet je er
@@ -35,39 +46,33 @@ xkcd.com over het schrijven van data
 - **Gebruik voor een datum altijd ISO-8601** (YYYY-MM-DD), alleen dan kan je makkelijk chronologisch sorteren. Meestal
 is het handig om de datum ergens aan het eind te zetten zodat alle bestanden die bij elkaar horen ook onder elkaar staan.
 <br><br>
-Bijvoorbeeld: manuscript_2020-12-01.docx of manuscript_2020-12-02.docx
+Bijvoorbeeld: *manuscript_2020-12-01.docx* of *manuscript_2020-12-02.docx*
 <br><br>
   
-- **Houdt ruimte voor hogere getallen** door nullen toe te voegen aan het begin van een getal, dit wordt ook wel zero-padding
-genoemd.
+- **Maak handig gebruik van getallen** door nullen toe te voegen aan het begin van een getal (dit wordt ook wel zero-padding
+genoemd) of door de sorteervolgorde te beïnvloeden.
 <br><br>
-Bijvoorbeeld: BloodImage_1.xml wordt opgevolgd door BloodImage_11.xml en niet BloodImage_2.xml. Zorg er daarom voor dat 
-je begint met BloodImage_01.xml en op die manier doorgaat met nummeren. Door het nummer aan het begin van een naam te 
-zetten zorg je ervoor dat men altijd kan sorteren, bijv. 01_exploratory_analysis.ipynb, 02_data_cleaning.ipynb, etc.
+Bijvoorbeeld: *BloodImage_1.xml* wordt opgevolgd door *BloodImage_11.xml* en niet *BloodImage_2.xml*. Zorg er daarom voor dat 
+je begint met *BloodImage_01.xml* en op die manier doorgaat met nummeren. 
+<br>
+Bijvoorbeeld: Door het nummer aan het begin van een naam te  zetten zorg je ervoor dat men altijd kan sorteren, bijv. 
+*01_exploratory_analysis.ipynb*, *02_data_cleaning.ipynb*, etc.
 <br><br>
 
 - **Gebruik geen spaties**, want deze worden gebruikt om commando's te scheiden in de command-line. Gebruik een minteken 
 (-), camelCase, of PascalCase om woorden te scheiden (afhankelijk van voorkeur). 
 <br><br>
-Bijvoorbeeld: BloodImage_2020-12-01_001.xml of blood-image_2020-12-01_001.xml
+Bijvoorbeeld: *BloodImage_2020-12-01_001.xml* of *blood-image_2020-12-01_001.xml*
 <br><br>
 
 - **Gebruik een underscore voor verschillende elementen** van een bestandsnaam zodat men deze later kan splitsen. 
 <br><br>
-Bijvoorbeeld: In het bovenstaande voorbeeld is het erg makkelijk om de naam, datum, en metingnummer uit de bestandsnaam 
-te halen door de naam te splitsen op de underscore. De volgorde van de elementen bepaalt hoe de bestanden standaard 
-gesorteerd worden. Verderop volgt een uitgebreider voorbeeld.
+Bijvoorbeeld: In het bovenstaande voorbeeld is het makkelijk om de naam, datum, en metingnummer uit de bestandsnaam 
+te halen door de naam te splitsen. De volgorde van de elementen bepaalt hoe de bestanden standaard gesorteerd worden.
 <br><br>  
 
-- **Beschrijf de inhoud van een bestand** en geef het niet alleen een getal. Een file zoals figuur_3.png zorgt meteen 
-voor verwarring wanneer er een figuur wordt toegevoegd of verwijderd in het manuscript en zonder te kijken weet je niet
-welk figuur het betreft. Beschrijf daarom ook altijd de inhoud van een file met de naam.
-<br><br>
-Bijvoorbeeld: beurskoers_gme.png of BloodImage_001.png
-<br><br>
-
 - **Gebruik versienummers** of — nog beter — een versiebeheersysteem. Spreek van tevoren af wat de strategie is voor
-versiebeheer zodat je niet uitkomt op een manuscript_v2_FINAL_FINAL.docx. Men kan bijvoorbeeld [semantic versioning](https://semver.org/)
+versiebeheer zodat je niet uitkomt op een *manuscript_v2_FINAL_FINAL.docx*. Men kan bijvoorbeeld [semantic versioning](https://semver.org/)
 gebruiken. 
   
 ### Mini-quiz
@@ -157,7 +162,7 @@ andere selectie nodig was is dat ook geen probleem.
 ---
 
 :::{eval-rst}
-.. link-button:: ../assignments/0_casus
+.. link-button:: ../assignments/0_voorbereiding
     :type: ref
     :text: Klaar voor een opdracht!
     :classes: btn-outline-primary btn-block

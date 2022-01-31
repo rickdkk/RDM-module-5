@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Good practices &#8212; Leerlijn Research Data Management</title>
     
-  <link href="../_static/css/theme.css" rel="stylesheet" />
-  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -23,7 +23,7 @@
 
     
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/sphinx-book-theme.acff12b8f9c144ce68a297486a2fa670.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../_static/panels-variables.403b217e9cfef9c0f0e4ba85ff69d0c0.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
 
     <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -43,8 +43,8 @@
     <script src="../_static/copybutton.js"></script>
     <script src="../_static/translations.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
     <script >
         const thebe_selector = ".thebe"
         const thebe_selector_input = "pre"
@@ -57,7 +57,10 @@
     <link rel="next" title="Tidy data" href="2_tidy_data.html" />
     <link rel="prev" title="Data organisatie" href="2_data_organisatie.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en" />
+    <meta name="docsearch:language" content="nl">
+    
+
+    <!-- Google Analytics -->
     
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
@@ -74,6 +77,10 @@
         <div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="../index.html">
       
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
       <img src="../_static/logo.svg" class="logo" alt="logo">
       
       
@@ -83,7 +90,7 @@
 </div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Zoek in dit boek ..." aria-label="Zoek in dit boek ..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
         <p class="caption">
  <span class="caption-text">
@@ -180,10 +187,8 @@
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="../assignments/0_casus.html">
-   Introductie casus
-   <i class="fab fa-accessible-icon">
-   </i>
+  <a class="reference internal" href="../assignments/0_voorbereiding.html">
+   Voorbereiding &amp; casus
   </a>
  </li>
  <li class="toctree-l1">
@@ -247,7 +252,7 @@
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
         <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Afdrukken naar pdf"
-            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
     </div>
 </div>
 
@@ -258,14 +263,14 @@
         aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
     <div class="dropdown-buttons sourcebuttons">
         <a class="repository-button"
-            href="https://gitlab.com/Rickdkk/module_5/"><button type="button" class="btn btn-secondary topbarbtn"
+            href="https://github.com/rickdkk/RDM-module-5/"><button type="button" class="btn btn-secondary topbarbtn"
                 data-toggle="tooltip" data-placement="left" title="Bronopslagplaats"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://gitlab.com/Rickdkk/module_5//issues/new?title=Issue%20on%20page%20%2Fchapters/2_good_practices.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/rickdkk/RDM-module-5//issues/new?title=Issue%20on%20page%20%2Fchapters/2_good_practices.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open een probleem"><i class="fas fa-lightbulb"></i>open probleem</button></a>
-        <a class="edit-button" href="https://github.com/Rickdkk/module_5/edit/main/chapters/2_good_practices.md"><button
+        <a class="edit-button" href="https://github.com/rickdkk/RDM-module-5/edit/main/chapters/2_good_practices.md"><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="bewerk deze pagina"><i class="fas fa-pencil-alt"></i>suggereren bewerken</button></a>
     </div>
@@ -283,19 +288,29 @@
         </div>
 
         <!-- Table of contents -->
-        <div class="d-none d-md-block col-md-2 bd-toc show">
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
             
         </div>
     </div>
 </div>
     <div id="main-content" class="row">
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
-        
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Good practices</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                    </div>
+                </div>
+            </div>
+            
               <div>
                 
-  <div class="section" id="good-practices">
+  <div class="tex2jax_ignore mathjax_ignore section" id="good-practices">
 <h1>Good practices<a class="headerlink" href="#good-practices" title="Permalink naar deze titel">¶</a></h1>
-<p>Er zijn veel verschillende soorten data en iedereen werkt met verschillende analysetools. Toch zijn er een aantal
+<p>Er zijn veel verschillende soorten data formats en iedereen werkt met verschillende analysetools. Toch zijn er een aantal
 praktische aanbevelingen die we kunnen doen om data zo te organiseren dat het geschikt is voor analyse en archivering.</p>
 <div class="margin sidebar">
 <p class="sidebar-title"></p>
@@ -309,29 +324,31 @@ praktische aanbevelingen die we kunnen doen om data zo te organiseren dat het ge
 van invloed zijn op de inhoud van de data. Het kan betekenen dat data getransformeerd moet worden en/of dat metadata ergens
 anders komt te staan.
 <br><br></p></li>
-<li><p><strong>Gebruik .csv in plaats van .xlsx</strong> of in ieder geval .ods voor spreadsheet data. In praktijk wordt (te) veel data in
-spreadsheets bewaard. Door gebruik te maken van .csv bestanden kunnen we ervoor zorgen dat de data makkelijk te verwerken
-is met andere tools en dat het bestand niet beschadigd raakt.
-<br><br></p></li>
-<li><p><strong>Werk in een kopie van de data</strong> en pas nooit de ruwe data aan. Hou transformaties bij in een los document, een script,
-of door bijv. de SPSS syntax op te slaan.
+<li><p><strong>Hou mutaties bij</strong> en werk in een kopie van de data, pas nooit de ruwe data aan. Hou transformaties bij in een los
+document (CHANGELOG), een script, met <a class="reference external" href="https://openrefine.org/">OpenRefine</a>, of door bijv. de SPSS syntax op te slaan.
 <br><br></p></li>
 <li><p><strong>Gebruik consistente waarden</strong> door bijvoorbeeld een <a class="reference external" href="https://help.osf.io/hc/en-us/articles/360019739054-How-to-Make-a-Data-Dictionary">data dictionary</a>
-te gebruiken en/of door data validatie toe te passen op de data als deze handmatig wordt ingevuld.
+of taxonomie/ontologie te gebruiken en/of door data validatie toe te passen op de data als deze handmatig wordt ingevuld.
 <br><br></p></li>
 <li><p><strong>Let op missings</strong> en leg een systeem vast om met missing data om te gaan. Vroeger gebruikte men daarvoor vaak de
 waarde 999, maar tegenwoordig kan de meeste software gewoon omgaan met missings. Gebruik je toch speciale waarden? Leg
 dit dan vast in het DMP/README/dictionary en zorg dat iedereen hiervan op de hoogte is.
 <br><br></p></li>
-<li><p><strong>Gebruik versie nummers</strong> of version control (bijv. Git LFS of DVC). Hou versies bij als de data wordt aangevuld of
-aangepast en spreek met je collega’s af welke versiestrategie je gebruikt.
-<br><br></p></li>
 <li><p><strong>Gebruik descriptieve headers</strong> en/of variabele namen. Probeer ervoor te zorgen dat mensen zo min mogelijk hoeven te
 zoeken wat een variabele betekent. Met descriptieve headers is de data al voor een heel deel zelf-documenterend.
 <br><br></p></li>
+<li><p><strong>Gebruik versienummers</strong> of version control (bijv. Git LFS of DVC). Hou versies bij als de data wordt aangevuld of
+aangepast en spreek met je collega’s af welke versiestrategie je gebruikt.
+<br><br></p></li>
+<li><p><strong>Gebruik .csv in plaats van .xlsx</strong> of in ieder geval .ods voor spreadsheet data. In praktijk wordt (te) veel data in
+spreadsheets bewaard. Door gebruik te maken van .csv (comma separated values) bestanden kunnen we ervoor zorgen dat de
+data makkelijk te verwerken is met andere tools en dat het bestand niet beschadigd raakt. Een bijkomend voordeel van
+.csv is dat men niet verleid kan raken om formatting als data te gebruiken of om data en analyse te mixen.
+<br><br></p></li>
 <li><p><strong>Gebruik geen spreadsheet programma</strong> voor analyses of plotten. Het voornaamste probleem is dat het moeilijk is om
 te zien wat de flow van data is in een spreadsheet. Er zijn gespecialiseerde programma’s die dit werk op een
-reproduceerbaardere manier kunnen verrichten.
+reproduceerbaardere manier kunnen verrichten. Spreadsheets zijn wel geschikt voor data entry, dat onderwerp wordt behandeld
+in <a class="reference internal" href="2_spreadsheets.html"><span class="doc">Spreadsheets</span></a>
 <br><br></p></li>
 <li><p><strong>Gebruik een tidy format</strong>: <a class="reference internal" href="2_tidy_data.html"><span class="doc">Tidy data</span></a></p></li>
 </ul>
@@ -359,34 +376,42 @@ reproduceerbaardere manier kunnen verrichten.
 
               </div>
               
-        
-        <div class='prev-next-bottom'>
             
-    <a class='left-prev' id="prev-link" href="2_data_organisatie.html" title="previous page">Data organisatie</a>
-    <a class='right-next' id="next-link" href="2_tidy_data.html" title="next page">Tidy data</a>
-
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="2_data_organisatie.html" title="vorige pagina">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">vorige</p>
+            <p class="prev-next-title">Data organisatie</p>
         </div>
-        
+    </a>
+    <a class='right-next' id="next-link" href="2_tidy_data.html" title="volgende pagina">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">volgende</p>
+        <p class="prev-next-title">Tidy data</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
         </div>
     </div>
-    <footer class="footer mt-5 mt-md-0">
-    <div class="container">
-      <p>
-        
-          Door Rick de Klerk<br/>
-        
-            &copy; auteursrechten 2021, CC BY 4.0.<br/>
-      </p>
-    </div>
-  </footer>
+    <footer class="footer">
+  <p>
+    
+      Door Rick de Klerk<br/>
+    
+        &copy; auteursrechten 2022, CC BY 4.0 .<br/>
+  </p>
+</footer>
 </main>
 
 
       </div>
     </div>
   
-  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
 
-  
   </body>
 </html>

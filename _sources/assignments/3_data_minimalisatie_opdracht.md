@@ -15,18 +15,12 @@ de retentiemeting, maar lang niet alles is nodig. Daarbij staan de gegevens *en 
 1. Verwijder de kolommen die niet nodig zijn uit de data.
 1. Maak een nieuwe file (`sleutel.ods` o.i.d.) en zet daar de `ID` kolom in samen met de gevoelige informatie.
     - Kan je de data nog linken aan de persoon door de files te combineren?
-    - Is de data file schoon van persoonsgegevens?
-1. Versleutel de sleutel met VeraCrypt.
-    - Optioneel: als er weinig tijd is kan je ook van [dit](https://gitlab.com/Rickdkk/messy-example-project/-/raw/main/container) 
-      volume gebruik maken (wachtwoord: password123).
-1. Sluit VeraCrypt en verplaats het versleutelde volume buiten de projectfolder.
-    - Kan iemand zonder het wachtwoord nog bij de persoonsgegevens?
-    - Is de data nu anoniem?
+    - Is de originele data file schoon van persoonsgegevens?
+1. Niet nu: Sla het bestand op in een losse map met beperkte autorisatie in Fontys Research Drive.
    
 Een oplossing voor de opdrachten staat [hier](https://gitlab.com/Rickdkk/messy-example-project/-/raw/main/wheelchair_sprints3.zip).
-Het wachtwoord op de container is password123. 
 Let wel op: in dit voorbeeld staat de sleutel ook in de projectmap, deze mag daar niet blijven. Het wachtwoord is natuurlijk
-ook uitzonderlijk slecht.
+ook uitzonderlijk slecht. 
 
 ## #TODO
 
