@@ -62,3 +62,7 @@ main.bd-content #main-content div.figure {
 a.headerlink{
     color: var(--fontys-purple) !important;
 }
+
+a.footnote-reference{
+    font-size: small !important;
+}

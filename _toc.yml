@@ -24,7 +24,7 @@ parts:
         - file: chapters/3_anonimiseren
   - caption: Opdrachten
     chapters:
-      - file: assignments/0_casus.md
+      - file: assignments/0_voorbereiding
       - file: assignments/1_project_organisatie_opdracht
       - file: assignments/2_data_organisatie_opdracht
       - file: assignments/3_data_minimalisatie_opdracht

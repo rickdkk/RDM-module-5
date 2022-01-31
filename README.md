@@ -6,7 +6,7 @@
 Aan het einde van deze module is de cursist in staat om een standaard projectstructuur te gebruiken, hun data netjes 
 te organiseren, en te identificeren welke data nodig zijn voor het onderzoek. Waar nodig wordt data geanonimiseerd of 
 gepseudonimiseerd. Voor onderzoekers geldt dat ze in staat zijn de methoden toe te passen en ondersteuners zullen in 
-staat zijn om te adviseren. De module bestaat uit één sessie van circa 2.5 uur.
+staat zijn om een adviserende rol op deze onderwerpen in te kunnen vullen. De module bestaat uit één sessie van circa 2.5 uur.
 
 ## Leerdoelen
 
@@ -14,8 +14,8 @@ staat zijn om te adviseren. De module bestaat uit één sessie van circa 2.5 uur
 hand van een standaard structuur voor mappen en files.
 - Cursisten kunnen data op een effectieve manier invoeren en organiseren in spreadsheets.
 - Cursisten kunnen "tidy" data herkennen en kunnen "messy" data handmatig omzetten naar een tidy format.
-- Cursisten kunnen het verschil tussen anonimiseren en pseudonimiseren benoemen en zijn in staat een versleuteld 
-volume aan te maken, identificeerbare data te verwijderen/verplaatsen, en deze in een sleutelbestand op te slaan.
+- Cursisten kunnen het verschil tussen anonimiseren en pseudonimiseren benoemen en zijn in staat identificeerbare data 
+te verwijderen/verplaatsen, en deze in een sleutelbestand op te slaan.
 
 ## Werkvorm
 
@@ -29,29 +29,33 @@ Het materiaal is bestemd voor een workshop met een groepsgrootte van 5 tot 15 pe
 blended learning met (online) leermateriaal en opdrachten. We beginnen bij het organiseren van de data in het project
 (Project organisatie) en zoomen steeds verder in op de inhoud ervan (Data organisatie en later Dataminimalisatie).
 
-| Tijd | Topic/Doel                                                    | Link |
-|------|---------------------------------------------------------------|------|
-| 10 min | Introductie 👋                                              |      |
-| 20 min | Theorie en methoden project organisatie                     | {doc}`link <./chapters/1_project_organisatie>` |
-| 20 min | Opdracht 1: project organisatie                             | {doc}`link <./assignments/1_project_organisatie_opdracht>` |
-| 10 min | *Pauze* ☕                                                   |      |
-| 10 min | Theorie en methoden voor data organisatie                   | {doc}`link <./chapters/2_data_organisatie>` |
-| 20 min | Opdracht 2: data organisatie                                | {doc}`link <./assignments/2_data_organisatie_opdracht>`   |
-| 20 min | Theorie dataminimalisatie, anonimiseren en pseudonimiseren  | {doc}`link <./chapters/3_data_minimalisatie>` |
-| 10 min | *Pauze* ☕                                                   |      | 
-| 20 min | Opdracht 3: data minimalisatie                              | {doc}`link <./assignments/3_data_minimalisatie_opdracht>` |
-| 10 min | Afronden 👋                                                 |      |
+| Tijd   | Topic/Doel                                                 | Link                                                       |
+|--------|------------------------------------------------------------|------------------------------------------------------------|
+| 10 min | Introductie 👋                                             |                                                            |
+| 20 min | Theorie en methoden project organisatie                    | {doc}`link <./chapters/1_project_organisatie>`             |
+| 20 min | Opdracht 1: project organisatie                            | {doc}`link <./assignments/1_project_organisatie_opdracht>` |
+| 10 min | *Pauze* ☕                                                  |                                                            |
+| 10 min | Theorie en methoden voor data organisatie                  | {doc}`link <./chapters/2_data_organisatie>`                |
+| 20 min | Opdracht 2: data organisatie                               | {doc}`link <./assignments/2_data_organisatie_opdracht>`    |
+| 20 min | Theorie dataminimalisatie, anonimiseren en pseudonimiseren | {doc}`link <./chapters/3_data_minimalisatie>`              |
+| 10 min | *Pauze* ☕                                                  |                                                            | 
+| 20 min | Opdracht 3: data minimalisatie                             | {doc}`link <./assignments/3_data_minimalisatie_opdracht>`  |
+| 10 min | Afronden 👋                                                |                                                            |
 
 ## Voorbereiding
 
-In de opdrachten wordt gebruik gemaakt van een aantal files, zorg dat je deze van tevoren al hebt gedownload,
-deze zijn [hier](https://gitlab.com/Rickdkk/messy-example-project/-/raw/main/wheelchair_sprints0.zip) te vinden <i class="fas fa-database"></i>. Daarnaast is een 
-spreadsheet programma nodig zoals Microsoft Excel of LibreOffice Calc <i class="fa fa-table" aria-hidden="true"></i>. 
-Nog geen spreadsheet programma? Download dan [hier](https://www.libreoffice.org/download/download/) LibreOffice. Let wel 
-op: er zitten subtiele verschillen binnen en tussen de layout van office programma's. Het kan dus zijn dat het er bij een 
-collega allemaal net iets anders uitziet. Als laatste heb je [VeraCrypt](https://www.veracrypt.fr/en/Downloads.html) nodig 
-om files te kunnen versleutelen <i class="fas fa-lock"></i>. Je hoeft nog niet te weten hoe het werkt, maar het is wel 
-handig om het alvast geïnstalleerd te hebben. Wil of kan je het niet installeren? Gebruik dan de portable versie.
+<i class="fas fa-folder-open"></i> Om alvast in de juiste stemming te komen is er een {doc}`voorbereidende opdracht <./assignments/0_voorbereiding>`.
+In deze (optionele) opdracht wordt je gevraagd om de structuur van een bestaand project inzichtelijk te maken.
+
+<i class="fas fa-database"></i> In de opdrachten wordt gebruik gemaakt van een aantal 
+[bestanden](https://gitlab.com/Rickdkk/messy-example-project/-/raw/main/wheelchair_sprints0.zip) die horen bij de 
+[casus](casus). Download de bestanden voor de aanvang van de workshop en lees de casus ook alvast
+door. In de download zit een .zip archief. Zet het archief in een map waarin je wil werken en pak het archief uit.
+
+<i class="fa fa-table" aria-hidden="true"></i> Daarnaast is er een spreadsheet programma nodig zoals Microsoft Excel of 
+LibreOffice Calc. Nog geen spreadsheet programma? Download dan [hier](https://www.libreoffice.org/download/download/) 
+LibreOffice. Let wel op: er zitten subtiele verschillen binnen en tussen de layout van office programma's. Het kan dus 
+zijn dat het er bij een collega allemaal net iets anders uitziet.
 
 ## Credits
 

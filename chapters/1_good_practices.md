@@ -1,8 +1,8 @@
 ﻿# Good (enough) practices
 
-De opslag van data is in 2021 ongelofelijk goedkoop, maar de tijd van onderzoekers is schaars en duur. Op het
+De opslag van data is in 2022 ongelofelijk goedkoop, maar de tijd van onderzoekers is schaars en duur. Op het
 moment van schrijven is de prijs van een harde schijf ongeveer 2 cent per GB. De prijs van het kwijtraken of beschadigen
-van data is echter velen malen groter en kan een project zo maar een jaar vertragen. Goed genoeg data management kan
+van data is echter velen malen groter en kan een project zo maar een jaar vertragen. Goed (genoeg) data management kan
 bijdragen aan de efficiëntie van een project en de risico's op het verliezen of beschadigen van data inperken.
 Daarnaast is het belangrijk om ervoor te zorgen dat de data geschikt zijn voor analyse en archivering.
 Door hier van tevoren al rekening mee te houden zorgen we dat we geen extra werk moeten leveren en zoveel mogelijk
@@ -80,7 +80,9 @@ Er bestaat bij het converteren van bestanden altijd een risico dat informatie ve
 originele file (in ieder geval totdat je het project hebt afgerond). Soms is het (nog) niet mogelijk om data in een open
 format op te slaan. Als er een ander format beschikbaar is dat een 'industrie standaard' is dan kan dat format worden
 gebruikt, maar op de lange termijn zou alles in een open format opgeslagen moeten worden. Leg van tevoren vast in het
-DMP welke bestanden je gaat gebruiken en welke bewerkingen daarvoor nodig zijn.
+DMP welke bestanden je gaat gebruiken en welke bewerkingen daarvoor nodig zijn. Op de RDM portal staan wat handige
+[tips](https://connect.fontys.nl/fontysbreed/opo/ResearchDataManagement/Data-opslag/Paginas/Data-omzetten.aspx)
+voor het omzetten van data.
 
 ## Beschrijf de data
 
@@ -97,11 +99,11 @@ goede toevoeging zijn. Hierin staan de namen van de variabelen, een omschrijving
 
 Onderzoeksdata moet minimaal 10 jaar [^VSNU] bewaard blijven (15/20 jaar voor medische data [^CCMO]). Het archiveren van data is
 dus een belangrijke stap in het onderzoeksproces. Bij voorkeur wordt de data openbaar gemaakt, maar als dat niet kan dan
-kan het ook gesloten gearchiveerd worden. Fontys beschikt over DataverseNL. Hier kunnen de data van helemaal open tot
-helemaal gesloten gearchiveerd worden (Module 4). Door al het voorwerk dat is gedaan in de voorgaande secties is het
-archiveren van data zo gebeurd. De organisatie is al op orde, evenals de documentatie, en de data staat al in een
-houdbaar format. Aan de data wordt een DOI gekoppeld waarmee jij en anderen kunnen refereren aan de data, hierdoor krijg
-je erkenning voor de moeite die je hebt gestoken in de data.
+kan het ook gesloten gearchiveerd worden. Fontys beschikt over [DataverseNL](https://dataverse.nl/dataverse/fontys/).
+Hier kunnen de data van helemaal open tot helemaal gesloten gearchiveerd worden (Module 4). Door al het voorwerk dat is
+gedaan in de voorgaande secties is het archiveren van data zo gebeurd. De organisatie is al op orde, evenals de
+documentatie, en de data staat al in een houdbaar format. Aan de data wordt een DOI gekoppeld waarmee jij en anderen
+kunnen refereren aan de data, hierdoor krijg je erkenning voor de moeite die je hebt gestoken in de data.
 
 :::{image} ../figures/logo_dataverse.png
 :alt: DataverseNL
