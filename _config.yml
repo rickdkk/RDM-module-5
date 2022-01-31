@@ -5,7 +5,7 @@ title                     : "Leerlijn Research Data Management"
 author                    : Rick de Klerk
 copyright                 : "2021, CC BY 4.0"
 logo                      : figures/logo.svg
-exclude_patterns          : [_build, data]
+exclude_patterns          : [_build]
 only_build_toc_files      : true
 
 # Force re-execution of notebooks on each build.
@@ -24,7 +24,7 @@ bibtex_bibfiles:
 
 # Information about where the book exists on the web
 repository:
-  url                     : https://gitlab.com/Rickdkk/module_5/  # Online location of your book
+  url                     : https://github.com/rickdkk/RDM-module-5/  # Online location of your book
   branch                  : main  # Which branch of the repository should be used when creating links (optional)
 
 # Add GitHub buttons to your book

@@ -55,6 +55,10 @@ main.bd-content #main-content div.figure {
     color: var(--fontys-purple) !important;
 }
 
+.fa-angle-left::before, .fa-angle-right::before, .prev-next-title{
+        color: var(--fontys-purple) !important;
+}
+
 a.headerlink{
     color: var(--fontys-purple) !important;
 }
