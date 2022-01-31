@@ -7,18 +7,23 @@ aanbevelingen, maar om het voldoen aan de regels.
 - **Ga voor anonieme data**. Probeer het onderzoek altijd zo op te zetten dat er geen identificeerbare data verwerkt
 hoeft te worden.
 <br><br>
+
 - **Plan vroeg in het onderzoek** en schrijf het op in je DMP. Door vroeg te plannen kom je niet voor verassingen te staan
 en door het vast te leggen weet iedereen hoe die moet omgaan met de data.
 <br><br>
+
 - **Leg de manipulaties vast** zodat je weet wat er is gebeurd met de data. Dit kan door de manipulaties automatisch te 
 doen en het script te bewaren of door een logboek bij te houden.
 <br><br>
+
 - **Gebruik betekenisvolle vervangingen** in kwalitatieve data. Vervang in getranscribeerde interviews de tekst met 
 \[haakjes\] of gebruik \<Auteur\>XML tags\<\/Auteur\>.
 <br><br>
+
 - **Print geen documenten met persoonsgegevens**. Het is erg moeilijk om papieren documenten te beveiligen en te
 bewaren. Het beste is om zoveel mogelijk met digitale bestanden te werken.
 <br><br>
+
 - **Bewaar niet langer dan nodig**. Als je identificeerbare gegevens opslaat en deze niet langer nodig hebt, verwijder
 ze dan direct.
 

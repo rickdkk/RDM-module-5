@@ -6,7 +6,7 @@ plicht om verantwoord om te gaan met de data van je participanten. De data die h
 de data die je niet hebt, daarom gaat dit eerste stuk over *dataminimalisatie*. Dit kan men bereiken door gevoelige
 informatie helemaal niet te verwerken of door de informatie direct uit de data te halen (anonimiseren). Het 
 pseudonimiseren van data kan een middenweg zijn als de data gevoelig doch noodzakelijk is voor het onderzoek. In het 
-volgende stuk gaan we in op dataminimalisatie, pseudonimiseren, en anonimiseren bij kleinschalig onderzoek.
+volgende stuk gaan we dus in op dataminimalisatie, pseudonimiseren, en anonimiseren bij kleinschalig onderzoek.
 
 :::{figure-md} rewards-fig
 <img src="../figures/xkcd_customer_rewards.png" alt="xkcd" width=250px>
