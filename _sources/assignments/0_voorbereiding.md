@@ -12,13 +12,14 @@ Documenteer de organisatie van het onderzoeksproject. Hiervoor zijn twee opties,
 
 ### Optie 1 (low-tech optie):
 Navigeer met je file explorer (bijv. Verkenner) naar de projectmap van jouw onderzoek en bekijk de inhoud. Beschrijf 
-(globaal, ~5 minuten) voor jezelf de organisatiestrategie met de richtvragen uit Stap 3.
+(globaal, ~5 minuten) voor jezelf de organisatiestrategie, maak eventueel één of meerdere screenshot(s),
+en beantwoord de richtvragen uit Stap 3.
 
 ### Optie 2 (enige technische voorkennis vereist):
 ::::::{margin}
 :::{tip}
-Als er te veel bestanden zijn kan je ook `/f` weglaten op Windows of `-d` toevoegen op Mac/Linux. Tree op linux heeft 
-nog extra opties.
+Als er te veel bestanden zijn kan je ook `/f` weglaten op Windows of `-d` toevoegen op Mac/Linux. Tree op Linux heeft 
+nog extra opties (zie --help).
 :::
 ::::::
 
