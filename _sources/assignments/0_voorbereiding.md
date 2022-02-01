@@ -4,7 +4,8 @@ je waarschijnlijk bewust of onbewust wel mee bezig bent. In deze opdracht willen
 een eigen onderzoeksproject expliciet te maken. Je doet dit voor jezelf en hoeft het resultaat niet te delen.
 
 ## Stap 1 kies: 
-Kies het onderzoeksproject dat je wilt beschrijven. Geen eigen onderzoeksproject? Gebruik dan dit voorbeeld.
+Kies het onderzoeksproject dat je wilt beschrijven. Geen eigen onderzoeksproject? Gebruik dan [dit](https://gitlab.com/Rickdkk/messy-example-project/-/raw/main/wheelchair_sprints3.zip)
+voorbeeld.
 
 ## Stap 2 beschrijf:
 Documenteer de organisatie van het onderzoeksproject. Hiervoor zijn twee opties, kies degene die het meest bij jou past:
