@@ -19,8 +19,7 @@ de retentiemeting, maar lang niet alles is nodig. Daarbij staan de gegevens *en 
 1. Niet nu: Sla het bestand op in een losse map met beperkte autorisatie in Fontys Research Drive.
    
 Een oplossing voor de opdrachten staat [hier](https://gitlab.com/Rickdkk/messy-example-project/-/raw/main/wheelchair_sprints3.zip).
-Let wel op: in dit voorbeeld staat de sleutel ook in de projectmap, deze mag daar niet blijven. Het wachtwoord is natuurlijk
-ook uitzonderlijk slecht. 
+Let wel op: in dit voorbeeld staat de sleutel ook in de projectmap, deze mag daar niet blijven.
 
 ## #TODO
 
