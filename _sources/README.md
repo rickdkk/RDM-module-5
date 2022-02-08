@@ -35,11 +35,11 @@ blended learning met (online) leermateriaal en opdrachten. We beginnen bij het o
 | 20 min | Theorie en methoden project organisatie                    | {doc}`link <./chapters/1_project_organisatie>`             |
 | 20 min | Opdracht 1: project organisatie                            | {doc}`link <./assignments/1_project_organisatie_opdracht>` |
 | 10 min | *Pauze* ☕                                                  |                                                            |
-| 10 min | Theorie en methoden voor data organisatie                  | {doc}`link <./chapters/2_data_organisatie>`                |
-| 20 min | Opdracht 2: data organisatie                               | {doc}`link <./assignments/2_data_organisatie_opdracht>`    |
-| 20 min | Theorie dataminimalisatie, anonimiseren en pseudonimiseren | {doc}`link <./chapters/3_data_minimalisatie>`              |
+| 20 min | Theorie en methoden voor data organisatie                  | {doc}`link <./chapters/2_data_organisatie>`                |
+| 15 min | Opdracht 2: data organisatie                               | {doc}`link <./assignments/2_data_organisatie_opdracht>`    |
 | 10 min | *Pauze* ☕                                                  |                                                            | 
-| 20 min | Opdracht 3: data minimalisatie                             | {doc}`link <./assignments/3_data_minimalisatie_opdracht>`  |
+| 20 min | Theorie dataminimalisatie, anonimiseren en pseudonimiseren | {doc}`link <./chapters/3_data_minimalisatie>`              |
+| 15 min | Opdracht 3: data minimalisatie                             | {doc}`link <./assignments/3_data_minimalisatie_opdracht>`  |
 | 10 min | Afronden 👋                                                |                                                            |
 
 ## Voorbereiding
